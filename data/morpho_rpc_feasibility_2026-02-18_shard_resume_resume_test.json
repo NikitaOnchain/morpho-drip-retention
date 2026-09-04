@@ -1,0 +1,46 @@
+{
+  "test": "intentional stop and append-only manifest resume",
+  "run_label": "2026-02-18_shard_resume",
+  "intentional_stop": {
+    "test": "intentional stop after completed range",
+    "day": "2026-02-18",
+    "run_label": "2026-02-18_shard_resume",
+    "stop_after_successful_ranges": 1,
+    "completed_ranges": 1,
+    "checkpoint_log_rows": 270,
+    "checkpoint_unique_keys": 270,
+    "checkpoint_duplicate_rows": 0,
+    "next_block": 433233243,
+    "end_block_exclusive": 433559875,
+    "checkpoint_complete": false,
+    "manifest_path": "data/tmp/rpc_feasibility_2026-02-18_shard_resume/manifest.json",
+    "completed_shards": [
+      {
+        "range_id": 1,
+        "from_block": 433213243,
+        "to_block_exclusive": 433233243,
+        "row_count": 270,
+        "file": "range_000001_433213243_433233243.jsonl",
+        "checksum_sha256": "6bdfa41966b623567b05e2aa7b14837a081e8dbac2d3238ab383e15feedae132",
+        "status": "verified"
+      }
+    ],
+    "stopped_at_utc": "2026-08-31T12:20:52.1978978Z"
+  },
+  "resume": {
+    "manifest_verified_before_rpc": true,
+    "resumed_from_block": 433233243,
+    "verified_shards_loaded": 1,
+    "verified_rows_loaded": 270,
+    "completed_ranges_refetched": 0,
+    "loaded_shards_preserved": true,
+    "final_verified_shards": 10,
+    "final_rows": 6358,
+    "manifest_gap_count": 0,
+    "manifest_overlap_count": 0,
+    "duplicate_key_groups": 0,
+    "part_files_remaining": 0,
+    "comparison_pass": true,
+    "completed_at_utc": "2026-08-31T12:21:47.2976650Z"
+  }
+}

@@ -1,0 +1,115 @@
+{
+  "status": "PASS",
+  "scope": "local static Markdown build; not GitHub-renderer parity or browser review",
+  "node_version": "v24.19.0",
+  "marked_version": "17.0.5",
+  "external_requests": 0,
+  "files": [
+    {
+      "source": "README.md",
+      "source_sha256": "10ece034e773f364fe475818c4977052b0cb81e48df4d220bc57add1a1fb2167",
+      "preview": "data/tmp/phase8_markdown_preview/README.md.html",
+      "headings": 9,
+      "images": [
+        {
+          "path": "figures/phase7_retained_uplift.png",
+          "sha256": "42802ffd49ae48d86a9c5f444d49a8137052374cc2be43d5e73cd0c7f393179c",
+          "width": 1800,
+          "height": 1050
+        },
+        {
+          "path": "figures/phase7_borrowed_assets_checkpoints.png",
+          "sha256": "0d9449e00e6cc8db8b161fddde6255e951f04dc8913bdb39e3b9c9ec4378fe89",
+          "width": 1800,
+          "height": 1250
+        },
+        {
+          "path": "figures/phase7_debt_flow_decomposition.png",
+          "sha256": "80176ae25d29168c69dffb22ff5112808b545e7366027a20f1661aad65d20172",
+          "width": 1800,
+          "height": 1250
+        },
+        {
+          "path": "figures/phase7_active_borrowers.png",
+          "sha256": "19b812d361889f0578580b7a0eea03e1261f1fba3cd3d71ba4ffacc4b91001d1",
+          "width": 1800,
+          "height": 950
+        },
+        {
+          "path": "figures/phase7_archetype_borrowed_assets.png",
+          "sha256": "eb850ddfbac8d4180da96830c34afeedf09d9156936ef7ee8b55de73c96a8b24",
+          "width": 2000,
+          "height": 1700
+        },
+        {
+          "path": "figures/phase7_market_concentration.png",
+          "sha256": "b66df03d755257966cc5b1dd796809d6eef39a565b27b6acbdd930a82fdc14b9",
+          "width": 1800,
+          "height": 1300
+        }
+      ]
+    },
+    {
+      "source": "reports/DRIP_LENDING_DEMAND_REPORT.md",
+      "source_sha256": "c3c8ecea88bef8810f05bf628c168a101975ce70b1ee6728d1ef856f2939457b",
+      "preview": "data/tmp/phase8_markdown_preview/reports__DRIP_LENDING_DEMAND_REPORT.md.html",
+      "headings": 7,
+      "images": []
+    },
+    {
+      "source": "docs/REPRODUCTION.md",
+      "source_sha256": "e368effe8199db61a54b676762338f4b8807ec4abab02339c98f5f46f85d46f4",
+      "preview": "data/tmp/phase8_markdown_preview/docs__REPRODUCTION.md.html",
+      "headings": 7,
+      "images": []
+    },
+    {
+      "source": "docs/HEADLINE_PROVENANCE.md",
+      "source_sha256": "ef3a0bf789bb6e08a9260be1de6e5edd497183e7a88cba80f40816e69b9f11ea",
+      "preview": "data/tmp/phase8_markdown_preview/docs__HEADLINE_PROVENANCE.md.html",
+      "headings": 1,
+      "images": []
+    },
+    {
+      "source": "docs/RELEASE_LIMITATIONS.md",
+      "source_sha256": "c34201908a5b55cc1ef0e970d48ecff27aa1f89020b4440e7efda17c55043692",
+      "preview": "data/tmp/phase8_markdown_preview/docs__RELEASE_LIMITATIONS.md.html",
+      "headings": 6,
+      "images": []
+    },
+    {
+      "source": "docs/REVIEWER_BRIEF.md",
+      "source_sha256": "908d0d7e0bd1b68712caefe70e360ce082c7b31fabff5968c002040f1140721c",
+      "preview": "data/tmp/phase8_markdown_preview/docs__REVIEWER_BRIEF.md.html",
+      "headings": 6,
+      "images": []
+    },
+    {
+      "source": "docs/RELEASE_CHECKLIST.md",
+      "source_sha256": "abaf400abdac52699654113ddae83839767a3ff817f72ada4deffaa2cf4ff5d6",
+      "preview": "data/tmp/phase8_markdown_preview/docs__RELEASE_CHECKLIST.md.html",
+      "headings": 4,
+      "images": []
+    },
+    {
+      "source": "docs/RELEASE_CANDIDATE_QA.md",
+      "source_sha256": "da9fe9b884b373e34ae9eb5dc4e75d8f265b5a5e4b95ee75b4cb2db53a9d62ca",
+      "preview": "data/tmp/phase8_markdown_preview/docs__RELEASE_CANDIDATE_QA.md.html",
+      "headings": 6,
+      "images": []
+    },
+    {
+      "source": "reports/DISTRIBUTION_DRAFTS.md",
+      "source_sha256": "b0569663049ccb05cdf91aa2985c1fe5d9fd1626458bd577006fdfbb066caf40",
+      "preview": "data/tmp/phase8_markdown_preview/reports__DISTRIBUTION_DRAFTS.md.html",
+      "headings": 4,
+      "images": []
+    }
+  ],
+  "x_draft_codepoint_lengths": [
+    202,
+    200,
+    174
+  ],
+  "note": "X drafts still require final platform length review after alias/URL substitution."
+}

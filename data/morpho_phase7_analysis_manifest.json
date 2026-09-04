@@ -1,0 +1,94 @@
+{
+  "version": "morpho-phase7-analysis-v1",
+  "status": "complete",
+  "created_at_utc": "2026-09-02T21:29:10.305895Z",
+  "metric_version": "v1.0",
+  "script": {
+    "path": "scripts/analyze_phase7_metrics.py",
+    "sha256": "de4924a97c4b8beccdfdba6b6e3d327dce36c3d9dc5ca6515d2ab478fead2712"
+  },
+  "inputs": {
+    "production_db_sha256": "80aca74cc5e43db03fd93c69d7ad448ac9afdec5f9566a6b833ec11f7e5c9543",
+    "frozen_metrics_sha256": "2774c0856ca66da4611523289a7e1c4da937ce208cad9799c2f008753eca2ba2",
+    "eligibility_bridge_sha256": "cbab02426bcd1ac1ad0679156f837e155c5b04e86b63001a9149b0cbae27d305",
+    "market_csv_sha256": "a88fceaa19fe383bb956ef698a819facb2d345a29bd173db730e85bbd5213a6a",
+    "boundary_csv_sha256": "329ca8510fdd73d4623fa9de17b621ef752c383db5fb131ba77a5ffe507aeac9",
+    "boundary_json_sha256": "00b888f453a72cf991dd3cd8dc9b52a95e86b8f6956b26fe681b4467b97a11cb",
+    "boundary_qa_sha256": "49a91c9507f03bd4c36d4e82d48dbaaf333eb0543d7b2ec8dde5b256bf5eabcf",
+    "boundary_manifest_sha256": "8a80d2f6f6f656f469301a6a41b7ed1a73fc1df0936c47c3503bb7ee0d7c0646",
+    "phase6_qa_sha256": "2f9c345f107ca0b6081c57ca36ff7da6534a252ef4c66558e56e0635a37199e6",
+    "scope_reproducibility_manifest_sha256": "08098fbb4b288bf8741bf5aa2fb16da7973cb521fc9b758460d5057a45e505d3",
+    "accepted_scope_raw_snapshot_path": "data/raw/drip_morpho_scope/merkl_opportunities_20260902T115959247853Z.json",
+    "accepted_scope_raw_snapshot_sha256": "4d9bc3e011ce56ad555b3b650d42198d83fd78d35594d8b93e1f56d5362ae8c7"
+  },
+  "boundary_identity_sha256": "7d6c71180dfc5140568626a7d04a6324cd0b723012a2a9bcd2cd0c35b75c6a7d",
+  "network": {
+    "rpc_calls": 0,
+    "eth_getlogs_calls": 0,
+    "gba_queries": 0
+  },
+  "production_database_access": "SQLite URI mode=ro&immutable=1; PRAGMA query_only=ON",
+  "outputs": [
+    {
+      "path": "data/morpho_phase7_market_retained_uplift.csv",
+      "bytes": 305276,
+      "sha256": "528eb56d05bcef02fc6a2a96545b20e4d08fb5a04da91917a9257ae28ee66ca5"
+    },
+    {
+      "path": "data/morpho_phase7_portfolio_retained_uplift.csv",
+      "bytes": 56260,
+      "sha256": "870559401fe31e00fe44dbc2727b836b07892a95540fc0c9e6fb5800aec0d47e"
+    },
+    {
+      "path": "data/morpho_phase7_checkpoint_series.csv",
+      "bytes": 491812,
+      "sha256": "4aecd60b2f3f85c34057a2d62a4552d1b9229811307d4cef656b896eb1040537"
+    },
+    {
+      "path": "data/morpho_phase7_period_flows.csv",
+      "bytes": 58100,
+      "sha256": "44003813bf720a360a61e03e2c2c71194906cf70bbe58fac3e7e23105c2ab917"
+    },
+    {
+      "path": "data/morpho_phase7_market_concentration.csv",
+      "bytes": 26621,
+      "sha256": "b5bcf48e839acaf103475d6cf7487ccc1be57564b293ecf9d6ac131047b52bd4"
+    },
+    {
+      "path": "figures/phase7_borrowed_assets_checkpoints.png",
+      "bytes": 78291,
+      "sha256": "0d9449e00e6cc8db8b161fddde6255e951f04dc8913bdb39e3b9c9ec4378fe89"
+    },
+    {
+      "path": "figures/phase7_retained_uplift.png",
+      "bytes": 48435,
+      "sha256": "42802ffd49ae48d86a9c5f444d49a8137052374cc2be43d5e73cd0c7f393179c"
+    },
+    {
+      "path": "figures/phase7_debt_flow_decomposition.png",
+      "bytes": 68492,
+      "sha256": "80176ae25d29168c69dffb22ff5112808b545e7366027a20f1661aad65d20172"
+    },
+    {
+      "path": "figures/phase7_market_concentration.png",
+      "bytes": 101743,
+      "sha256": "b66df03d755257966cc5b1dd796809d6eef39a565b27b6acbdd930a82fdc14b9"
+    },
+    {
+      "path": "figures/phase7_archetype_borrowed_assets.png",
+      "bytes": 108667,
+      "sha256": "eb850ddfbac8d4180da96830c34afeedf09d9156936ef7ee8b55de73c96a8b24"
+    },
+    {
+      "path": "figures/phase7_active_borrowers.png",
+      "bytes": 49444,
+      "sha256": "19b812d361889f0578580b7a0eea03e1261f1fba3cd3d71ba4ffacc4b91001d1"
+    },
+    {
+      "path": "data/morpho_phase7_analysis_qa.json",
+      "bytes": 8528,
+      "sha256": "734562077bdba860b6b5a5e993d560e3de228f6e8399ce1210a0955ccfb0a62b"
+    }
+  ],
+  "qa_status": "PASS"
+}

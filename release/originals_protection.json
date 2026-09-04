@@ -1,0 +1,206 @@
+{
+  "files": [
+    {
+      "path": "reviews/independent/applicability_and_exposure.json",
+      "sha256": "a88da07489e58b8b90b28c7be20566f9eed15437929eb4e91a4fb97a2c049794"
+    },
+    {
+      "path": "reviews/independent/audit_package.py",
+      "sha256": "b3aaab2a1be8ba9680fe66bfe489afb08ff2b96ffc9c5dd7eeedacc6046f7835"
+    },
+    {
+      "path": "reviews/independent/browser_review.json",
+      "sha256": "c6aba1e39c92e3f3b651a6129af242aded4c794c31d3e46c7f4facc7d4803f48"
+    },
+    {
+      "path": "reviews/independent/csv_render_probe.json",
+      "sha256": "13323a18f7d2076cdd121ff1b809933040fa2c0abaefec037f18db14c0917b42"
+    },
+    {
+      "path": "reviews/independent/event_samples.json",
+      "sha256": "9545ff86cd7c18c951fab733ee835ba3c10ddc2143d70160c044b15fca12f73c"
+    },
+    {
+      "path": "reviews/independent/finalize_review.py",
+      "sha256": "dcbf790a6f457f0361dc558895522b252914606fb272a47f36a270ff01db2883"
+    },
+    {
+      "path": "reviews/independent/independent_concentration.csv",
+      "sha256": "31b9471f7474b8f705255e571a814ff4dc75f6d18827f9f331405c3f0624affd"
+    },
+    {
+      "path": "reviews/independent/independent_flows.csv",
+      "sha256": "7fdfc26518648d752710ef5db4690efb57d1b2624483e8f8369eb134f354b691"
+    },
+    {
+      "path": "reviews/independent/independent_headlines.json",
+      "sha256": "b5fc0bd89c3b9c53a0cf6010add7629dba2c81aafc59fba7e0e8f6e2725ca289"
+    },
+    {
+      "path": "reviews/independent/independent_metrics.csv",
+      "sha256": "52a2bde54356f8fc9c29ef80f4f4ebe033e867721cd9e11a72632a976e6f0dc4"
+    },
+    {
+      "path": "reviews/independent/independent_program_series.csv",
+      "sha256": "b08b276d01e344c7235b3fb1dc15f724e1a2557a0e0f330708fd2669b24d134d"
+    },
+    {
+      "path": "reviews/independent/input_schema.json",
+      "sha256": "870b13f77f80e05d922b0036ddf11ef21f9d1c7ec3d0cdd1c27bb1ca0da10a62"
+    },
+    {
+      "path": "reviews/independent/inspect_inputs.py",
+      "sha256": "90f5c19b3c701bd2106a5fca7a9e6572cd3d41dfaa6ef362574945533c663d10"
+    },
+    {
+      "path": "reviews/independent/metric_discrepancies.json",
+      "sha256": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945"
+    },
+    {
+      "path": "reviews/independent/numeric_audit.json",
+      "sha256": "211518a90cf9f2c03ce1c71612b12cd2ba79c817ab3478f27280768c95bdb92a"
+    },
+    {
+      "path": "reviews/independent/original_files_verification.json",
+      "sha256": "24ce9b83af575af2d7ea6c6ef01c8fd3c39e54f4690dee9f9c09459b753569fb"
+    },
+    {
+      "path": "reviews/independent/package_all_local_links.json",
+      "sha256": "ab7d1a1df58a73320f62e9c498583316dffbf1135c6ea2bcb5272946230544ab"
+    },
+    {
+      "path": "reviews/independent/package_audit.json",
+      "sha256": "408dd391186bdf96053b3189114be603be78f414cd45e8343dbb87b68796c50f"
+    },
+    {
+      "path": "reviews/independent/package_broken_links.json",
+      "sha256": "db70ff579dd088882553b54bb4c69781d8da850308027ba13991b19a390d5dc7"
+    },
+    {
+      "path": "reviews/independent/package_commands.json",
+      "sha256": "99b18a69d259d583b89cfd493103df6a22edc8d4647bbb62d123600a9a327fc7"
+    },
+    {
+      "path": "reviews/independent/package_source_hashes.json",
+      "sha256": "283cd54217da10c55dff5754793567d50655a1b844df8298ab41f6a57d777f7d"
+    },
+    {
+      "path": "reviews/independent/raw_production_fingerprints.json",
+      "sha256": "9d9244b2fc645f76d1cadde5c598ca616b37b193202d9fbb52676d0ca042b367"
+    },
+    {
+      "path": "reviews/independent/raw_shard_verification.csv",
+      "sha256": "49d9299bd1aec8f55f5734f758751f7e7947a77275651b4f41ae33b9feb275fd"
+    },
+    {
+      "path": "reviews/independent/recompute.py",
+      "sha256": "b6e4adf235d40936ed7f230553f141463ca9b5c4cd46c80d9dc0a035ccd47394"
+    },
+    {
+      "path": "reviews/independent/render_csv_probe.py",
+      "sha256": "3bef2a40e24a750bbdd992672b100782773cf7a0589fd55b55a44757b9349a74"
+    },
+    {
+      "path": "reviews/independent/REPORT.md",
+      "sha256": "86f03c49853d50de33a19740f4d4606aba922a5a462c349e3fdbd21f2d0f3cce"
+    },
+    {
+      "path": "reviews/independent/review_manifest.json",
+      "sha256": "563bc561fee14e2b5db591315f8495683952bad60558c4fc439816036573ed1f"
+    },
+    {
+      "path": "reviews/independent/review_result.json",
+      "sha256": "34b8b14dd6305c181e6c11efda78e49edb2e4eb4ecc386ba54e27df0a805f3a1"
+    },
+    {
+      "path": "reviews/independent/token_decimals.json",
+      "sha256": "d34551e7093004a942ce6bf511dc22e205cafd41bc14ddda94a6f4b972d5f3db"
+    },
+    {
+      "path": "reviews/independent/csv_render/phase7_active_borrowers.png",
+      "sha256": "19b812d361889f0578580b7a0eea03e1261f1fba3cd3d71ba4ffacc4b91001d1"
+    },
+    {
+      "path": "reviews/independent/csv_render/phase7_archetype_borrowed_assets.png",
+      "sha256": "eb850ddfbac8d4180da96830c34afeedf09d9156936ef7ee8b55de73c96a8b24"
+    },
+    {
+      "path": "reviews/independent/csv_render/phase7_borrowed_assets_checkpoints.png",
+      "sha256": "0d9449e00e6cc8db8b161fddde6255e951f04dc8913bdb39e3b9c9ec4378fe89"
+    },
+    {
+      "path": "reviews/independent/csv_render/phase7_debt_flow_decomposition.png",
+      "sha256": "80176ae25d29168c69dffb22ff5112808b545e7366027a20f1661aad65d20172"
+    },
+    {
+      "path": "reviews/independent/csv_render/phase7_market_concentration.png",
+      "sha256": "b66df03d755257966cc5b1dd796809d6eef39a565b27b6acbdd930a82fdc14b9"
+    },
+    {
+      "path": "reviews/independent/csv_render/phase7_retained_uplift.png",
+      "sha256": "42802ffd49ae48d86a9c5f444d49a8137052374cc2be43d5e73cd0c7f393179c"
+    },
+    {
+      "path": "scripts/analyze_phase7_metrics.py",
+      "sha256": "de4924a97c4b8beccdfdba6b6e3d327dce36c3d9dc5ca6515d2ab478fead2712"
+    },
+    {
+      "path": "data/morpho_phase7_market_retained_uplift.csv",
+      "sha256": "528eb56d05bcef02fc6a2a96545b20e4d08fb5a04da91917a9257ae28ee66ca5"
+    },
+    {
+      "path": "data/morpho_phase7_portfolio_retained_uplift.csv",
+      "sha256": "870559401fe31e00fe44dbc2727b836b07892a95540fc0c9e6fb5800aec0d47e"
+    },
+    {
+      "path": "data/morpho_phase7_checkpoint_series.csv",
+      "sha256": "4aecd60b2f3f85c34057a2d62a4552d1b9229811307d4cef656b896eb1040537"
+    },
+    {
+      "path": "data/morpho_phase7_period_flows.csv",
+      "sha256": "44003813bf720a360a61e03e2c2c71194906cf70bbe58fac3e7e23105c2ab917"
+    },
+    {
+      "path": "data/morpho_phase7_market_concentration.csv",
+      "sha256": "b5bcf48e839acaf103475d6cf7487ccc1be57564b293ecf9d6ac131047b52bd4"
+    },
+    {
+      "path": "figures/phase7_borrowed_assets_checkpoints.png",
+      "sha256": "0d9449e00e6cc8db8b161fddde6255e951f04dc8913bdb39e3b9c9ec4378fe89"
+    },
+    {
+      "path": "figures/phase7_retained_uplift.png",
+      "sha256": "42802ffd49ae48d86a9c5f444d49a8137052374cc2be43d5e73cd0c7f393179c"
+    },
+    {
+      "path": "figures/phase7_debt_flow_decomposition.png",
+      "sha256": "80176ae25d29168c69dffb22ff5112808b545e7366027a20f1661aad65d20172"
+    },
+    {
+      "path": "figures/phase7_market_concentration.png",
+      "sha256": "b66df03d755257966cc5b1dd796809d6eef39a565b27b6acbdd930a82fdc14b9"
+    },
+    {
+      "path": "figures/phase7_archetype_borrowed_assets.png",
+      "sha256": "eb850ddfbac8d4180da96830c34afeedf09d9156936ef7ee8b55de73c96a8b24"
+    },
+    {
+      "path": "figures/phase7_active_borrowers.png",
+      "sha256": "19b812d361889f0578580b7a0eea03e1261f1fba3cd3d71ba4ffacc4b91001d1"
+    },
+    {
+      "path": "data/morpho_phase7_analysis_qa.json",
+      "sha256": "734562077bdba860b6b5a5e993d560e3de228f6e8399ce1210a0955ccfb0a62b"
+    },
+    {
+      "path": "docs/METRICS.md",
+      "sha256": "2774c0856ca66da4611523289a7e1c4da937ce208cad9799c2f008753eca2ba2"
+    },
+    {
+      "path": "data/tmp/morpho_market_day_full_v1.sqlite",
+      "sha256": "80aca74cc5e43db03fd93c69d7ad448ac9afdec5f9566a6b833ec11f7e5c9543"
+    }
+  ],
+  "review_files_checked": 297,
+  "all_originals_unchanged": true
+}

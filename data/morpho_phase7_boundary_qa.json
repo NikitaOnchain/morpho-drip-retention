@@ -1,0 +1,129 @@
+{
+  "version": "morpho-phase7-frozen-boundaries-v1",
+  "status": "PASS",
+  "generated_at_utc": "2026-09-02T20:28:56.263361Z",
+  "definition": "chosen_block is the minimum block whose timestamp is greater than or equal to target_timestamp",
+  "identity": {
+    "version": "morpho-phase7-frozen-boundaries-v1",
+    "chain_id": 42161,
+    "rpc_method": "eth_getBlockByNumber",
+    "boundary_rule": "minimum block_number where block.timestamp >= target_timestamp",
+    "timestamp_count": 227,
+    "timestamp_list_sha256": "be8ee9c6c0a80864090d50b2d16737acd58da5c70a184a7728666ca0f3d04959",
+    "script_sha256": "70aba65954308eb5bbea83434e2b2ea339024e53e317b79617f5f93afa4e427c",
+    "production_db_sha256": "80aca74cc5e43db03fd93c69d7ad448ac9afdec5f9566a6b833ec11f7e5c9543",
+    "frozen_metrics_sha256": "2774c0856ca66da4611523289a7e1c4da937ce208cad9799c2f008753eca2ba2",
+    "eligibility_bridge_sha256": "cbab02426bcd1ac1ad0679156f837e155c5b04e86b63001a9149b0cbae27d305",
+    "production_day_boundary_sha256": "420b02a9331563c21dd2134d1bf7888ec4c64cad1640bf2ab3114cf1bb8e8157"
+  },
+  "checks": {
+    "target_count": {
+      "observed": 227,
+      "expected": 227
+    },
+    "unique_target_timestamps": {
+      "observed": 227,
+      "expected": 227
+    },
+    "complete_boundaries": {
+      "observed": 227,
+      "expected": 227
+    },
+    "missing_boundaries": {
+      "observed": 0,
+      "expected": 0
+    },
+    "duplicate_target_timestamps": {
+      "observed": 0,
+      "expected": 0
+    },
+    "non_monotonic_target_timestamps": {
+      "observed": 0,
+      "expected": 0
+    },
+    "non_monotonic_boundary_blocks": {
+      "observed": 0,
+      "expected": 0
+    },
+    "predecessor_failures": {
+      "observed": 0,
+      "expected": 0
+    },
+    "chosen_block_failures": {
+      "observed": 0,
+      "expected": 0
+    },
+    "adjacent_block_number_failures": {
+      "observed": 0,
+      "expected": 0
+    },
+    "parent_hash_failures": {
+      "observed": 0,
+      "expected": 0
+    },
+    "accepted_day_bracket_failures": {
+      "observed": 0,
+      "expected": 0
+    },
+    "phase2_phase6_exact_timestamp_intersections": {
+      "observed": 0,
+      "expected": 0
+    },
+    "phase2_phase6_intersection_mismatches": {
+      "observed": 0,
+      "expected": 0
+    }
+  },
+  "failed_checks": [],
+  "cache_failed_checks": [],
+  "cache_audit": {
+    "sqlite_integrity": "ok",
+    "target_rows": 227,
+    "unique_target_timestamps": 227,
+    "complete_targets": 227,
+    "cached_block_headers": 4427,
+    "invalid_cache_entries": 0,
+    "duplicate_cache_keys": 0,
+    "http_requests": 236,
+    "rpc_items": 4429,
+    "response_bytes": 10344658,
+    "error_attempts": 0,
+    "checkpoint": {
+      "singleton": 1,
+      "completed_targets": 227,
+      "global_round": 19,
+      "status": "complete",
+      "updated_at_utc": "2026-09-02T20:28:56.263361Z"
+    }
+  },
+  "timestamp_span": {
+    "first": "2025-07-10T13:00:00Z",
+    "last": "2026-08-17T13:00:00Z"
+  },
+  "boundary_block_span": {
+    "first": 356233093,
+    "last": 495489315
+  },
+  "timestamp_overshoot_seconds": {
+    "min": 0,
+    "max": 0
+  },
+  "predecessor_gap_seconds": {
+    "min": 1,
+    "max": 1
+  },
+  "accepted_boundary_reconciliation": {
+    "exact_timestamp_intersections": 0,
+    "intersection_mismatches": 0,
+    "all_targets_inside_accepted_day_brackets": true,
+    "note": "The frozen 13:00 timestamps do not coincide with the accepted midnight boundary rows; all 227 are reconciled to their accepted Phase 6 day brackets."
+  },
+  "network_scope": {
+    "allowed_methods": [
+      "eth_chainId",
+      "eth_getBlockByNumber"
+    ],
+    "eth_getlogs_calls": 0,
+    "gba_queries": 0
+  }
+}

@@ -1,0 +1,131 @@
+{
+  "verdict": "APPROVE WITH CAVEATS",
+  "finding_status": {
+    "R1": "CLOSED",
+    "R2": "CLOSED",
+    "R3": "CLOSED",
+    "R4": "CLOSED"
+  },
+  "package_manifest_sha256": "18bedd20ced80d229230214fd1170af1e35063330a017a7e07ca2ea48a99882a",
+  "original_review_sha256": "86f03c49853d50de33a19740f4d4606aba922a5a462c349e3fdbd21f2d0f3cce",
+  "response_to_review_sha256": "53c80318e0133acb5e72c582c6642634ac54e10906a2d94d4031fad1caee4081",
+  "csv_route": {
+    "exit_code": 0,
+    "sqlite_connections": 0,
+    "network_attempts": 0,
+    "original_workspace_reads": 0,
+    "python": "3.12.14",
+    "pillow": "12.3.0",
+    "font_evidence": [
+      {
+        "filename": "segoeui.ttf",
+        "sha256": "8134dbcd09e7b123c9a7f229d49cffbcb01352cc72ea5e1076b65d0dca9f73cd"
+      },
+      {
+        "filename": "segoeuib.ttf",
+        "sha256": "aeb9e4a6ec5cc59f4d72df8189032d7dbb28f45161cf1552174818b5465dac4e"
+      }
+    ]
+  },
+  "sqlite_route": {
+    "exit_code": 0,
+    "seconds": 78.547,
+    "external_files": 2,
+    "immutable_connections": 2,
+    "checked_metric_rows": 648,
+    "share_reconciliations": 10215,
+    "defects": 0,
+    "network_attempts": 0,
+    "original_workspace_reads": 0
+  },
+  "independent_output_hash_comparisons": {
+    "figures": [
+      {
+        "path": "figures/phase7_borrowed_assets_checkpoints.png",
+        "package_sha256": "0d9449e00e6cc8db8b161fddde6255e951f04dc8913bdb39e3b9c9ec4378fe89",
+        "csv_route_sha256": "0d9449e00e6cc8db8b161fddde6255e951f04dc8913bdb39e3b9c9ec4378fe89",
+        "sqlite_route_sha256": "0d9449e00e6cc8db8b161fddde6255e951f04dc8913bdb39e3b9c9ec4378fe89",
+        "original_sha256": "0d9449e00e6cc8db8b161fddde6255e951f04dc8913bdb39e3b9c9ec4378fe89",
+        "changed_from_original": false
+      },
+      {
+        "path": "figures/phase7_retained_uplift.png",
+        "package_sha256": "42802ffd49ae48d86a9c5f444d49a8137052374cc2be43d5e73cd0c7f393179c",
+        "csv_route_sha256": "42802ffd49ae48d86a9c5f444d49a8137052374cc2be43d5e73cd0c7f393179c",
+        "sqlite_route_sha256": "42802ffd49ae48d86a9c5f444d49a8137052374cc2be43d5e73cd0c7f393179c",
+        "original_sha256": "42802ffd49ae48d86a9c5f444d49a8137052374cc2be43d5e73cd0c7f393179c",
+        "changed_from_original": false
+      },
+      {
+        "path": "figures/phase7_debt_flow_decomposition.png",
+        "package_sha256": "80176ae25d29168c69dffb22ff5112808b545e7366027a20f1661aad65d20172",
+        "csv_route_sha256": "80176ae25d29168c69dffb22ff5112808b545e7366027a20f1661aad65d20172",
+        "sqlite_route_sha256": "80176ae25d29168c69dffb22ff5112808b545e7366027a20f1661aad65d20172",
+        "original_sha256": "80176ae25d29168c69dffb22ff5112808b545e7366027a20f1661aad65d20172",
+        "changed_from_original": false
+      },
+      {
+        "path": "figures/phase7_market_concentration.png",
+        "package_sha256": "b66df03d755257966cc5b1dd796809d6eef39a565b27b6acbdd930a82fdc14b9",
+        "csv_route_sha256": "b66df03d755257966cc5b1dd796809d6eef39a565b27b6acbdd930a82fdc14b9",
+        "sqlite_route_sha256": "b66df03d755257966cc5b1dd796809d6eef39a565b27b6acbdd930a82fdc14b9",
+        "original_sha256": "b66df03d755257966cc5b1dd796809d6eef39a565b27b6acbdd930a82fdc14b9",
+        "changed_from_original": false
+      },
+      {
+        "path": "figures/phase7_archetype_borrowed_assets.png",
+        "package_sha256": "fa9d7bb3f9f6167e9093e540bb16a32e80d25127a042a600ccb91cc4a3c924ea",
+        "csv_route_sha256": "fa9d7bb3f9f6167e9093e540bb16a32e80d25127a042a600ccb91cc4a3c924ea",
+        "sqlite_route_sha256": "fa9d7bb3f9f6167e9093e540bb16a32e80d25127a042a600ccb91cc4a3c924ea",
+        "original_sha256": "eb850ddfbac8d4180da96830c34afeedf09d9156936ef7ee8b55de73c96a8b24",
+        "changed_from_original": true
+      },
+      {
+        "path": "figures/phase7_active_borrowers.png",
+        "package_sha256": "b9e1b47c894ef74c235c9906565301c39c3f7e1f9a6800bb6d94404565d96fbc",
+        "csv_route_sha256": "b9e1b47c894ef74c235c9906565301c39c3f7e1f9a6800bb6d94404565d96fbc",
+        "sqlite_route_sha256": "b9e1b47c894ef74c235c9906565301c39c3f7e1f9a6800bb6d94404565d96fbc",
+        "original_sha256": "19b812d361889f0578580b7a0eea03e1261f1fba3cd3d71ba4ffacc4b91001d1",
+        "changed_from_original": true
+      }
+    ],
+    "csvs": [
+      {
+        "path": "data/morpho_phase7_market_retained_uplift.csv",
+        "sha256": "528eb56d05bcef02fc6a2a96545b20e4d08fb5a04da91917a9257ae28ee66ca5",
+        "byte_equal": true
+      },
+      {
+        "path": "data/morpho_phase7_portfolio_retained_uplift.csv",
+        "sha256": "870559401fe31e00fe44dbc2727b836b07892a95540fc0c9e6fb5800aec0d47e",
+        "byte_equal": true
+      },
+      {
+        "path": "data/morpho_phase7_checkpoint_series.csv",
+        "sha256": "4aecd60b2f3f85c34057a2d62a4552d1b9229811307d4cef656b896eb1040537",
+        "byte_equal": true
+      },
+      {
+        "path": "data/morpho_phase7_period_flows.csv",
+        "sha256": "44003813bf720a360a61e03e2c2c71194906cf70bbe58fac3e7e23105c2ab917",
+        "byte_equal": true
+      },
+      {
+        "path": "data/morpho_phase7_market_concentration.csv",
+        "sha256": "b5bcf48e839acaf103475d6cf7487ccc1be57564b293ecf9d6ac131047b52bd4",
+        "byte_equal": true
+      }
+    ]
+  },
+  "limitations": {
+    "full_raw_state_rebuild": "NOT_RUN",
+    "new_database_logical_equality_bridge": "NOT_RUN",
+    "public_source_bundle_acquisition": "NOT_TESTED / NOT_AVAILABLE",
+    "browser_github_rendering": "NOT_PERFORMED",
+    "cross_os_fonts": "NOT_TESTED",
+    "fresh_dependency_install": "NOT_PERFORMED",
+    "raw_preflight_phase1_bridge_execution": "NOT_REPEATED in this targeted review; four raw CLI argument sets parsed only",
+    "full_independent_abi_replay": "NOT_REPEATED; prior independently computed identities remain unchanged"
+  },
+  "guard_limit": "Python audit hooks for normal IO/dependency checks, not an OS-level hostile-code sandbox"
+}

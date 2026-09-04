@@ -1,0 +1,8 @@
+{
+  "status": "PASS",
+  "redacted_findings": [],
+  "scope": "Actual final package text; credential/token/personal-path heuristics, no suspected values exported",
+  "dedicated_scanner": "NOT RUN — no installed gitleaks/trufflehog found",
+  "git_history": "NOT RUN — no Git repository initialized",
+  "absence_of_all_secrets_certified": false
+}

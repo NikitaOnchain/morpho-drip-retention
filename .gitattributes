@@ -1,0 +1,8 @@
+# Preserve byte identities of accepted evidence and checksum-bound code.
+*.csv -text
+*.json -text
+*.md -text
+*.sql -text
+*.py -text
+*.ps1 -text
+*.png binary

@@ -1,0 +1,83 @@
+{
+  "csv_files": 5,
+  "metric_rows": 648,
+  "ratio_applicability_checks": 1296,
+  "series_rows": 2724,
+  "native_unit_delta_checks": 3888,
+  "checkpoint_metric_reconciliations": 36,
+  "flow_equations": 141,
+  "concentration_group_totals": 4,
+  "concentration_rows": 90,
+  "flow_rows": 141,
+  "applicability": {
+    "('borrowed_assets', 'applicable')": 42,
+    "('supplied_assets', 'applicable')": 45,
+    "('collateral_assets', 'applicable')": 44,
+    "('active_borrowers', 'applicable')": 38,
+    "('active_borrowers', 'not_applicable_no_positive_end_uplift')": 7,
+    "('borrowed_assets', 'not_applicable_no_positive_end_uplift')": 3,
+    "('collateral_assets', 'not_applicable_no_positive_end_uplift')": 1
+  },
+  "input_sha256": {
+    "data/morpho_phase7_market_retained_uplift.csv": "528eb56d05bcef02fc6a2a96545b20e4d08fb5a04da91917a9257ae28ee66ca5",
+    "data/morpho_phase7_portfolio_retained_uplift.csv": "870559401fe31e00fe44dbc2727b836b07892a95540fc0c9e6fb5800aec0d47e",
+    "data/morpho_phase7_checkpoint_series.csv": "4aecd60b2f3f85c34057a2d62a4552d1b9229811307d4cef656b896eb1040537",
+    "data/morpho_phase7_period_flows.csv": "44003813bf720a360a61e03e2c2c71194906cf70bbe58fac3e7e23105c2ab917",
+    "data/morpho_phase7_market_concentration.csv": "b5bcf48e839acaf103475d6cf7487ccc1be57564b293ecf9d6ac131047b52bd4"
+  },
+  "status": "PASS",
+  "scope": "published CSV identity/internal arithmetic and render only",
+  "network_calls": 0,
+  "database_reads": 0,
+  "figures": [
+    {
+      "path": "figures/phase7_borrowed_assets_checkpoints.png",
+      "rendered_sha256": "0d9449e00e6cc8db8b161fddde6255e951f04dc8913bdb39e3b9c9ec4378fe89",
+      "package_sha256": "0d9449e00e6cc8db8b161fddde6255e951f04dc8913bdb39e3b9c9ec4378fe89",
+      "byte_equal": true
+    },
+    {
+      "path": "figures/phase7_retained_uplift.png",
+      "rendered_sha256": "42802ffd49ae48d86a9c5f444d49a8137052374cc2be43d5e73cd0c7f393179c",
+      "package_sha256": "42802ffd49ae48d86a9c5f444d49a8137052374cc2be43d5e73cd0c7f393179c",
+      "byte_equal": true
+    },
+    {
+      "path": "figures/phase7_debt_flow_decomposition.png",
+      "rendered_sha256": "80176ae25d29168c69dffb22ff5112808b545e7366027a20f1661aad65d20172",
+      "package_sha256": "80176ae25d29168c69dffb22ff5112808b545e7366027a20f1661aad65d20172",
+      "byte_equal": true
+    },
+    {
+      "path": "figures/phase7_market_concentration.png",
+      "rendered_sha256": "b66df03d755257966cc5b1dd796809d6eef39a565b27b6acbdd930a82fdc14b9",
+      "package_sha256": "b66df03d755257966cc5b1dd796809d6eef39a565b27b6acbdd930a82fdc14b9",
+      "byte_equal": true
+    },
+    {
+      "path": "figures/phase7_archetype_borrowed_assets.png",
+      "rendered_sha256": "fa9d7bb3f9f6167e9093e540bb16a32e80d25127a042a600ccb91cc4a3c924ea",
+      "package_sha256": "fa9d7bb3f9f6167e9093e540bb16a32e80d25127a042a600ccb91cc4a3c924ea",
+      "byte_equal": true
+    },
+    {
+      "path": "figures/phase7_active_borrowers.png",
+      "rendered_sha256": "b9e1b47c894ef74c235c9906565301c39c3f7e1f9a6800bb6d94404565d96fbc",
+      "package_sha256": "b9e1b47c894ef74c235c9906565301c39c3f7e1f9a6800bb6d94404565d96fbc",
+      "byte_equal": true
+    }
+  ],
+  "python": "3.12.14",
+  "pillow": "12.3.0",
+  "font_evidence": [
+    {
+      "filename": "segoeui.ttf",
+      "sha256": "8134dbcd09e7b123c9a7f229d49cffbcb01352cc72ea5e1076b65d0dca9f73cd"
+    },
+    {
+      "filename": "segoeuib.ttf",
+      "sha256": "aeb9e4a6ec5cc59f4d72df8189032d7dbb28f45161cf1552174818b5465dac4e"
+    }
+  ],
+  "source_reconstruction": "NOT_RUN"
+}

@@ -1,0 +1,29 @@
+{
+  "version": "morpho-phase3-one-position-checkpoints-v1",
+  "selection_sha256": "00031bb5035ff7db2acca4ee754c563e588412db7a46428d7248682152615e5f",
+  "market_id": "0xed06d9e82d7c35ca80d3983194e15462a96202bd875800af18183321f4611868",
+  "wallet": "0xa0c826c8238dae8e11c637c29d0b3374c34f5f80",
+  "anchor": {
+    "block_number": 464068386,
+    "state_point": "end_of_block"
+  },
+  "intermediate": {
+    "block_number": 464068387,
+    "state_point": "end_of_block",
+    "selection_reason": "The first Borrow occurs in this block; the checkpoint was fixed before the bounded reconstruction RPC call."
+  },
+  "final": {
+    "block_number": 482431182,
+    "state_point": "end_of_block"
+  },
+  "replay_interval": {
+    "from_block_inclusive": 464068387,
+    "to_block_exclusive": 482431183
+  },
+  "ordering": [
+    "block_number",
+    "transaction_index",
+    "log_index"
+  ],
+  "created_at_utc": "2026-09-01T00:00:00Z"
+}

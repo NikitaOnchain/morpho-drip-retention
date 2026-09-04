@@ -1,0 +1,1022 @@
+{
+  "version": "morpho-phase4-three-market-daily-v1",
+  "status": "pass",
+  "completed_at_utc": "2026-09-01T18:38:35.813955Z",
+  "sql_engine": "SQLite 3.50.4 through Python stdlib sqlite3",
+  "sql_files": {
+    "build": "sql/10_market_day_prototype.sql",
+    "build_sha256": "c989c4d9985785c53ce8dfa6006d5898e5d64348e946f22e08ccbc15c3be035f",
+    "qa": "sql/90_qa_market_day_prototype.sql",
+    "qa_sha256": "ff43c5ce72aac30052e766db635770f3e69c1cb285ba8db8ee5c79c4197e5272"
+  },
+  "scope": {
+    "markets": [
+      "0xd09404e9512e1341321c8ae3bd663fab7087582142ac61486635a6c072c2af12",
+      "0xf86f3edd6f16cd8211f4d206866dc4ecd41be6211063ac11f8508e1b7112ef40",
+      "0x571cb3ac535d61d92026c071ef1df4794d0bbbe1755f916ff640746f81b52af4"
+    ],
+    "window_start_utc": "2025-07-09T13:00:00Z",
+    "window_end_exclusive_utc": "2026-08-18T00:00:00Z",
+    "days": 405,
+    "market_day_rows": 1215,
+    "grain": "market_id x UTC day",
+    "ordering": [
+      "block_number",
+      "transaction_index",
+      "log_index"
+    ]
+  },
+  "source_scan": {
+    "elapsed_seconds": 19.754746,
+    "verified_shards": 3157,
+    "source_rows_scanned": 1231462,
+    "source_bytes_scanned": 786571394,
+    "selected_raw_jsonl_bytes": 176785557,
+    "selected_event_rows": 275797,
+    "selected_event_counts_by_market": {
+      "0x571cb3ac535d61d92026c071ef1df4794d0bbbe1755f916ff640746f81b52af4": 30495,
+      "0xd09404e9512e1341321c8ae3bd663fab7087582142ac61486635a6c072c2af12": 62753,
+      "0xf86f3edd6f16cd8211f4d206866dc4ecd41be6211063ac11f8508e1b7112ef40": 182549
+    },
+    "selected_event_family_counts": {
+      "0x571cb3ac535d61d92026c071ef1df4794d0bbbe1755f916ff640746f81b52af4": {
+        "AccrueInterest": 15451,
+        "Borrow": 439,
+        "Repay": 489,
+        "Supply": 6756,
+        "SupplyCollateral": 454,
+        "Withdraw": 6428,
+        "WithdrawCollateral": 478
+      },
+      "0xd09404e9512e1341321c8ae3bd663fab7087582142ac61486635a6c072c2af12": {
+        "AccrueInterest": 36086,
+        "Borrow": 111,
+        "Liquidate": 11,
+        "Repay": 114,
+        "Supply": 11800,
+        "SupplyCollateral": 100,
+        "Withdraw": 14446,
+        "WithdrawCollateral": 85
+      },
+      "0xf86f3edd6f16cd8211f4d206866dc4ecd41be6211063ac11f8508e1b7112ef40": {
+        "AccrueInterest": 85677,
+        "Borrow": 4907,
+        "Repay": 1507,
+        "Supply": 43059,
+        "SupplyCollateral": 6025,
+        "Withdraw": 39814,
+        "WithdrawCollateral": 1560
+      }
+    },
+    "checksum_defects": 0,
+    "row_count_defects": 0,
+    "removed_rows": 0,
+    "scope_defects": 0,
+    "malformed_rows": 0,
+    "source_ordering_defects": 0,
+    "duplicate_selected_keys": 0
+  },
+  "rpc_evidence": {
+    "checkpoint_plan_sha256": "17eeec9fd829a9649a87a0681150a4c23854429d90764eeb94b1c7f554983804",
+    "checkpoint_evidence_path": "data/morpho_phase4_rpc_checkpoint_evidence.json",
+    "cache_audit": {
+      "sqlite_integrity": "ok",
+      "cache_identity_sha256": "3f699660079fd805ec1a3301c8333342cde786c3aa66dc257f81ab9389c4c7e3",
+      "cache_entries": 12,
+      "invalid_entries": 0,
+      "duplicate_key_groups": 0,
+      "error_entries": 0,
+      "checkpoint_contiguous_through": 11,
+      "progress_rows": 12,
+      "progress_gaps": 0,
+      "orphan_progress_rows": 0,
+      "wal_mode": "wal",
+      "synchronous": 2
+    },
+    "archive_session_metrics": {
+      "planned_calls_seen": 12,
+      "cache_hits": 12,
+      "new_archive_rpc_calls": 0
+    },
+    "rpc_transport_metrics": {
+      "offline_only": 1
+    }
+  },
+  "qa_checks": [
+    {
+      "check_name": "continuous_calendar_boundaries",
+      "blocking": 1,
+      "observed": "0",
+      "expected": "0",
+      "defect_count": 0,
+      "status": "PASS"
+    },
+    {
+      "check_name": "daily_event_sequence_delta",
+      "blocking": 1,
+      "observed": "0",
+      "expected": "0",
+      "defect_count": 0,
+      "status": "PASS"
+    },
+    {
+      "check_name": "deterministic_ordering_duplicates",
+      "blocking": 1,
+      "observed": "0",
+      "expected": "0",
+      "defect_count": 0,
+      "status": "PASS"
+    },
+    {
+      "check_name": "expected_market_day_rows",
+      "blocking": 1,
+      "observed": "1215",
+      "expected": "1215",
+      "defect_count": 0,
+      "status": "PASS"
+    },
+    {
+      "check_name": "inactive_days_are_zero",
+      "blocking": 1,
+      "observed": "0",
+      "expected": "0",
+      "defect_count": 0,
+      "status": "PASS"
+    },
+    {
+      "check_name": "nonzero_bad_debt_incidence",
+      "blocking": 0,
+      "observed": "0",
+      "expected": ">0 for empirical coverage",
+      "defect_count": 0,
+      "status": "GAP"
+    },
+    {
+      "check_name": "nonzero_fee_shares_incidence",
+      "blocking": 0,
+      "observed": "0",
+      "expected": ">0 for empirical coverage",
+      "defect_count": 0,
+      "status": "GAP"
+    },
+    {
+      "check_name": "per_market_calendar_coverage",
+      "blocking": 1,
+      "observed": "405..405",
+      "expected": "405..405",
+      "defect_count": 0,
+      "status": "PASS"
+    },
+    {
+      "check_name": "previous_close_equals_next_open",
+      "blocking": 1,
+      "observed": "0",
+      "expected": "0",
+      "defect_count": 0,
+      "status": "PASS"
+    },
+    {
+      "check_name": "raw_event_counts_reconcile",
+      "blocking": 1,
+      "observed": "0",
+      "expected": "0",
+      "defect_count": 0,
+      "status": "PASS"
+    },
+    {
+      "check_name": "raw_event_flows_reconcile",
+      "blocking": 1,
+      "observed": "0",
+      "expected": "0",
+      "defect_count": 0,
+      "status": "PASS"
+    },
+    {
+      "check_name": "raw_event_key_duplicates",
+      "blocking": 1,
+      "observed": "0",
+      "expected": "0",
+      "defect_count": 0,
+      "status": "PASS"
+    },
+    {
+      "check_name": "rounding_checks",
+      "blocking": 1,
+      "observed": "0",
+      "expected": "0",
+      "defect_count": 0,
+      "status": "PASS"
+    },
+    {
+      "check_name": "rpc_market_checkpoint_reconciliation",
+      "blocking": 1,
+      "observed": "0",
+      "expected": "0",
+      "defect_count": 0,
+      "status": "PASS"
+    },
+    {
+      "check_name": "unexplained_required_nulls",
+      "blocking": 1,
+      "observed": "0",
+      "expected": "0",
+      "defect_count": 0,
+      "status": "PASS"
+    },
+    {
+      "check_name": "unique_market_day_key",
+      "blocking": 1,
+      "observed": "0",
+      "expected": "0",
+      "defect_count": 0,
+      "status": "PASS"
+    },
+    {
+      "check_name": "unsigned_state_format_and_nonnegative",
+      "blocking": 1,
+      "observed": "0",
+      "expected": "0",
+      "defect_count": 0,
+      "status": "PASS"
+    }
+  ],
+  "checkpoint_reconciliation": [
+    {
+      "market_id": "0x571cb3ac535d61d92026c071ef1df4794d0bbbe1755f916ff640746f81b52af4",
+      "checkpoint_name": "anchor",
+      "block_number": 355887375,
+      "reconstructed_event_sequence": 0,
+      "reconstructed_total_supply_assets": "0",
+      "rpc_total_supply_assets": "0",
+      "reconstructed_total_supply_shares": "0",
+      "rpc_total_supply_shares": "0",
+      "reconstructed_total_borrow_assets": "0",
+      "rpc_total_borrow_assets": "0",
+      "reconstructed_total_borrow_shares": "0",
+      "rpc_total_borrow_shares": "0",
+      "rpc_last_update": 0,
+      "rpc_fee": "0",
+      "totals_match": 1
+    },
+    {
+      "market_id": "0x571cb3ac535d61d92026c071ef1df4794d0bbbe1755f916ff640746f81b52af4",
+      "checkpoint_name": "start",
+      "block_number": 413594451,
+      "reconstructed_event_sequence": 2,
+      "reconstructed_total_supply_assets": "1000000",
+      "rpc_total_supply_assets": "1000000",
+      "reconstructed_total_supply_shares": "1000000000000",
+      "rpc_total_supply_shares": "1000000000000",
+      "reconstructed_total_borrow_assets": "0",
+      "rpc_total_borrow_assets": "0",
+      "reconstructed_total_borrow_shares": "0",
+      "rpc_total_borrow_shares": "0",
+      "rpc_last_update": 1766476313,
+      "rpc_fee": "0",
+      "totals_match": 1
+    },
+    {
+      "market_id": "0x571cb3ac535d61d92026c071ef1df4794d0bbbe1755f916ff640746f81b52af4",
+      "checkpoint_name": "mid",
+      "block_number": 445271692,
+      "reconstructed_event_sequence": 15248,
+      "reconstructed_total_supply_assets": "50001749812853",
+      "rpc_total_supply_assets": "50001749812853",
+      "reconstructed_total_supply_shares": "49545642362192847129",
+      "rpc_total_supply_shares": "49545642362192847129",
+      "reconstructed_total_borrow_assets": "42331775057595",
+      "rpc_total_borrow_assets": "42331775057595",
+      "reconstructed_total_borrow_shares": "41892255727005643641",
+      "rpc_total_borrow_shares": "41892255727005643641",
+      "rpc_last_update": 1774384456,
+      "rpc_fee": "0",
+      "totals_match": 1
+    },
+    {
+      "market_id": "0x571cb3ac535d61d92026c071ef1df4794d0bbbe1755f916ff640746f81b52af4",
+      "checkpoint_name": "end",
+      "block_number": 495647033,
+      "reconstructed_event_sequence": 30495,
+      "reconstructed_total_supply_assets": "52611953301",
+      "rpc_total_supply_assets": "52611953301",
+      "reconstructed_total_supply_shares": "51290956641446949",
+      "rpc_total_supply_shares": "51290956641446949",
+      "reconstructed_total_borrow_assets": "42740965473",
+      "rpc_total_borrow_assets": "42740965473",
+      "reconstructed_total_borrow_shares": "41519360320658443",
+      "rpc_total_borrow_shares": "41519360320658443",
+      "rpc_last_update": 1786387857,
+      "rpc_fee": "0",
+      "totals_match": 1
+    },
+    {
+      "market_id": "0xd09404e9512e1341321c8ae3bd663fab7087582142ac61486635a6c072c2af12",
+      "checkpoint_name": "anchor",
+      "block_number": 355887375,
+      "reconstructed_event_sequence": 0,
+      "reconstructed_total_supply_assets": "0",
+      "rpc_total_supply_assets": "0",
+      "reconstructed_total_supply_shares": "0",
+      "rpc_total_supply_shares": "0",
+      "reconstructed_total_borrow_assets": "0",
+      "rpc_total_borrow_assets": "0",
+      "reconstructed_total_borrow_shares": "0",
+      "rpc_total_borrow_shares": "0",
+      "rpc_last_update": 0,
+      "rpc_fee": "0",
+      "totals_match": 1
+    },
+    {
+      "market_id": "0xd09404e9512e1341321c8ae3bd663fab7087582142ac61486635a6c072c2af12",
+      "checkpoint_name": "start",
+      "block_number": 358881054,
+      "reconstructed_event_sequence": 2,
+      "reconstructed_total_supply_assets": "1000000",
+      "rpc_total_supply_assets": "1000000",
+      "reconstructed_total_supply_shares": "1000000000000",
+      "rpc_total_supply_shares": "1000000000000",
+      "reconstructed_total_borrow_assets": "0",
+      "rpc_total_borrow_assets": "0",
+      "reconstructed_total_borrow_shares": "0",
+      "rpc_total_borrow_shares": "0",
+      "rpc_last_update": 1752813735,
+      "rpc_fee": "0",
+      "totals_match": 1
+    },
+    {
+      "market_id": "0xd09404e9512e1341321c8ae3bd663fab7087582142ac61486635a6c072c2af12",
+      "checkpoint_name": "mid",
+      "block_number": 449327957,
+      "reconstructed_event_sequence": 31377,
+      "reconstructed_total_supply_assets": "459811093899",
+      "rpc_total_supply_assets": "459811093899",
+      "reconstructed_total_supply_shares": "423083564349874924",
+      "rpc_total_supply_shares": "423083564349874924",
+      "reconstructed_total_borrow_assets": "254225602196",
+      "rpc_total_borrow_assets": "254225602196",
+      "reconstructed_total_borrow_shares": "232041655434633081",
+      "rpc_total_borrow_shares": "232041655434633081",
+      "rpc_last_update": 1775400030,
+      "rpc_fee": "0",
+      "totals_match": 1
+    },
+    {
+      "market_id": "0xd09404e9512e1341321c8ae3bd663fab7087582142ac61486635a6c072c2af12",
+      "checkpoint_name": "end",
+      "block_number": 495647033,
+      "reconstructed_event_sequence": 62753,
+      "reconstructed_total_supply_assets": "1798251909464",
+      "rpc_total_supply_assets": "1798251909464",
+      "reconstructed_total_supply_shares": "1629766812905400500",
+      "rpc_total_supply_shares": "1629766812905400500",
+      "reconstructed_total_borrow_assets": "1412787420771",
+      "rpc_total_borrow_assets": "1412787420771",
+      "reconstructed_total_borrow_shares": "1267277013158563722",
+      "rpc_total_borrow_shares": "1267277013158563722",
+      "rpc_last_update": 1787010934,
+      "rpc_fee": "0",
+      "totals_match": 1
+    },
+    {
+      "market_id": "0xf86f3edd6f16cd8211f4d206866dc4ecd41be6211063ac11f8508e1b7112ef40",
+      "checkpoint_name": "anchor",
+      "block_number": 355887375,
+      "reconstructed_event_sequence": 0,
+      "reconstructed_total_supply_assets": "0",
+      "rpc_total_supply_assets": "0",
+      "reconstructed_total_supply_shares": "0",
+      "rpc_total_supply_shares": "0",
+      "reconstructed_total_borrow_assets": "0",
+      "rpc_total_borrow_assets": "0",
+      "reconstructed_total_borrow_shares": "0",
+      "rpc_total_borrow_shares": "0",
+      "rpc_last_update": 0,
+      "rpc_fee": "0",
+      "totals_match": 1
+    },
+    {
+      "market_id": "0xf86f3edd6f16cd8211f4d206866dc4ecd41be6211063ac11f8508e1b7112ef40",
+      "checkpoint_name": "start",
+      "block_number": 373644710,
+      "reconstructed_event_sequence": 2,
+      "reconstructed_total_supply_assets": "1000000",
+      "rpc_total_supply_assets": "1000000",
+      "reconstructed_total_supply_shares": "1000000000000",
+      "rpc_total_supply_shares": "1000000000000",
+      "reconstructed_total_borrow_assets": "0",
+      "rpc_total_borrow_assets": "0",
+      "reconstructed_total_borrow_shares": "0",
+      "rpc_total_borrow_shares": "0",
+      "rpc_last_update": 1756500132,
+      "rpc_fee": "0",
+      "totals_match": 1
+    },
+    {
+      "market_id": "0xf86f3edd6f16cd8211f4d206866dc4ecd41be6211063ac11f8508e1b7112ef40",
+      "checkpoint_name": "mid",
+      "block_number": 419106522,
+      "reconstructed_event_sequence": 91276,
+      "reconstructed_total_supply_assets": "55036902147599",
+      "rpc_total_supply_assets": "55036902147599",
+      "reconstructed_total_supply_shares": "54135453830880874836",
+      "rpc_total_supply_shares": "54135453830880874836",
+      "reconstructed_total_borrow_assets": "48842052174204",
+      "rpc_total_borrow_assets": "48842052174204",
+      "reconstructed_total_borrow_shares": "47945267955153302611",
+      "rpc_total_borrow_shares": "47945267955153302611",
+      "rpc_last_update": 1767853177,
+      "rpc_fee": "0",
+      "totals_match": 1
+    },
+    {
+      "market_id": "0xf86f3edd6f16cd8211f4d206866dc4ecd41be6211063ac11f8508e1b7112ef40",
+      "checkpoint_name": "end",
+      "block_number": 495647033,
+      "reconstructed_event_sequence": 182549,
+      "reconstructed_total_supply_assets": "60761059311",
+      "rpc_total_supply_assets": "60761059311",
+      "reconstructed_total_supply_shares": "58520538872801281",
+      "rpc_total_supply_shares": "58520538872801281",
+      "reconstructed_total_borrow_assets": "43457779513",
+      "rpc_total_borrow_assets": "43457779513",
+      "reconstructed_total_borrow_shares": "41641712820816773",
+      "rpc_total_borrow_shares": "41641712820816773",
+      "rpc_last_update": 1786994521,
+      "rpc_fee": "0",
+      "totals_match": 1
+    }
+  ],
+  "event_family_reconciliation": [
+    {
+      "market_id": "0x571cb3ac535d61d92026c071ef1df4794d0bbbe1755f916ff640746f81b52af4",
+      "event_family": "AccrueInterest",
+      "raw_event_count": 15451,
+      "daily_event_count": 15451,
+      "counts_match": 1
+    },
+    {
+      "market_id": "0x571cb3ac535d61d92026c071ef1df4794d0bbbe1755f916ff640746f81b52af4",
+      "event_family": "Borrow",
+      "raw_event_count": 439,
+      "daily_event_count": 439,
+      "counts_match": 1
+    },
+    {
+      "market_id": "0x571cb3ac535d61d92026c071ef1df4794d0bbbe1755f916ff640746f81b52af4",
+      "event_family": "Liquidate",
+      "raw_event_count": 0,
+      "daily_event_count": 0,
+      "counts_match": 1
+    },
+    {
+      "market_id": "0x571cb3ac535d61d92026c071ef1df4794d0bbbe1755f916ff640746f81b52af4",
+      "event_family": "Repay",
+      "raw_event_count": 489,
+      "daily_event_count": 489,
+      "counts_match": 1
+    },
+    {
+      "market_id": "0x571cb3ac535d61d92026c071ef1df4794d0bbbe1755f916ff640746f81b52af4",
+      "event_family": "Supply",
+      "raw_event_count": 6756,
+      "daily_event_count": 6756,
+      "counts_match": 1
+    },
+    {
+      "market_id": "0x571cb3ac535d61d92026c071ef1df4794d0bbbe1755f916ff640746f81b52af4",
+      "event_family": "SupplyCollateral",
+      "raw_event_count": 454,
+      "daily_event_count": 454,
+      "counts_match": 1
+    },
+    {
+      "market_id": "0x571cb3ac535d61d92026c071ef1df4794d0bbbe1755f916ff640746f81b52af4",
+      "event_family": "Withdraw",
+      "raw_event_count": 6428,
+      "daily_event_count": 6428,
+      "counts_match": 1
+    },
+    {
+      "market_id": "0x571cb3ac535d61d92026c071ef1df4794d0bbbe1755f916ff640746f81b52af4",
+      "event_family": "WithdrawCollateral",
+      "raw_event_count": 478,
+      "daily_event_count": 478,
+      "counts_match": 1
+    },
+    {
+      "market_id": "0xd09404e9512e1341321c8ae3bd663fab7087582142ac61486635a6c072c2af12",
+      "event_family": "AccrueInterest",
+      "raw_event_count": 36086,
+      "daily_event_count": 36086,
+      "counts_match": 1
+    },
+    {
+      "market_id": "0xd09404e9512e1341321c8ae3bd663fab7087582142ac61486635a6c072c2af12",
+      "event_family": "Borrow",
+      "raw_event_count": 111,
+      "daily_event_count": 111,
+      "counts_match": 1
+    },
+    {
+      "market_id": "0xd09404e9512e1341321c8ae3bd663fab7087582142ac61486635a6c072c2af12",
+      "event_family": "Liquidate",
+      "raw_event_count": 11,
+      "daily_event_count": 11,
+      "counts_match": 1
+    },
+    {
+      "market_id": "0xd09404e9512e1341321c8ae3bd663fab7087582142ac61486635a6c072c2af12",
+      "event_family": "Repay",
+      "raw_event_count": 114,
+      "daily_event_count": 114,
+      "counts_match": 1
+    },
+    {
+      "market_id": "0xd09404e9512e1341321c8ae3bd663fab7087582142ac61486635a6c072c2af12",
+      "event_family": "Supply",
+      "raw_event_count": 11800,
+      "daily_event_count": 11800,
+      "counts_match": 1
+    },
+    {
+      "market_id": "0xd09404e9512e1341321c8ae3bd663fab7087582142ac61486635a6c072c2af12",
+      "event_family": "SupplyCollateral",
+      "raw_event_count": 100,
+      "daily_event_count": 100,
+      "counts_match": 1
+    },
+    {
+      "market_id": "0xd09404e9512e1341321c8ae3bd663fab7087582142ac61486635a6c072c2af12",
+      "event_family": "Withdraw",
+      "raw_event_count": 14446,
+      "daily_event_count": 14446,
+      "counts_match": 1
+    },
+    {
+      "market_id": "0xd09404e9512e1341321c8ae3bd663fab7087582142ac61486635a6c072c2af12",
+      "event_family": "WithdrawCollateral",
+      "raw_event_count": 85,
+      "daily_event_count": 85,
+      "counts_match": 1
+    },
+    {
+      "market_id": "0xf86f3edd6f16cd8211f4d206866dc4ecd41be6211063ac11f8508e1b7112ef40",
+      "event_family": "AccrueInterest",
+      "raw_event_count": 85677,
+      "daily_event_count": 85677,
+      "counts_match": 1
+    },
+    {
+      "market_id": "0xf86f3edd6f16cd8211f4d206866dc4ecd41be6211063ac11f8508e1b7112ef40",
+      "event_family": "Borrow",
+      "raw_event_count": 4907,
+      "daily_event_count": 4907,
+      "counts_match": 1
+    },
+    {
+      "market_id": "0xf86f3edd6f16cd8211f4d206866dc4ecd41be6211063ac11f8508e1b7112ef40",
+      "event_family": "Liquidate",
+      "raw_event_count": 0,
+      "daily_event_count": 0,
+      "counts_match": 1
+    },
+    {
+      "market_id": "0xf86f3edd6f16cd8211f4d206866dc4ecd41be6211063ac11f8508e1b7112ef40",
+      "event_family": "Repay",
+      "raw_event_count": 1507,
+      "daily_event_count": 1507,
+      "counts_match": 1
+    },
+    {
+      "market_id": "0xf86f3edd6f16cd8211f4d206866dc4ecd41be6211063ac11f8508e1b7112ef40",
+      "event_family": "Supply",
+      "raw_event_count": 43059,
+      "daily_event_count": 43059,
+      "counts_match": 1
+    },
+    {
+      "market_id": "0xf86f3edd6f16cd8211f4d206866dc4ecd41be6211063ac11f8508e1b7112ef40",
+      "event_family": "SupplyCollateral",
+      "raw_event_count": 6025,
+      "daily_event_count": 6025,
+      "counts_match": 1
+    },
+    {
+      "market_id": "0xf86f3edd6f16cd8211f4d206866dc4ecd41be6211063ac11f8508e1b7112ef40",
+      "event_family": "Withdraw",
+      "raw_event_count": 39814,
+      "daily_event_count": 39814,
+      "counts_match": 1
+    },
+    {
+      "market_id": "0xf86f3edd6f16cd8211f4d206866dc4ecd41be6211063ac11f8508e1b7112ef40",
+      "event_family": "WithdrawCollateral",
+      "raw_event_count": 1560,
+      "daily_event_count": 1560,
+      "counts_match": 1
+    }
+  ],
+  "event_flow_reconciliation": [
+    {
+      "market_id": "0x571cb3ac535d61d92026c071ef1df4794d0bbbe1755f916ff640746f81b52af4",
+      "measure": "accrued_fee_shares",
+      "raw_value": "0",
+      "daily_value": "0",
+      "values_match": 1
+    },
+    {
+      "market_id": "0x571cb3ac535d61d92026c071ef1df4794d0bbbe1755f916ff640746f81b52af4",
+      "measure": "accrued_interest_assets",
+      "raw_value": "267059278234",
+      "daily_value": "267059278234",
+      "values_match": 1
+    },
+    {
+      "market_id": "0x571cb3ac535d61d92026c071ef1df4794d0bbbe1755f916ff640746f81b52af4",
+      "measure": "borrow_assets_out",
+      "raw_value": "97486243912155",
+      "daily_value": "97486243912155",
+      "values_match": 1
+    },
+    {
+      "market_id": "0x571cb3ac535d61d92026c071ef1df4794d0bbbe1755f916ff640746f81b52af4",
+      "measure": "borrow_shares_minted",
+      "raw_value": "96762552334353303475",
+      "daily_value": "96762552334353303475",
+      "values_match": 1
+    },
+    {
+      "market_id": "0x571cb3ac535d61d92026c071ef1df4794d0bbbe1755f916ff640746f81b52af4",
+      "measure": "collateral_assets_in",
+      "raw_value": "100356786704397",
+      "daily_value": "100356786704397",
+      "values_match": 1
+    },
+    {
+      "market_id": "0x571cb3ac535d61d92026c071ef1df4794d0bbbe1755f916ff640746f81b52af4",
+      "measure": "collateral_assets_withdrawn",
+      "raw_value": "100314279850284",
+      "daily_value": "100314279850284",
+      "values_match": 1
+    },
+    {
+      "market_id": "0x571cb3ac535d61d92026c071ef1df4794d0bbbe1755f916ff640746f81b52af4",
+      "measure": "liquidation_bad_debt_assets",
+      "raw_value": "0",
+      "daily_value": "0",
+      "values_match": 1
+    },
+    {
+      "market_id": "0x571cb3ac535d61d92026c071ef1df4794d0bbbe1755f916ff640746f81b52af4",
+      "measure": "liquidation_bad_debt_shares",
+      "raw_value": "0",
+      "daily_value": "0",
+      "values_match": 1
+    },
+    {
+      "market_id": "0x571cb3ac535d61d92026c071ef1df4794d0bbbe1755f916ff640746f81b52af4",
+      "measure": "liquidation_repaid_assets",
+      "raw_value": "0",
+      "daily_value": "0",
+      "values_match": 1
+    },
+    {
+      "market_id": "0x571cb3ac535d61d92026c071ef1df4794d0bbbe1755f916ff640746f81b52af4",
+      "measure": "liquidation_repaid_shares",
+      "raw_value": "0",
+      "daily_value": "0",
+      "values_match": 1
+    },
+    {
+      "market_id": "0x571cb3ac535d61d92026c071ef1df4794d0bbbe1755f916ff640746f81b52af4",
+      "measure": "liquidation_seized_collateral_assets",
+      "raw_value": "0",
+      "daily_value": "0",
+      "values_match": 1
+    },
+    {
+      "market_id": "0x571cb3ac535d61d92026c071ef1df4794d0bbbe1755f916ff640746f81b52af4",
+      "measure": "repay_assets_in",
+      "raw_value": "97710562224916",
+      "daily_value": "97710562224916",
+      "values_match": 1
+    },
+    {
+      "market_id": "0x571cb3ac535d61d92026c071ef1df4794d0bbbe1755f916ff640746f81b52af4",
+      "measure": "repay_shares_burned",
+      "raw_value": "96721032974032645032",
+      "daily_value": "96721032974032645032",
+      "values_match": 1
+    },
+    {
+      "market_id": "0x571cb3ac535d61d92026c071ef1df4794d0bbbe1755f916ff640746f81b52af4",
+      "measure": "supply_assets_in",
+      "raw_value": "274572130085211",
+      "daily_value": "274572130085211",
+      "values_match": 1
+    },
+    {
+      "market_id": "0x571cb3ac535d61d92026c071ef1df4794d0bbbe1755f916ff640746f81b52af4",
+      "measure": "supply_shares_minted",
+      "raw_value": "272307005248901178437",
+      "daily_value": "272307005248901178437",
+      "values_match": 1
+    },
+    {
+      "market_id": "0x571cb3ac535d61d92026c071ef1df4794d0bbbe1755f916ff640746f81b52af4",
+      "measure": "withdraw_assets_out",
+      "raw_value": "274786577410144",
+      "daily_value": "274786577410144",
+      "values_match": 1
+    },
+    {
+      "market_id": "0x571cb3ac535d61d92026c071ef1df4794d0bbbe1755f916ff640746f81b52af4",
+      "measure": "withdraw_shares_burned",
+      "raw_value": "272255714292259731488",
+      "daily_value": "272255714292259731488",
+      "values_match": 1
+    },
+    {
+      "market_id": "0xd09404e9512e1341321c8ae3bd663fab7087582142ac61486635a6c072c2af12",
+      "measure": "accrued_fee_shares",
+      "raw_value": "0",
+      "daily_value": "0",
+      "values_match": 1
+    },
+    {
+      "market_id": "0xd09404e9512e1341321c8ae3bd663fab7087582142ac61486635a6c072c2af12",
+      "measure": "accrued_interest_assets",
+      "raw_value": "30637826969",
+      "daily_value": "30637826969",
+      "values_match": 1
+    },
+    {
+      "market_id": "0xd09404e9512e1341321c8ae3bd663fab7087582142ac61486635a6c072c2af12",
+      "measure": "borrow_assets_out",
+      "raw_value": "4578199589466",
+      "daily_value": "4578199589466",
+      "values_match": 1
+    },
+    {
+      "market_id": "0xd09404e9512e1341321c8ae3bd663fab7087582142ac61486635a6c072c2af12",
+      "measure": "borrow_shares_minted",
+      "raw_value": "4199412748594452711",
+      "daily_value": "4199412748594452711",
+      "values_match": 1
+    },
+    {
+      "market_id": "0xd09404e9512e1341321c8ae3bd663fab7087582142ac61486635a6c072c2af12",
+      "measure": "collateral_assets_in",
+      "raw_value": "2051492809320202955269",
+      "daily_value": "2051492809320202955269",
+      "values_match": 1
+    },
+    {
+      "market_id": "0xd09404e9512e1341321c8ae3bd663fab7087582142ac61486635a6c072c2af12",
+      "measure": "collateral_assets_withdrawn",
+      "raw_value": "961302528218673424384",
+      "daily_value": "961302528218673424384",
+      "values_match": 1
+    },
+    {
+      "market_id": "0xd09404e9512e1341321c8ae3bd663fab7087582142ac61486635a6c072c2af12",
+      "measure": "liquidation_bad_debt_assets",
+      "raw_value": "0",
+      "daily_value": "0",
+      "values_match": 1
+    },
+    {
+      "market_id": "0xd09404e9512e1341321c8ae3bd663fab7087582142ac61486635a6c072c2af12",
+      "measure": "liquidation_bad_debt_shares",
+      "raw_value": "0",
+      "daily_value": "0",
+      "values_match": 1
+    },
+    {
+      "market_id": "0xd09404e9512e1341321c8ae3bd663fab7087582142ac61486635a6c072c2af12",
+      "measure": "liquidation_repaid_assets",
+      "raw_value": "1155066879",
+      "daily_value": "1155066879",
+      "values_match": 1
+    },
+    {
+      "market_id": "0xd09404e9512e1341321c8ae3bd663fab7087582142ac61486635a6c072c2af12",
+      "measure": "liquidation_repaid_shares",
+      "raw_value": "1077375797527061",
+      "daily_value": "1077375797527061",
+      "values_match": 1
+    },
+    {
+      "market_id": "0xd09404e9512e1341321c8ae3bd663fab7087582142ac61486635a6c072c2af12",
+      "measure": "liquidation_seized_collateral_assets",
+      "raw_value": "290532848471948847",
+      "daily_value": "290532848471948847",
+      "values_match": 1
+    },
+    {
+      "market_id": "0xd09404e9512e1341321c8ae3bd663fab7087582142ac61486635a6c072c2af12",
+      "measure": "repay_assets_in",
+      "raw_value": "3194894928785",
+      "daily_value": "3194894928785",
+      "values_match": 1
+    },
+    {
+      "market_id": "0xd09404e9512e1341321c8ae3bd663fab7087582142ac61486635a6c072c2af12",
+      "measure": "repay_shares_burned",
+      "raw_value": "2931058359638361928",
+      "daily_value": "2931058359638361928",
+      "values_match": 1
+    },
+    {
+      "market_id": "0xd09404e9512e1341321c8ae3bd663fab7087582142ac61486635a6c072c2af12",
+      "measure": "supply_assets_in",
+      "raw_value": "304350507766391",
+      "daily_value": "304350507766391",
+      "values_match": 1
+    },
+    {
+      "market_id": "0xd09404e9512e1341321c8ae3bd663fab7087582142ac61486635a6c072c2af12",
+      "measure": "supply_shares_minted",
+      "raw_value": "278468519073013859877",
+      "daily_value": "278468519073013859877",
+      "values_match": 1
+    },
+    {
+      "market_id": "0xd09404e9512e1341321c8ae3bd663fab7087582142ac61486635a6c072c2af12",
+      "measure": "withdraw_assets_out",
+      "raw_value": "302582893683896",
+      "daily_value": "302582893683896",
+      "values_match": 1
+    },
+    {
+      "market_id": "0xd09404e9512e1341321c8ae3bd663fab7087582142ac61486635a6c072c2af12",
+      "measure": "withdraw_shares_burned",
+      "raw_value": "276838752260108459377",
+      "daily_value": "276838752260108459377",
+      "values_match": 1
+    },
+    {
+      "market_id": "0xf86f3edd6f16cd8211f4d206866dc4ecd41be6211063ac11f8508e1b7112ef40",
+      "measure": "accrued_fee_shares",
+      "raw_value": "0",
+      "daily_value": "0",
+      "values_match": 1
+    },
+    {
+      "market_id": "0xf86f3edd6f16cd8211f4d206866dc4ecd41be6211063ac11f8508e1b7112ef40",
+      "measure": "accrued_interest_assets",
+      "raw_value": "784369200278",
+      "daily_value": "784369200278",
+      "values_match": 1
+    },
+    {
+      "market_id": "0xf86f3edd6f16cd8211f4d206866dc4ecd41be6211063ac11f8508e1b7112ef40",
+      "measure": "borrow_assets_out",
+      "raw_value": "221605883357720",
+      "daily_value": "221605883357720",
+      "values_match": 1
+    },
+    {
+      "market_id": "0xf86f3edd6f16cd8211f4d206866dc4ecd41be6211063ac11f8508e1b7112ef40",
+      "measure": "borrow_shares_minted",
+      "raw_value": "218749205282469484626",
+      "daily_value": "218749205282469484626",
+      "values_match": 1
+    },
+    {
+      "market_id": "0xf86f3edd6f16cd8211f4d206866dc4ecd41be6211063ac11f8508e1b7112ef40",
+      "measure": "collateral_assets_in",
+      "raw_value": "218531492101659",
+      "daily_value": "218531492101659",
+      "values_match": 1
+    },
+    {
+      "market_id": "0xf86f3edd6f16cd8211f4d206866dc4ecd41be6211063ac11f8508e1b7112ef40",
+      "measure": "collateral_assets_withdrawn",
+      "raw_value": "218483238881790",
+      "daily_value": "218483238881790",
+      "values_match": 1
+    },
+    {
+      "market_id": "0xf86f3edd6f16cd8211f4d206866dc4ecd41be6211063ac11f8508e1b7112ef40",
+      "measure": "liquidation_bad_debt_assets",
+      "raw_value": "0",
+      "daily_value": "0",
+      "values_match": 1
+    },
+    {
+      "market_id": "0xf86f3edd6f16cd8211f4d206866dc4ecd41be6211063ac11f8508e1b7112ef40",
+      "measure": "liquidation_bad_debt_shares",
+      "raw_value": "0",
+      "daily_value": "0",
+      "values_match": 1
+    },
+    {
+      "market_id": "0xf86f3edd6f16cd8211f4d206866dc4ecd41be6211063ac11f8508e1b7112ef40",
+      "measure": "liquidation_repaid_assets",
+      "raw_value": "0",
+      "daily_value": "0",
+      "values_match": 1
+    },
+    {
+      "market_id": "0xf86f3edd6f16cd8211f4d206866dc4ecd41be6211063ac11f8508e1b7112ef40",
+      "measure": "liquidation_repaid_shares",
+      "raw_value": "0",
+      "daily_value": "0",
+      "values_match": 1
+    },
+    {
+      "market_id": "0xf86f3edd6f16cd8211f4d206866dc4ecd41be6211063ac11f8508e1b7112ef40",
+      "measure": "liquidation_seized_collateral_assets",
+      "raw_value": "0",
+      "daily_value": "0",
+      "values_match": 1
+    },
+    {
+      "market_id": "0xf86f3edd6f16cd8211f4d206866dc4ecd41be6211063ac11f8508e1b7112ef40",
+      "measure": "repay_assets_in",
+      "raw_value": "222346794778485",
+      "daily_value": "222346794778485",
+      "values_match": 1
+    },
+    {
+      "market_id": "0xf86f3edd6f16cd8211f4d206866dc4ecd41be6211063ac11f8508e1b7112ef40",
+      "measure": "repay_shares_burned",
+      "raw_value": "218707563569648667853",
+      "daily_value": "218707563569648667853",
+      "values_match": 1
+    },
+    {
+      "market_id": "0xf86f3edd6f16cd8211f4d206866dc4ecd41be6211063ac11f8508e1b7112ef40",
+      "measure": "supply_assets_in",
+      "raw_value": "4366572004940518",
+      "daily_value": "4366572004940518",
+      "values_match": 1
+    },
+    {
+      "market_id": "0xf86f3edd6f16cd8211f4d206866dc4ecd41be6211063ac11f8508e1b7112ef40",
+      "measure": "supply_shares_minted",
+      "raw_value": "4315031274576117193395",
+      "daily_value": "4315031274576117193395",
+      "values_match": 1
+    },
+    {
+      "market_id": "0xf86f3edd6f16cd8211f4d206866dc4ecd41be6211063ac11f8508e1b7112ef40",
+      "measure": "withdraw_assets_out",
+      "raw_value": "4367295613081485",
+      "daily_value": "4367295613081485",
+      "values_match": 1
+    },
+    {
+      "market_id": "0xf86f3edd6f16cd8211f4d206866dc4ecd41be6211063ac11f8508e1b7112ef40",
+      "measure": "withdraw_shares_burned",
+      "raw_value": "4314972754037244392114",
+      "daily_value": "4314972754037244392114",
+      "values_match": 1
+    }
+  ],
+  "rounding_status_counts": {
+    "not_applicable": 145919,
+    "pass": 129881
+  },
+  "inactive_market_day_rows": 227,
+  "rare_branch_coverage": {
+    "nonzero_fee_shares_events": 0,
+    "nonzero_bad_debt_events": 0,
+    "fee_shares_status": "implemented_not_empirically_exercised",
+    "bad_debt_status": "implemented_not_empirically_exercised"
+  },
+  "cost_and_storage": {
+    "method": "one-pass source scan remains constant; replay/storage scale by exact 45-market Phase 2 event population with 25% headroom",
+    "prototype_selected_events": 275797,
+    "known_full_45_market_events": 1231462,
+    "event_scale_factor": 4.465103,
+    "prototype_market_day_rows": 1215,
+    "full_45_market_day_rows": 18225,
+    "row_scale_factor": 15.0,
+    "prototype_sql_seconds": 89.265273,
+    "projected_full_sql_seconds_with_25pct_headroom": 498.223,
+    "prototype_database_bytes": 415236096,
+    "projected_full_database_bytes_with_25pct_headroom": 7785676800,
+    "projected_full_database_gib": 7.250977,
+    "projected_full_working_set_gib_including_existing_source": 7.983528,
+    "source_bytes_read_one_pass": 786571394,
+    "source_gib_read_one_pass": 0.732552,
+    "gba_bytes_billed": 0,
+    "within_8_to_10_gib_cost_gate": true,
+    "caveat": "Runtime is an engineering projection from local replay throughput, not a billed BigQuery dry run; the exact all-market raw event count is already known from Phase 2."
+  },
+  "artifacts": {
+    "database_path_ignored": "data/tmp/morpho_phase4_market_day_prototype.sqlite",
+    "sample_csv": "data/market_day_prototype_sample.csv",
+    "sample_rows": 15
+  },
+  "total_elapsed_seconds": 117.260463,
+  "limitations": [
+    "This bounded prototype proves only the three frozen markets and does not validate the future 45-market output.",
+    "The first UTC bucket is partial because the accepted Phase 2 interval begins at 2025-07-09T13:00:00Z.",
+    "Aggregate collateral is replayed from a proven uninitialized zero anchor; Morpho has no market-level totalCollateral getter for independent RPC reconciliation.",
+    "The local cost projection is not a BigQuery dry run and creates no GBA billable bytes.",
+    "This artifact does not calculate retention, uplift, reward receipt, wallet cohorts or DRIP causality."
+  ]
+}

@@ -1,0 +1,21 @@
+{
+  "package_files": 170,
+  "package_bytes": 6084230,
+  "manifest_entries": 168,
+  "manifest_sha256": "18bedd20ced80d229230214fd1170af1e35063330a017a7e07ca2ea48a99882a",
+  "manifest_exact": true,
+  "sha256sums_exact": true,
+  "python_syntax_files": 22,
+  "third_party_imports": [
+    "PIL"
+  ],
+  "missing_local_imports": [],
+  "local_links_checked": 144,
+  "broken_links": [],
+  "old_16_restored": true,
+  "path_hits": [],
+  "high_signal_secret_hits": [],
+  "large_files": [],
+  "external_sources_verified": 3163,
+  "frozen_csv_identity_unchanged": true
+}

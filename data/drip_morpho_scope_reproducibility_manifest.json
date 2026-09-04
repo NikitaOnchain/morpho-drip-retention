@@ -1,0 +1,49 @@
+{
+  "version": "drip-morpho-scope-extractor-v1",
+  "status": "reproduced",
+  "fetched_at_utc": "2026-09-02T12:00:00.133830Z",
+  "api": {
+    "url": "https://api.merkl.xyz/v4/opportunities?mainProtocolId=morpho&tags=drip&campaigns=true&status=PAST&items=100&page=0",
+    "source_mode": "existing_raw_snapshot",
+    "attempts": 0,
+    "response_bytes": 1236207,
+    "response_sha256": "4d9bc3e011ce56ad555b3b650d42198d83fd78d35594d8b93e1f56d5362ae8c7",
+    "raw_snapshot_path": "data/raw/drip_morpho_scope/merkl_opportunities_20260902T115959247853Z.json"
+  },
+  "frozen_filter": {
+    "chain_id": 42161,
+    "creator": "0x7d0a9493edecf7112486319e0fdba72fc7a62468",
+    "reward_token": "0x912ce59144191c1204e64559fe8253a0e49e6548",
+    "campaign_start_utc": "2025-09-03T13:00:00Z",
+    "campaign_end_exclusive_utc": "2026-02-18T13:00:00Z",
+    "root_campaign_id_format": "^0x[0-9a-fA-F]{64}$",
+    "expected_epochs": 12,
+    "expected_campaigns": 36,
+    "expected_markets": 45
+  },
+  "extractor": {
+    "path": "scripts/extract_drip_morpho_scope.py",
+    "sha256": "2373752ef88507b8141a81cfe832b647660bc53d78e6fd50d622aeb6f6e891cc"
+  },
+  "accepted": {
+    "campaign_csv": "data/drip_morpho_epoch_campaigns.csv",
+    "campaign_csv_sha256": "6474919d49b87ed38df72de55f470f24535a506899a4ccdcfb05c2085a27045b",
+    "market_csv": "data/drip_morpho_markets.csv",
+    "market_csv_sha256": "a88fceaa19fe383bb956ef698a819facb2d345a29bd173db730e85bbd5213a6a"
+  },
+  "candidate": {
+    "campaign_csv": "data/tmp/drip_morpho_scope_candidate/drip_morpho_epoch_campaigns.csv",
+    "campaign_csv_sha256": "6474919d49b87ed38df72de55f470f24535a506899a4ccdcfb05c2085a27045b",
+    "market_csv": "data/tmp/drip_morpho_scope_candidate/drip_morpho_markets.csv",
+    "market_csv_sha256": "a88fceaa19fe383bb956ef698a819facb2d345a29bd173db730e85bbd5213a6a"
+  },
+  "comparison": {
+    "report_path": "data/drip_morpho_scope_comparison.json",
+    "report_sha256": "b200c7f1d667a681958b50ecf9668111c5b4b3f0648baddf67f7bdcc6a611030",
+    "total_defects": 0
+  },
+  "safety": {
+    "accepted_csv_overwrite_supported": false,
+    "candidate_and_raw_paths_are_gitignored": true
+  }
+}

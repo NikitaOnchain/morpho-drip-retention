@@ -1,0 +1,19 @@
+{
+  "surface": "repository-native PNG, read beside the README; no app",
+  "question": "How do active borrower counts and the three archetypes compare at observed checkpoints?",
+  "takeaway": "Post values are sparse observations, not a daily trajectory.",
+  "family": "dense aligned baseline/campaign time series plus discrete post markers",
+  "sufficiency": "56 baseline closes; 169 campaign points with one shared timestamp; only three post observations",
+  "palette": "accepted blue/gold/pink; panels and labels distinguish units; zero y baselines",
+  "post_encoding": "no connectors; +30/+90/+180 markers, labels and explicit unobserved-trajectory note",
+  "producing_code": "scripts/release_chart_renderer.py",
+  "original_producer_sha256": "de4924a97c4b8beccdfdba6b6e3d327dce36c3d9dc5ca6515d2ab478fead2712",
+  "figure_paths": {
+    "borrowed_checkpoint_series": "figures/phase7_borrowed_assets_checkpoints.png",
+    "retained_uplift": "figures/phase7_retained_uplift.png",
+    "flow_decomposition": "figures/phase7_debt_flow_decomposition.png",
+    "market_concentration": "figures/phase7_market_concentration.png",
+    "archetypes": "figures/phase7_archetype_borrowed_assets.png",
+    "active_borrowers": "figures/phase7_active_borrowers.png"
+  }
+}

@@ -1,0 +1,178 @@
+{
+  "version": "morpho-phase6-preflight-v1",
+  "status": "pass",
+  "completed_at_utc": "2026-09-02T12:12:51.860362Z",
+  "scope": {
+    "bridge_grain": "market_id x epoch x side",
+    "bridge_rows": 469,
+    "bridge_unique_keys": 469,
+    "distinct_markets": 45,
+    "distinct_epochs": 12,
+    "supply_rows": 252,
+    "borrow_rows": 217,
+    "shared_plus_dedicated_rows": 4,
+    "duplicate_keys": 0,
+    "required_nulls": 0,
+    "semicolon_cells": 0
+  },
+  "campaign_reconciliation": {
+    "campaign_rows": 36,
+    "unique_campaign_db_ids": 36,
+    "counts_by_scope": {
+      "shared_market_pool": 25,
+      "dedicated_market": 4,
+      "direct_vault": 7
+    },
+    "budgets_arb_by_scope": {
+      "shared_market_pool": 3147500,
+      "dedicated_market": 330000,
+      "direct_vault": 505000
+    },
+    "market_linked_budget_arb": 3477500,
+    "direct_vault_budget_arb_not_attributed": 505000,
+    "total_budget_arb": 3982500,
+    "budget_arb_by_epoch": {
+      "1": 120000,
+      "2": 300000,
+      "3": 570000,
+      "4": 550000,
+      "5": 510000,
+      "6": 110000,
+      "7": 140000,
+      "8": 290000,
+      "9": 450000,
+      "10": 420000,
+      "11": 325000,
+      "12": 197500
+    },
+    "shared_campaign_count_mismatches": [],
+    "dedicated_campaign_count_mismatches": [],
+    "market_linked_campaign_orphans": [],
+    "bridge_orphan_markets": [],
+    "accepted_markets_without_bridge_rows": [],
+    "attribution_policy": {
+      "shared_pool_budget": "campaign-level only; never divided or duplicated across bridge rows",
+      "dedicated_market_budget": "retained only in dedicated_market_allocation_arb because target is one exact market",
+      "direct_vault_505k": "excluded from bridge; no underlying-market attribution without time-aware vault evidence"
+    }
+  },
+  "reproducibility": {
+    "comparison_status": "match",
+    "comparison_defects": 0,
+    "manifest_status": "reproduced",
+    "raw_snapshot_sha256": "4d9bc3e011ce56ad555b3b650d42198d83fd78d35594d8b93e1f56d5362ae8c7",
+    "accepted_csv_files_were_modified": false
+  },
+  "full_build_preflight": {
+    "target_grain": "market_id x UTC day",
+    "markets": 45,
+    "utc_day_buckets": 405,
+    "expected_rows": 18225,
+    "source_shards": 3157,
+    "source_event_rows": 1231462,
+    "source_bytes": 786571394,
+    "projected_runtime_seconds_with_25pct_headroom": 498.223,
+    "projected_database_bytes_with_25pct_headroom": 7785676800,
+    "projected_database_gib": 7.250977,
+    "projected_working_set_gib_including_existing_source": 7.983528,
+    "minimum_free_bytes_gate": 10737418240,
+    "minimum_free_gib_gate": 10.0,
+    "observed_free_bytes": 234790883328,
+    "observed_free_gib": 218.66605,
+    "free_space_gate_pass": true,
+    "gba_bytes_billed": 0,
+    "new_rpc_calls": 0,
+    "projection_basis": "accepted three-market SQLite prototype scaled by known 45-market event population with 25% headroom",
+    "not_executed": [
+      "full 45-market market-day build",
+      "new RPC extraction",
+      "new GBA query",
+      "Phase 7 analysis"
+    ]
+  },
+  "inputs": [
+    {
+      "role": "accepted_campaign_scope",
+      "path": "data/drip_morpho_epoch_campaigns.csv",
+      "bytes": 11576,
+      "sha256": "6474919d49b87ed38df72de55f470f24535a506899a4ccdcfb05c2085a27045b"
+    },
+    {
+      "role": "accepted_market_scope",
+      "path": "data/drip_morpho_markets.csv",
+      "bytes": 9662,
+      "sha256": "a88fceaa19fe383bb956ef698a819facb2d345a29bd173db730e85bbd5213a6a"
+    },
+    {
+      "role": "normalized_eligibility_bridge",
+      "path": "data/drip_morpho_eligibility_bridge.csv",
+      "bytes": 133541,
+      "sha256": "cbab02426bcd1ac1ad0679156f837e155c5b04e86b63001a9149b0cbae27d305"
+    },
+    {
+      "role": "immutable_phase2_manifest",
+      "path": "data/raw/morpho_full_window/manifest.json",
+      "bytes": 2728844,
+      "sha256": "c8552428187094e5aad725193f2e3023e622ddc4ab37428f1414c375e7d6be58"
+    },
+    {
+      "role": "phase2_day_boundaries",
+      "path": "data/raw/morpho_full_window/day_boundaries.json",
+      "bytes": 37214,
+      "sha256": "da1b7c58406301f8b282ae798344dba292f2b0a650ae1f451235f84c8a261ac0"
+    },
+    {
+      "role": "accepted_phase4_cost_evidence",
+      "path": "data/morpho_market_day_prototype_qa.json",
+      "bytes": 35289,
+      "sha256": "53993f3b9ef429d88b14a54ecca3c9937cacea79a3f868c9800ca166ff53b0d3"
+    },
+    {
+      "role": "phase4_build_sql_template",
+      "path": "sql/10_market_day_prototype.sql",
+      "bytes": 11895,
+      "sha256": "c989c4d9985785c53ce8dfa6006d5898e5d64348e946f22e08ccbc15c3be035f"
+    },
+    {
+      "role": "phase4_qa_sql_template",
+      "path": "sql/90_qa_market_day_prototype.sql",
+      "bytes": 16893,
+      "sha256": "ff43c5ce72aac30052e766db635770f3e69c1cb285ba8db8ee5c79c4197e5272"
+    },
+    {
+      "role": "frozen_metrics_v1",
+      "path": "docs/METRICS.md",
+      "bytes": 13310,
+      "sha256": "2774c0856ca66da4611523289a7e1c4da937ce208cad9799c2f008753eca2ba2"
+    }
+  ],
+  "checks": {
+    "reproduction_status_match": true,
+    "accepted_campaign_rows_36": true,
+    "unique_campaign_db_ids": true,
+    "accepted_market_rows_45": true,
+    "unique_market_ids_45": true,
+    "bridge_covers_45_of_45_markets": true,
+    "bridge_key_unique": true,
+    "bridge_has_no_semicolon_lists": true,
+    "bridge_required_fields_complete": true,
+    "shared_campaign_counts_reconcile": true,
+    "dedicated_campaign_counts_reconcile": true,
+    "no_market_linked_campaign_orphans": true,
+    "epochs_1_to_12_present": true,
+    "epoch_budgets_reconcile": true,
+    "campaign_scope_counts_reconcile": true,
+    "campaign_scope_budgets_reconcile": true,
+    "total_budget_reconciles_3982500": true,
+    "phase2_snapshot_is_immutable_accepted_version": true,
+    "phase2_manifest_complete": true,
+    "expected_market_day_grain_18225": true,
+    "free_space_gate_10_gib": true
+  },
+  "limitations": [
+    "The preflight validates eligibility normalization and build readiness; it does not validate the unbuilt 45-market daily output.",
+    "The 498.223-second runtime and 7.250977-GiB database estimates are engineering projections from Phase 4, not observed Phase 6 build measurements.",
+    "The immutable Phase 2 manifest identity is checked here; the 3,157 shards are not rescanned in this bounded step.",
+    "Frozen metrics v1.0 are inputs only and were not changed."
+  ]
+}

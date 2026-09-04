@@ -1,0 +1,63 @@
+{
+  "version": "morpho-phase7-frozen-boundaries-v1",
+  "status": "complete",
+  "created_at_utc": "2026-09-02T20:25:30.141601Z",
+  "completed_at_utc": "2026-09-02T20:28:56.263361Z",
+  "identity": {
+    "version": "morpho-phase7-frozen-boundaries-v1",
+    "chain_id": 42161,
+    "rpc_method": "eth_getBlockByNumber",
+    "boundary_rule": "minimum block_number where block.timestamp >= target_timestamp",
+    "timestamp_count": 227,
+    "timestamp_list_sha256": "be8ee9c6c0a80864090d50b2d16737acd58da5c70a184a7728666ca0f3d04959",
+    "script_sha256": "70aba65954308eb5bbea83434e2b2ea339024e53e317b79617f5f93afa4e427c",
+    "production_db_sha256": "80aca74cc5e43db03fd93c69d7ad448ac9afdec5f9566a6b833ec11f7e5c9543",
+    "frozen_metrics_sha256": "2774c0856ca66da4611523289a7e1c4da937ce208cad9799c2f008753eca2ba2",
+    "eligibility_bridge_sha256": "cbab02426bcd1ac1ad0679156f837e155c5b04e86b63001a9149b0cbae27d305",
+    "production_day_boundary_sha256": "420b02a9331563c21dd2134d1bf7888ec4c64cad1640bf2ab3114cf1bb8e8157"
+  },
+  "identity_sha256": "7d6c71180dfc5140568626a7d04a6324cd0b723012a2a9bcd2cd0c35b75c6a7d",
+  "cache": {
+    "path": "data/tmp/morpho_phase7_boundary_cache_v1.sqlite",
+    "sha256": "1bf999d9ea8997df9abb987b6b2dbb92f80c55a9cbfd9c6d3f91860d84b9f6ff",
+    "journal_mode": "WAL",
+    "sealed": true
+  },
+  "timestamp_population": {
+    "distinct_timestamps": 227,
+    "roles": 228,
+    "first": "2025-07-10T13:00:00Z",
+    "last": "2026-08-17T13:00:00Z",
+    "sha256": "be8ee9c6c0a80864090d50b2d16737acd58da5c70a184a7728666ca0f3d04959"
+  },
+  "rpc_scope": {
+    "allowed_methods": [
+      "eth_chainId",
+      "eth_getBlockByNumber"
+    ],
+    "eth_getlogs_calls": 0,
+    "gba_queries": 0,
+    "endpoint_profile": "official Arbitrum One public RPC or user-supplied equivalent; URL is not persisted",
+    "rate_limit_seconds": 0.5,
+    "batch_size": 20,
+    "configured_retries": 6
+  },
+  "qa_status": "PASS",
+  "artifacts": [
+    {
+      "path": "data/morpho_phase7_boundary_map.csv",
+      "bytes": 66463,
+      "sha256": "329ca8510fdd73d4623fa9de17b621ef752c383db5fb131ba77a5ffe507aeac9"
+    },
+    {
+      "path": "data/morpho_phase7_boundary_map.json",
+      "bytes": 239778,
+      "sha256": "00b888f453a72cf991dd3cd8dc9b52a95e86b8f6956b26fe681b4467b97a11cb"
+    },
+    {
+      "path": "data/morpho_phase7_boundary_qa.json",
+      "bytes": 3669,
+      "sha256": "49a91c9507f03bd4c36d4e82d48dbaaf333eb0543d7b2ec8dde5b256bf5eabcf"
+    }
+  ]
+}

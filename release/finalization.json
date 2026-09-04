@@ -1,0 +1,69 @@
+{
+  "status": "CURRENT — reviewed release candidate ready for publication approval",
+  "review_verdict": "APPROVE WITH CAVEATS",
+  "finding_status": {
+    "R1": "CLOSED",
+    "R2": "CLOSED",
+    "R3": "CLOSED",
+    "R4": "CLOSED"
+  },
+  "reviewed_manifest_sha256": "18bedd20ced80d229230214fd1170af1e35063330a017a7e07ca2ea48a99882a",
+  "changed_reviewed_files": [
+    {
+      "path": "docs/RELEASE_CANDIDATE_QA.md",
+      "reviewed_sha256": "5507ea552503abe67c3eda53a44e441edd7c0b0b3d2b2dcb1a831f8c7b04ee6f",
+      "final_sha256": "6d28c54ab8118043553a0edce011ac63758235113a8a4cf38aa1f57638cfd410"
+    },
+    {
+      "path": "docs/RELEASE_CHECKLIST.md",
+      "reviewed_sha256": "1c3e7d17d489930c1e14b327dbece67cfec2294e737e0cc50d529bf168511e3a",
+      "final_sha256": "762f1062d36b1c3fa290a11417d0c912b7dce2d46872a422b1e8ff44fe3689a0"
+    },
+    {
+      "path": "docs/RELEASE_LIMITATIONS.md",
+      "reviewed_sha256": "c34201908a5b55cc1ef0e970d48ecff27aa1f89020b4440e7efda17c55043692",
+      "final_sha256": "a90811173cb36ca6db5a47d0b2d363528e524e80f070ee484ca6eebd365cbf27"
+    },
+    {
+      "path": "docs/REPRODUCTION.md",
+      "reviewed_sha256": "7d02f0d8324e47b7ec2677d7def30749de5d3050c40ea8c76472865efbcfb1b4",
+      "final_sha256": "b2fc610d4d99d8bee1cfd11dba503e8c7314fb5827fa63bf72a69479b30db490"
+    },
+    {
+      "path": "docs/RESPONSE_TO_REVIEW.md",
+      "reviewed_sha256": "53c80318e0133acb5e72c582c6642634ac54e10906a2d94d4031fad1caee4081",
+      "final_sha256": "482f90ca8fdffefc54038888cf1bc0d7e1b7c8d162c629cd5c68e869b7567a86"
+    },
+    {
+      "path": "docs/REVIEWER_BRIEF.md",
+      "reviewed_sha256": "f3d481ed0eda4ec38d2e9b800279917b36a84ffcd2dc734c43ce56add8a9e9b7",
+      "final_sha256": "1e86a2802bfa30640eaf6a23c87357589db5783b7d8c5523751da2411c209999"
+    },
+    {
+      "path": "docs/SOURCES.md",
+      "reviewed_sha256": "7d6f39879f886a01a9ab94cfa69ab61a6a043ca92ede91f16ea41d32381b078b",
+      "final_sha256": "62b0b517d0cf82e45742e18c6c526bd143121df36f68b38d16cf3e8f79f7df1b"
+    },
+    {
+      "path": "README.md",
+      "reviewed_sha256": "fbc08fcc34cac925cbd75923b8ca3097bc51927cefa353a615cdce7edb591a24",
+      "final_sha256": "24ea28d2067dca92701503242cab9a080794c95052562dbaf74ad2428b53f0f8"
+    }
+  ],
+  "unchanged_reviewed_payload_files": 160,
+  "all_calculation_code_sql_metrics_csvs_figures_unchanged": true,
+  "review_evidence": "reviews/public/evidence_manifest.json",
+  "historical_receipts": "Existing release/qa correction receipts apply to RC2; do not reinterpret historical review-pending text as current status",
+  "route_status": {
+    "csv_only": "autonomous given declared runtime/fonts; rerun at final packaging",
+    "sqlite_route": "independently tested RC2 with two external files; code/results unchanged, not rerun at packaging",
+    "full_raw_rebuild": "NOT_RUN",
+    "new_database_logical_reconciliation": "NOT_RUN",
+    "public_bundle_acquisition": "NOT_AVAILABLE",
+    "browser_github_rendering": "NOT_CHECKED"
+  },
+  "package_not_self_contained_for_raw_reconstruction": true,
+  "new_rpc_gba_calls": 0,
+  "production_database_opened": false,
+  "publication_push_draft_sending": false
+}

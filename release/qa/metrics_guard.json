@@ -1,0 +1,13 @@
+{
+  "status": "PASS",
+  "exit_code": 0,
+  "scope": "Python audit-hook accidental-dependency guard, not OS-level security isolation",
+  "script": "scripts/reproduce_phase7_isolated.py",
+  "checks": {
+    "file_opens": 886,
+    "sqlite_connections": 2,
+    "network_attempts": 0,
+    "forbidden_paths": 0
+  },
+  "original_workspace_not_an_allowed_root": true
+}

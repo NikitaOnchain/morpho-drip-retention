@@ -1,0 +1,98 @@
+[
+  {
+    "file": "docs/HEADLINE_PROVENANCE.md",
+    "line": 5,
+    "target": "../scripts/analyze_phase7_metrics.py",
+    "exists_in_projection": false
+  },
+  {
+    "file": "docs/HEADLINE_PROVENANCE.md",
+    "line": 20,
+    "target": "../data/morpho_market_day_full_qa.json",
+    "exists_in_projection": false
+  },
+  {
+    "file": "docs/MORPHO_ONE_POSITION_RECONSTRUCTION.md",
+    "line": 94,
+    "target": "../data/morpho_one_position_reconstruction_qa.json",
+    "exists_in_projection": false
+  },
+  {
+    "file": "docs/PHASE7_ANALYSIS_QA.md",
+    "line": 89,
+    "target": "../scripts/analyze_phase7_metrics.py",
+    "exists_in_projection": false
+  },
+  {
+    "file": "docs/RELEASE_CANDIDATE_QA.md",
+    "line": 19,
+    "target": "../data/release/phase8_release_inventory.csv",
+    "exists_in_projection": false
+  },
+  {
+    "file": "docs/RELEASE_CANDIDATE_QA.md",
+    "line": 19,
+    "target": "../data/release/phase8_hygiene_findings.csv",
+    "exists_in_projection": false
+  },
+  {
+    "file": "docs/RELEASE_CANDIDATE_QA.md",
+    "line": 25,
+    "target": "../data/release/phase8_release_preflight.json",
+    "exists_in_projection": false
+  },
+  {
+    "file": "docs/SOURCES.md",
+    "line": 103,
+    "target": "../data/morpho_one_position_reconstruction_qa.json",
+    "exists_in_projection": false
+  },
+  {
+    "file": "docs/SOURCES.md",
+    "line": 110,
+    "target": "../data/morpho_market_day_prototype_qa.json",
+    "exists_in_projection": false
+  },
+  {
+    "file": "docs/SOURCES.md",
+    "line": 114,
+    "target": "../data/morpho_phase4_rpc_checkpoint_evidence.json",
+    "exists_in_projection": false
+  },
+  {
+    "file": "docs/SOURCES.md",
+    "line": 121,
+    "target": "../data/morpho_market_day_full_qa.json",
+    "exists_in_projection": false
+  },
+  {
+    "file": "docs/SOURCES.md",
+    "line": 127,
+    "target": "../data/morpho_phase6_rpc_checkpoint_evidence.json",
+    "exists_in_projection": false
+  },
+  {
+    "file": "docs/SOURCES.md",
+    "line": 140,
+    "target": "../scripts/analyze_phase7_metrics.py",
+    "exists_in_projection": false
+  },
+  {
+    "file": "docs/SOURCES.md",
+    "line": 153,
+    "target": "../PHASE3_SELECTION_CHECKPOINT.md",
+    "exists_in_projection": false
+  },
+  {
+    "file": "docs/SOURCES.md",
+    "line": 155,
+    "target": "../PHASE3_RPC_CACHE_HANDOFF.md",
+    "exists_in_projection": false
+  },
+  {
+    "file": "reports/PHASE7_FINDINGS.md",
+    "line": 68,
+    "target": "../scripts/analyze_phase7_metrics.py",
+    "exists_in_projection": false
+  }
+]

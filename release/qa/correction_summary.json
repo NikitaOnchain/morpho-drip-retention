@@ -1,0 +1,36 @@
+{
+  "status": "PASS_WITH_EXPLICIT_UNRUN_RELEASE_GATES",
+  "review_verdict_not_overridden": "CHANGES REQUESTED; re-review pending",
+  "protected_originals_unchanged": true,
+  "protected_file_count": 50,
+  "tested_code_sha256": {
+    "scripts/analyze_phase7_metrics.py": "f61201d2fd0599b13c6627af986c4c4f02c78495ee19a0b5e848cdc491b9d38b",
+    "scripts/build_morpho_market_day_full.py": "fb7fc737cb954fab1dae7621c008c6c5edb9656352499257b2e908fa7b18eb36",
+    "scripts/build_morpho_market_day_prototype.py": "a298a1f2e00f9751dbf89be4e9b3dac4c89a074f31fd4bcab13e383954fa9c45",
+    "scripts/extract_drip_morpho_scope.py": "2373752ef88507b8141a81cfe832b647660bc53d78e6fd50d622aeb6f6e891cc",
+    "scripts/prepare_phase6_preflight.py": "da7a4b2b5e64696e7f2e3aa0419c226eb788b8abc6e48e79a24e96d2bcb3c400",
+    "scripts/release_chart_renderer.py": "5fb49f7733a17581f8cb2d4bb6dadb526662334093e0b66ebb2918a893d356e2",
+    "scripts/release_routes.py": "f4b4c189f20265b8912babe25d088a7d1eb394c0acda7399043c662c8d8b2faf",
+    "scripts/release_support.py": "dc582dfb6aa36cb95c7e4062a848d85adcd76eb20aa484ebb7cfa4007afd217a",
+    "scripts/reproduce_phase7_isolated.py": "5933946f9ff495e66d42797ac0d996e5fe08d11bdc7257fba9b8adb25ae6ab9d",
+    "scripts/reproduce_release_csv.py": "1476a597059934fd682e31d978b8c9b47d635f8d5f9c5d937815d4224aca8690",
+    "scripts/review_phase7_headlines.py": "fcd36b019c32c8313380a92273b40435eaca6277d49ee27dc30c7f1ddbb37483",
+    "scripts/run_release_sandbox.py": "273285f74e9afa99094795f5d13781148a0f0fdcd95875d98e2e9cfad656f6c9"
+  },
+  "visual_inspection": {
+    "active_borrowers": "PASS",
+    "archetypes": "PASS",
+    "post_connectors": 0,
+    "post_markers_per_series": 3,
+    "scope": "Standalone PNGs viewed at exported resolution; no browser/GitHub document-render certification"
+  },
+  "not_run": [
+    "full raw-state rebuild/new-DB logical reconciliation",
+    "public source-bundle download",
+    "browser/GitHub final rendering",
+    "cross-platform fonts",
+    "dedicated/staged/history secret audit"
+  ],
+  "network_calls": 0,
+  "publication_push_external_messages": 0
+}

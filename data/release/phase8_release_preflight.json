@@ -1,0 +1,101 @@
+{
+  "version": "phase8-release-preflight-v1",
+  "status": "PASS_WITH_RELEASE_HOLDS",
+  "scope": "local workspace; exact inventory excludes only its three self-generated receipts",
+  "network_calls": 0,
+  "files_deleted": 0,
+  "git_repository_present": false,
+  "syntax_and_structure_checks": {
+    "csv_shape": 41,
+    "json_parse": 37,
+    "python_syntax": 15
+  },
+  "parse_errors": [],
+  "inventory_counts": {
+    "INCLUDE": 131,
+    "EXCLUDE": 3285
+  },
+  "inventory_bytes": {
+    "INCLUDE": 4508033,
+    "EXCLUDE": 5030878542
+  },
+  "high_signal_secret_hits": 0,
+  "secret_scan_limitations": "Heuristic patterns; raw/cache/SQLite contents and nonexistent Git history not scanned. Never a proof of absence.",
+  "absolute_local_path_locations": 40,
+  "system_font_path_locations": 2,
+  "gitignore_fixture_checks": {
+    "data/raw/test.jsonl": true,
+    "data/tmp/test.sqlite": true,
+    ".env": true,
+    "test.sqlite-wal": true,
+    "test.sqlite-shm": true,
+    "test.part": true,
+    "__pycache__/test.pyc": true
+  },
+  "local_markdown_broken_links": [],
+  "new_release_spine_broken_links": [],
+  "links_to_excluded_files": [
+    {
+      "source": "docs/HEADLINE_PROVENANCE.md",
+      "target": "../scripts/analyze_phase7_metrics.py"
+    },
+    {
+      "source": "docs/HEADLINE_PROVENANCE.md",
+      "target": "../data/morpho_market_day_full_qa.json"
+    },
+    {
+      "source": "docs/MORPHO_ONE_POSITION_RECONSTRUCTION.md",
+      "target": "../data/morpho_one_position_reconstruction_qa.json"
+    },
+    {
+      "source": "docs/PHASE7_ANALYSIS_QA.md",
+      "target": "../scripts/analyze_phase7_metrics.py"
+    },
+    {
+      "source": "docs/SOURCES.md",
+      "target": "../data/morpho_one_position_reconstruction_qa.json"
+    },
+    {
+      "source": "docs/SOURCES.md",
+      "target": "../data/morpho_market_day_prototype_qa.json"
+    },
+    {
+      "source": "docs/SOURCES.md",
+      "target": "../data/morpho_phase4_rpc_checkpoint_evidence.json"
+    },
+    {
+      "source": "docs/SOURCES.md",
+      "target": "../data/morpho_market_day_full_qa.json"
+    },
+    {
+      "source": "docs/SOURCES.md",
+      "target": "../data/morpho_phase6_rpc_checkpoint_evidence.json"
+    },
+    {
+      "source": "docs/SOURCES.md",
+      "target": "../scripts/analyze_phase7_metrics.py"
+    },
+    {
+      "source": "docs/SOURCES.md",
+      "target": "../PHASE3_SELECTION_CHECKPOINT.md"
+    },
+    {
+      "source": "docs/SOURCES.md",
+      "target": "../PHASE3_RPC_CACHE_HANDOFF.md"
+    },
+    {
+      "source": "reports/PHASE7_FINDINGS.md",
+      "target": "../scripts/analyze_phase7_metrics.py"
+    }
+  ],
+  "external_url_count_not_requested": 31,
+  "publication_holds": [
+    "Independent reviewer signoff is pending.",
+    "Pseudonym, repository URL and license are not selected.",
+    "Original files containing absolute local paths are excluded pending explicit sanitized derivative packaging.",
+    "Public package link closure must be rechecked after hygiene holds are resolved.",
+    "Source/cache/database bundle distribution route is not yet approved or published.",
+    "No Git repository exists here; staged-file/history secret scanning is not yet possible."
+  ],
+  "inventory_path": "data/release/phase8_release_inventory.csv"
+}

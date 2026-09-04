@@ -1,0 +1,116 @@
+{
+  "status": "PASS",
+  "files": 186,
+  "bytes": 6218312,
+  "local_links_checked": 204,
+  "broken_links": [],
+  "review_link_cases": [
+    {
+      "path": "docs/HEADLINE_PROVENANCE.md",
+      "original_line": 5,
+      "target": "../scripts/analyze_phase7_metrics.py",
+      "target_now_in_package": true
+    },
+    {
+      "path": "docs/HEADLINE_PROVENANCE.md",
+      "original_line": 20,
+      "target": "../data/morpho_market_day_full_qa.json",
+      "target_now_in_package": true
+    },
+    {
+      "path": "docs/MORPHO_ONE_POSITION_RECONSTRUCTION.md",
+      "original_line": 94,
+      "target": "../data/morpho_one_position_reconstruction_qa.json",
+      "target_now_in_package": true
+    },
+    {
+      "path": "docs/PHASE7_ANALYSIS_QA.md",
+      "original_line": 89,
+      "target": "../scripts/analyze_phase7_metrics.py",
+      "target_now_in_package": true
+    },
+    {
+      "path": "docs/RELEASE_CANDIDATE_QA.md",
+      "original_line": 19,
+      "target": "../data/release/phase8_release_inventory.csv",
+      "target_now_in_package": true
+    },
+    {
+      "path": "docs/RELEASE_CANDIDATE_QA.md",
+      "original_line": 19,
+      "target": "../data/release/phase8_hygiene_findings.csv",
+      "target_now_in_package": true
+    },
+    {
+      "path": "docs/RELEASE_CANDIDATE_QA.md",
+      "original_line": 25,
+      "target": "../data/release/phase8_release_preflight.json",
+      "target_now_in_package": true
+    },
+    {
+      "path": "docs/SOURCES.md",
+      "original_line": 103,
+      "target": "../data/morpho_one_position_reconstruction_qa.json",
+      "target_now_in_package": true
+    },
+    {
+      "path": "docs/SOURCES.md",
+      "original_line": 110,
+      "target": "../data/morpho_market_day_prototype_qa.json",
+      "target_now_in_package": true
+    },
+    {
+      "path": "docs/SOURCES.md",
+      "original_line": 114,
+      "target": "../data/morpho_phase4_rpc_checkpoint_evidence.json",
+      "target_now_in_package": true
+    },
+    {
+      "path": "docs/SOURCES.md",
+      "original_line": 121,
+      "target": "../data/morpho_market_day_full_qa.json",
+      "target_now_in_package": true
+    },
+    {
+      "path": "docs/SOURCES.md",
+      "original_line": 127,
+      "target": "../data/morpho_phase6_rpc_checkpoint_evidence.json",
+      "target_now_in_package": true
+    },
+    {
+      "path": "docs/SOURCES.md",
+      "original_line": 140,
+      "target": "../scripts/analyze_phase7_metrics.py",
+      "target_now_in_package": true
+    },
+    {
+      "path": "docs/SOURCES.md",
+      "original_line": 153,
+      "target": "../PHASE3_SELECTION_CHECKPOINT.md",
+      "target_now_in_package": true
+    },
+    {
+      "path": "docs/SOURCES.md",
+      "original_line": 155,
+      "target": "../PHASE3_RPC_CACHE_HANDOFF.md",
+      "target_now_in_package": true
+    },
+    {
+      "path": "reports/PHASE7_FINDINGS.md",
+      "original_line": 68,
+      "target": "../scripts/analyze_phase7_metrics.py",
+      "target_now_in_package": true
+    }
+  ],
+  "absolute_path_hits": [],
+  "high_signal_secret_hits": [],
+  "syntax_errors": [],
+  "large_files": [],
+  "forbidden_payloads": [],
+  "limitations": [
+    "Heuristic secrets only; no dedicated scanner or Git history audit.",
+    "External URLs and renderer-specific anchors not checked.",
+    "No browser/GitHub renderer or cross-OS font certification."
+  ],
+  "scope": "Final local package; sizes below are the pre-seal payload scan, final receipt counts the completed manifest and sums"
+}

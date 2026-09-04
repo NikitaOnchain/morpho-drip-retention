@@ -1,0 +1,2 @@
+# Phase 7 figure renderer. All calculation/review dependencies otherwise use Python stdlib.
+Pillow==12.3.0

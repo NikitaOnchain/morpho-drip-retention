@@ -1,0 +1,242 @@
+{
+  "provenance_cases": [
+    {
+      "path": "scripts/analyze_phase7_metrics.py",
+      "case": "exact mapped derivative",
+      "accepted": true
+    },
+    {
+      "path": "scripts/analyze_phase7_metrics.py",
+      "case": "missing_mapping",
+      "rejected": true
+    },
+    {
+      "path": "scripts/analyze_phase7_metrics.py",
+      "case": "wrong_original_hash",
+      "rejected": true
+    },
+    {
+      "path": "scripts/analyze_phase7_metrics.py",
+      "case": "wrong_release_hash",
+      "rejected": true
+    },
+    {
+      "path": "scripts/analyze_phase7_metrics.py",
+      "case": "duplicate_mapping",
+      "rejected": true
+    },
+    {
+      "path": "scripts/analyze_phase7_metrics.py",
+      "case": "tampered_payload",
+      "rejected": true
+    },
+    {
+      "path": "figures/phase7_archetype_borrowed_assets.png",
+      "case": "exact mapped derivative",
+      "accepted": true
+    },
+    {
+      "path": "figures/phase7_archetype_borrowed_assets.png",
+      "case": "missing_mapping",
+      "rejected": true
+    },
+    {
+      "path": "figures/phase7_archetype_borrowed_assets.png",
+      "case": "wrong_original_hash",
+      "rejected": true
+    },
+    {
+      "path": "figures/phase7_archetype_borrowed_assets.png",
+      "case": "wrong_release_hash",
+      "rejected": true
+    },
+    {
+      "path": "figures/phase7_archetype_borrowed_assets.png",
+      "case": "duplicate_mapping",
+      "rejected": true
+    },
+    {
+      "path": "figures/phase7_archetype_borrowed_assets.png",
+      "case": "tampered_payload",
+      "rejected": true
+    },
+    {
+      "path": "figures/phase7_active_borrowers.png",
+      "case": "exact mapped derivative",
+      "accepted": true
+    },
+    {
+      "path": "figures/phase7_active_borrowers.png",
+      "case": "missing_mapping",
+      "rejected": true
+    },
+    {
+      "path": "figures/phase7_active_borrowers.png",
+      "case": "wrong_original_hash",
+      "rejected": true
+    },
+    {
+      "path": "figures/phase7_active_borrowers.png",
+      "case": "wrong_release_hash",
+      "rejected": true
+    },
+    {
+      "path": "figures/phase7_active_borrowers.png",
+      "case": "duplicate_mapping",
+      "rejected": true
+    },
+    {
+      "path": "figures/phase7_active_borrowers.png",
+      "case": "tampered_payload",
+      "rejected": true
+    }
+  ],
+  "raw_cli_checks": [
+    {
+      "script": "extract_drip_morpho_scope.py",
+      "args": [
+        "--raw-snapshot",
+        "data/raw/drip_morpho_scope/merkl_opportunities_20260902T115959247853Z.json",
+        "--accepted-campaigns",
+        "data/drip_morpho_epoch_campaigns.csv",
+        "--accepted-markets",
+        "data/drip_morpho_markets.csv",
+        "--raw-dir",
+        "work/scope_raw",
+        "--candidate-dir",
+        "work/scope_candidate",
+        "--comparison-report",
+        "work/scope_comparison.json",
+        "--manifest",
+        "work/scope_manifest.json"
+      ],
+      "parse_succeeded": true,
+      "main_executed": false
+    },
+    {
+      "script": "build_morpho_market_day_prototype.py",
+      "args": [
+        "--offline-only",
+        "--manifest",
+        "data/raw/morpho_full_window/manifest.json",
+        "--boundaries",
+        "data/raw/morpho_full_window/day_boundaries.json",
+        "--archetypes",
+        "data/morpho_phase4_market_archetypes.csv",
+        "--sql-build",
+        "sql/10_market_day_prototype.sql",
+        "--sql-qa",
+        "sql/90_qa_market_day_prototype.sql",
+        "--checkpoint-plan",
+        "data/morpho_phase4_rpc_checkpoint_plan.json",
+        "--checkpoint-evidence",
+        "work/phase4_rpc_evidence.json",
+        "--rpc-cache",
+        "data/tmp/morpho_phase4_market_day_rpc.sqlite",
+        "--database",
+        "work/prototype.sqlite",
+        "--sample-output",
+        "work/prototype_sample.csv",
+        "--qa-output",
+        "work/prototype_qa.json"
+      ],
+      "parse_succeeded": true,
+      "main_executed": false
+    },
+    {
+      "script": "prepare_phase6_preflight.py",
+      "args": [
+        "--workspace",
+        ".",
+        "--campaigns",
+        "data/drip_morpho_epoch_campaigns.csv",
+        "--markets",
+        "data/drip_morpho_markets.csv",
+        "--reproduction-manifest",
+        "work/scope_manifest.json",
+        "--comparison",
+        "work/scope_comparison.json",
+        "--phase2-manifest",
+        "data/raw/morpho_full_window/manifest.json",
+        "--day-boundaries",
+        "data/raw/morpho_full_window/day_boundaries.json",
+        "--prototype-qa",
+        "data/morpho_market_day_prototype_qa.json",
+        "--prototype-build-sql",
+        "sql/10_market_day_prototype.sql",
+        "--prototype-qa-sql",
+        "sql/90_qa_market_day_prototype.sql",
+        "--metrics",
+        "docs/METRICS.md",
+        "--bridge-output",
+        "work/bridge.csv",
+        "--qa-output",
+        "work/preflight_qa.json"
+      ],
+      "parse_succeeded": true,
+      "main_executed": false
+    },
+    {
+      "script": "build_morpho_market_day_full.py",
+      "args": [
+        "--offline-only",
+        "--manifest",
+        "data/raw/morpho_full_window/manifest.json",
+        "--boundaries",
+        "data/raw/morpho_full_window/day_boundaries.json",
+        "--markets",
+        "data/drip_morpho_markets.csv",
+        "--bridge",
+        "work/bridge.csv",
+        "--metrics",
+        "docs/METRICS.md",
+        "--prototype-db",
+        "work/prototype.sqlite",
+        "--core-sql",
+        "sql/10_market_day_prototype.sql",
+        "--core-qa-sql",
+        "sql/90_qa_market_day_prototype.sql",
+        "--production-sql",
+        "sql/20_market_day_full.sql",
+        "--production-qa-sql",
+        "sql/90_qa_market_day_full.sql",
+        "--checkpoint-plan",
+        "data/morpho_phase6_rpc_checkpoint_plan.json",
+        "--checkpoint-evidence",
+        "work/phase6_rpc_evidence.json",
+        "--rpc-cache",
+        "data/tmp/morpho_phase6_rpc_checkpoints_v1.sqlite",
+        "--building-db",
+        "work/full.building.sqlite",
+        "--final-db",
+        "work/full.sqlite",
+        "--build-checkpoint",
+        "work/full_checkpoint.json",
+        "--sample-output",
+        "work/full_sample.csv",
+        "--coverage-output",
+        "work/full_coverage.csv",
+        "--qa-output",
+        "work/full_qa.json"
+      ],
+      "parse_succeeded": true,
+      "main_executed": false
+    }
+  ],
+  "source_bundle_negative_cases": [
+    {
+      "case": "missing_bundle",
+      "rejected": true,
+      "message": "Missing explicit external input: data/tmp/morpho_market_day_full_v1.sqlite",
+      "no_job_created": true
+    },
+    {
+      "case": "wrong_database_hash",
+      "rejected": true,
+      "message": "Source bundle mismatch: data/tmp/morpho_market_day_full_v1.sqlite",
+      "no_job_created": true
+    }
+  ],
+  "full_raw_build": "NOT_RUN",
+  "public_bundle_acquisition": "NOT_TESTED"
+}

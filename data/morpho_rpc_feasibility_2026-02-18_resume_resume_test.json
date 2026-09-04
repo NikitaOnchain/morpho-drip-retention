@@ -1,0 +1,14 @@
+{
+  "test": "intentional stop after completed range",
+  "day": "2026-02-18",
+  "run_label": "2026-02-18_resume",
+  "stop_after_successful_ranges": 1,
+  "completed_ranges": 1,
+  "checkpoint_log_rows": 270,
+  "checkpoint_unique_keys": 270,
+  "checkpoint_duplicate_rows": 0,
+  "next_block": 433233243,
+  "end_block_exclusive": 433559875,
+  "checkpoint_complete": false,
+  "stopped_at_utc": "2026-08-31T11:55:14.0415409Z"
+}

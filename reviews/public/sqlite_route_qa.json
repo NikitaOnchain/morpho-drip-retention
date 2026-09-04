@@ -1,0 +1,16 @@
+{
+  "status": "PASS",
+  "mode": "metrics",
+  "external_inputs_verified": 2,
+  "package_and_source_bundle_unchanged": true,
+  "network_calls": 0,
+  "metric_csvs_reproduced": [
+    "data/morpho_phase7_market_retained_uplift.csv",
+    "data/morpho_phase7_portfolio_retained_uplift.csv",
+    "data/morpho_phase7_checkpoint_series.csv",
+    "data/morpho_phase7_period_flows.csv",
+    "data/morpho_phase7_market_concentration.csv"
+  ],
+  "full_raw_build": "NOT_RUN",
+  "limitation": "No public source download/access test. Raw-preflight is not an end-to-end state rebuild. Rebuilt physical DB requires logical reconciliation before new metric identity."
+}

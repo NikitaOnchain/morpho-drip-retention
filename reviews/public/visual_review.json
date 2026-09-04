@@ -1,0 +1,26 @@
+{
+  "status": "COMPLETED for two standalone PNGs",
+  "method": "Actual view_image inspection plus source inspection; both revised PNGs re-rendered byte-identically by both routes",
+  "findings": [
+    {
+      "path": "figures/phase7_archetype_borrowed_assets.png",
+      "sha256": "fa9d7bb3f9f6167e9093e540bb16a32e80d25127a042a600ccb91cc4a3c924ea",
+      "line_ends_at_E": true,
+      "post_markers_at_30_90_180": true,
+      "on_image_unobserved_trajectory_caption": true,
+      "zero_scales_and_native_units_preserved": true,
+      "labels_readable_no_material_clipping_seen": true
+    },
+    {
+      "path": "figures/phase7_active_borrowers.png",
+      "sha256": "b9e1b47c894ef74c235c9906565301c39c3f7e1f9a6800bb6d94404565d96fbc",
+      "line_ends_at_E": true,
+      "post_markers_at_30_90_180": true,
+      "on_image_unobserved_trajectory_caption": true,
+      "zero_scales_and_native_units_preserved": true,
+      "labels_readable_no_material_clipping_seen": true
+    }
+  ],
+  "browser_github_rendering": "NOT_PERFORMED in this re-review; native PNG viewing is not Markdown/browser QA",
+  "mobile_rendering": "NOT_PERFORMED"
+}

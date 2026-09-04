@@ -1,0 +1,5 @@
+"occurred_at_utc","method","attempt","message"
+"2026-08-31T11:52:51.9167834Z","eth_getBlockByNumber","1","The request was canceled due to the configured HttpClient.Timeout of 60 seconds elapsing."
+"2026-08-31T11:54:03.9575600Z","eth_getBlockByNumber","1","The request was canceled due to the configured HttpClient.Timeout of 60 seconds elapsing."
+"2026-08-31T11:55:07.8738451Z","eth_getBlockByNumber","1","The request was canceled due to the configured HttpClient.Timeout of 60 seconds elapsing."
+"2026-08-31T11:56:54.7424136Z","eth_getLogs","1","The request was canceled due to the configured HttpClient.Timeout of 60 seconds elapsing."

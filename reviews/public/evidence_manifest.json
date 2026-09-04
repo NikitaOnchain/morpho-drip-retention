@@ -1,0 +1,584 @@
+{
+  "verdict": "APPROVE WITH CAVEATS",
+  "accepted_by_project_owner": true,
+  "finding_status": {
+    "R1": "CLOSED",
+    "R2": "CLOSED",
+    "R3": "CLOSED",
+    "R4": "CLOSED"
+  },
+  "reviewed_package_manifest_sha256": "18bedd20ced80d229230214fd1170af1e35063330a017a7e07ca2ea48a99882a",
+  "original_evidence_manifest_sha256": "65642643660a7f30d9151558f1f95f9949f495159c41772e29d8c196bae1ad74",
+  "initial_report_sha256": "86f03c49853d50de33a19740f4d4606aba922a5a462c349e3fdbd21f2d0f3cce",
+  "public_copies": [
+    {
+      "source": "verification_summary.json",
+      "path": "verification_summary.json",
+      "original_sha256": "b0ac0098c5796813a9514c240e1ca2ba7a8d8ee83845d661deef5802d4517788",
+      "public_sha256": "b0ac0098c5796813a9514c240e1ca2ba7a8d8ee83845d661deef5802d4517788",
+      "transformation": "none; verbatim bytes"
+    },
+    {
+      "source": "derivative_verification.json",
+      "path": "derivative_verification.json",
+      "original_sha256": "3c17ee879a8b3c72e2573f0f0e9cee8992076c7a5b9348c2d275cf40dc3f7c7a",
+      "public_sha256": "3c17ee879a8b3c72e2573f0f0e9cee8992076c7a5b9348c2d275cf40dc3f7c7a",
+      "transformation": "none; verbatim bytes"
+    },
+    {
+      "source": "static_audit.json",
+      "path": "static_audit.json",
+      "original_sha256": "fea3b7f0ffaa0c958341259705ba8aead44b3f44e6d2124faa42c510de1dfc02",
+      "public_sha256": "fea3b7f0ffaa0c958341259705ba8aead44b3f44e6d2124faa42c510de1dfc02",
+      "transformation": "none; verbatim bytes"
+    },
+    {
+      "source": "visual_review.json",
+      "path": "visual_review.json",
+      "original_sha256": "555b021e9f7f52c8ddddb89197266b79f6fe7ce0417f376b9f4758a64ce277ff",
+      "public_sha256": "555b021e9f7f52c8ddddb89197266b79f6fe7ce0417f376b9f4758a64ce277ff",
+      "transformation": "none; verbatim bytes"
+    },
+    {
+      "source": "unchanged_verification.json",
+      "path": "unchanged_verification.json",
+      "original_sha256": "479cc8beb7f67691b9268db7832cd2776448fea9de8e46fbea3fbf6feb9b63be",
+      "public_sha256": "479cc8beb7f67691b9268db7832cd2776448fea9de8e46fbea3fbf6feb9b63be",
+      "transformation": "none; verbatim bytes"
+    },
+    {
+      "source": "csv_output_v2/csv_qa.json",
+      "path": "csv_qa.json",
+      "original_sha256": "30f1d33ce54c6cbe5920c525ca798d645075aa7719ca209d8cf59d18c2d2fa96",
+      "public_sha256": "30f1d33ce54c6cbe5920c525ca798d645075aa7719ca209d8cf59d18c2d2fa96",
+      "transformation": "none; verbatim bytes"
+    },
+    {
+      "source": "metrics_output/route_qa.json",
+      "path": "sqlite_route_qa.json",
+      "original_sha256": "351c725cea774f9a3af0ca671937a18547582a86807f8101c9b9cd9a51773e83",
+      "public_sha256": "351c725cea774f9a3af0ca671937a18547582a86807f8101c9b9cd9a51773e83",
+      "transformation": "none; verbatim bytes"
+    },
+    {
+      "source": "metrics_output/work/headline_review.json",
+      "path": "headline_review.json",
+      "original_sha256": "54bd10df7a935b99c9e07ba9691e6d0fd9bf61b0939cf1edf483244ec30b0f6c",
+      "public_sha256": "54bd10df7a935b99c9e07ba9691e6d0fd9bf61b0939cf1edf483244ec30b0f6c",
+      "transformation": "none; verbatim bytes"
+    },
+    {
+      "source": "contract_fixtures/contract_checks.json",
+      "path": "contract_checks.json",
+      "original_sha256": "1f13e9c7e47cb1dcb485458d4e1452ff2e7af0a75913a400d382eb640e3fb4ce",
+      "public_sha256": "1f13e9c7e47cb1dcb485458d4e1452ff2e7af0a75913a400d382eb640e3fb4ce",
+      "transformation": "none; verbatim bytes"
+    },
+    {
+      "source": "REPORT.md",
+      "path": "REPORT.md",
+      "original_sha256": "3a6a996d04f1bf21e7b6ae3668954edf1cfa015e2c96b0d8e6f7f0476133266c",
+      "public_sha256": "e83f19658b1aa251ab7474d2c6903b6826bde6d78c0b5e81bda0b7dccdadc299",
+      "transformation": "local hyperlinks only plus portability notice",
+      "link_transformations": [
+        {
+          "original_target": "../REPORT.md",
+          "public_link_or_notice": "первоначальный REPORT (`../REPORT.md`; omitted from public payload, see evidence inventory)"
+        },
+        {
+          "original_target": "../../../release_staging/morpho_rc2_v2/docs/RESPONSE_TO_REVIEW.md",
+          "public_link_or_notice": "[пакетный RESPONSE_TO_REVIEW](../../docs/RESPONSE_TO_REVIEW.md)"
+        },
+        {
+          "original_target": "../../../release_staging/morpho_rc2_v2/release/derivative_manifest.json",
+          "public_link_or_notice": "[release/derivative_manifest.json](../../release/derivative_manifest.json)"
+        },
+        {
+          "original_target": "../../../release_staging/morpho_rc2_v2/scripts/release_support.py",
+          "public_link_or_notice": "[scripts/release_support.py](../../scripts/release_support.py)"
+        },
+        {
+          "original_target": "../../../release_staging/morpho_rc2_v2/scripts/review_phase7_headlines.py",
+          "public_link_or_notice": "[scripts/review_phase7_headlines.py](../../scripts/review_phase7_headlines.py)"
+        },
+        {
+          "original_target": "../../../release_staging/morpho_rc2_v2/scripts/release_routes.py",
+          "public_link_or_notice": "[scripts/release_routes.py](../../scripts/release_routes.py)"
+        },
+        {
+          "original_target": "derivative_verification.json",
+          "public_link_or_notice": "[derivative_verification.json](derivative_verification.json)"
+        },
+        {
+          "original_target": "diff_analyze_phase7_metrics.txt",
+          "public_link_or_notice": "analyzer diff (`diff_analyze_phase7_metrics.txt`; omitted from public payload, see evidence inventory)"
+        },
+        {
+          "original_target": "diff_review_phase7_headlines.txt",
+          "public_link_or_notice": "reviewer diff (`diff_review_phase7_headlines.txt`; omitted from public payload, see evidence inventory)"
+        },
+        {
+          "original_target": "contract_fixtures/contract_checks.json",
+          "public_link_or_notice": "[contract_checks.json](contract_checks.json)"
+        },
+        {
+          "original_target": "static_audit.json",
+          "public_link_or_notice": "[static_audit.json](static_audit.json)"
+        },
+        {
+          "original_target": "local_links.json",
+          "public_link_or_notice": "local_links.json (`local_links.json`; omitted from public payload, see evidence inventory)"
+        },
+        {
+          "original_target": "../../../release_staging/morpho_rc2_v2/docs/HEADLINE_PROVENANCE.md",
+          "public_link_or_notice": "[docs/HEADLINE_PROVENANCE.md](../../docs/HEADLINE_PROVENANCE.md)"
+        },
+        {
+          "original_target": "../../../release_staging/morpho_rc2_v2/docs/SOURCES.md",
+          "public_link_or_notice": "[docs/SOURCES.md](../../docs/SOURCES.md)"
+        },
+        {
+          "original_target": "local_links.json",
+          "public_link_or_notice": "local_links.json (`local_links.json`; omitted from public payload, see evidence inventory)"
+        },
+        {
+          "original_target": "package_command_receipt.json",
+          "public_link_or_notice": "package_command_receipt.json (`package_command_receipt.json`; omitted from public payload, see evidence inventory)"
+        },
+        {
+          "original_target": "package_before.json",
+          "public_link_or_notice": "package_before.json (`package_before.json`; omitted from public payload, see evidence inventory)"
+        },
+        {
+          "original_target": "guard_run.py",
+          "public_link_or_notice": "guard_run.py (`guard_run.py`; omitted from public payload, see evidence inventory)"
+        },
+        {
+          "original_target": "../../../release_staging/morpho_rc2_v2/docs/REPRODUCTION.md",
+          "public_link_or_notice": "[docs/REPRODUCTION.md](../../docs/REPRODUCTION.md)"
+        },
+        {
+          "original_target": "../../../release_staging/morpho_rc2_v2/scripts/release_routes.py",
+          "public_link_or_notice": "[scripts/release_routes.py](../../scripts/release_routes.py)"
+        },
+        {
+          "original_target": "../../../release_staging/morpho_rc2_v2/docs/FULL_RECONSTRUCTION_COMMANDS.md",
+          "public_link_or_notice": "[docs/FULL_RECONSTRUCTION_COMMANDS.md](../../docs/FULL_RECONSTRUCTION_COMMANDS.md)"
+        },
+        {
+          "original_target": "verification_summary.json",
+          "public_link_or_notice": "[verification_summary.json](verification_summary.json)"
+        },
+        {
+          "original_target": "csv_command_receipt.json",
+          "public_link_or_notice": "CSV guard receipt (`csv_command_receipt.json`; omitted from public payload, see evidence inventory)"
+        },
+        {
+          "original_target": "csv_output_v2/csv_qa.json",
+          "public_link_or_notice": "[CSV QA](csv_qa.json)"
+        },
+        {
+          "original_target": "metrics_command_receipt.json",
+          "public_link_or_notice": "SQLite guard receipt (`metrics_command_receipt.json`; omitted from public payload, see evidence inventory)"
+        },
+        {
+          "original_target": "metrics_output/route_qa.json",
+          "public_link_or_notice": "[SQLite route QA](sqlite_route_qa.json)"
+        },
+        {
+          "original_target": "metrics_output/work/headline_review.json",
+          "public_link_or_notice": "[headline review](headline_review.json)"
+        },
+        {
+          "original_target": "external_identity_checks.json",
+          "public_link_or_notice": "external identities (`external_identity_checks.json`; omitted from public payload, see evidence inventory)"
+        },
+        {
+          "original_target": "contract_fixtures/contract_checks.json",
+          "public_link_or_notice": "[CLI/negative cases](contract_checks.json)"
+        },
+        {
+          "original_target": "../../../release_staging/morpho_rc2_v2/figures/phase7_active_borrowers.png",
+          "public_link_or_notice": "[active borrowers PNG](../../figures/phase7_active_borrowers.png)"
+        },
+        {
+          "original_target": "../../../release_staging/morpho_rc2_v2/figures/phase7_archetype_borrowed_assets.png",
+          "public_link_or_notice": "[archetypes PNG](../../figures/phase7_archetype_borrowed_assets.png)"
+        },
+        {
+          "original_target": "../../../release_staging/morpho_rc2_v2/scripts/release_chart_renderer.py",
+          "public_link_or_notice": "[scripts/release_chart_renderer.py](../../scripts/release_chart_renderer.py)"
+        },
+        {
+          "original_target": "../../../release_staging/morpho_rc2_v2/README.md",
+          "public_link_or_notice": "[README.md](../../README.md)"
+        },
+        {
+          "original_target": "visual_review.json",
+          "public_link_or_notice": "[visual_review.json](visual_review.json)"
+        },
+        {
+          "original_target": "verification_summary.json",
+          "public_link_or_notice": "[PNG hash comparisons](verification_summary.json)"
+        },
+        {
+          "original_target": "../../../release_staging/morpho_rc2_v2/README.md",
+          "public_link_or_notice": "[README.md:86](../../README.md)"
+        },
+        {
+          "original_target": "../../../release_staging/morpho_rc2_v2/docs/REPRODUCTION.md",
+          "public_link_or_notice": "[REPRODUCTION.md:30](../../docs/REPRODUCTION.md)"
+        },
+        {
+          "original_target": "../../../release_staging/morpho_rc2_v2/docs/REPRODUCTION.md",
+          "public_link_or_notice": "[REPRODUCTION.md:64](../../docs/REPRODUCTION.md)"
+        },
+        {
+          "original_target": "../../../release_staging/morpho_rc2_v2/docs/FULL_RECONSTRUCTION_COMMANDS.md",
+          "public_link_or_notice": "[FULL_RECONSTRUCTION_COMMANDS.md:59](../../docs/FULL_RECONSTRUCTION_COMMANDS.md)"
+        },
+        {
+          "original_target": "unchanged_verification.json",
+          "public_link_or_notice": "[unchanged_verification.json](unchanged_verification.json)"
+        },
+        {
+          "original_target": "check_rc2.py",
+          "public_link_or_notice": "check_rc2.py (`check_rc2.py`; omitted from public payload, see evidence inventory)"
+        },
+        {
+          "original_target": "guard_run.py",
+          "public_link_or_notice": "guard_run.py (`guard_run.py`; omitted from public payload, see evidence inventory)"
+        },
+        {
+          "original_target": "check_contracts.py",
+          "public_link_or_notice": "check_contracts.py (`check_contracts.py`; omitted from public payload, see evidence inventory)"
+        },
+        {
+          "original_target": "summarize_rc2.py",
+          "public_link_or_notice": "summarize_rc2.py (`summarize_rc2.py`; omitted from public payload, see evidence inventory)"
+        },
+        {
+          "original_target": "harness_notes.json",
+          "public_link_or_notice": "harness_notes.json (`harness_notes.json`; omitted from public payload, see evidence inventory)"
+        }
+      ]
+    }
+  ],
+  "source_inventory": [
+    {
+      "source": "check_contracts.py",
+      "bytes": 3935,
+      "original_sha256": "3f9d63825c590a680229a901fa92cf1bef890ee941a3ccb9a51b2d3629e2f1ac",
+      "decision": "EXCLUDE",
+      "reason": "redundant outputs or execution-local scripts/receipts; retained unchanged outside package"
+    },
+    {
+      "source": "check_rc2.py",
+      "bytes": 9735,
+      "original_sha256": "3950cb282aa9d7b35e386801c8cc643c93e00c39f4e18d7b7e83a76f176d0d32",
+      "decision": "EXCLUDE",
+      "reason": "redundant outputs or execution-local scripts/receipts; retained unchanged outside package"
+    },
+    {
+      "source": "contract_fixtures/contract_checks.json",
+      "bytes": 7105,
+      "original_sha256": "1f13e9c7e47cb1dcb485458d4e1452ff2e7af0a75913a400d382eb640e3fb4ce",
+      "decision": "INCLUDE",
+      "reason": "compact public evidence"
+    },
+    {
+      "source": "contracts_command_receipt.json",
+      "bytes": 39930,
+      "original_sha256": "ba4b665cacd2b8b97fac0148413ed738047b5c66edcb0e176f5a607746fcf605",
+      "decision": "EXCLUDE",
+      "reason": "redundant outputs or execution-local scripts/receipts; retained unchanged outside package"
+    },
+    {
+      "source": "csv_command_receipt.json",
+      "bytes": 12218,
+      "original_sha256": "243ec4abb59ff6896eddadce4ec7cce73a09465b188141a7e2b4adefb6b700ac",
+      "decision": "EXCLUDE",
+      "reason": "redundant outputs or execution-local scripts/receipts; retained unchanged outside package"
+    },
+    {
+      "source": "csv_output_v2/csv_qa.json",
+      "bytes": 3540,
+      "original_sha256": "30f1d33ce54c6cbe5920c525ca798d645075aa7719ca209d8cf59d18c2d2fa96",
+      "decision": "INCLUDE",
+      "reason": "compact public evidence"
+    },
+    {
+      "source": "csv_output_v2/phase7_active_borrowers.png",
+      "bytes": 56036,
+      "original_sha256": "b9e1b47c894ef74c235c9906565301c39c3f7e1f9a6800bb6d94404565d96fbc",
+      "decision": "EXCLUDE",
+      "reason": "redundant outputs or execution-local scripts/receipts; retained unchanged outside package"
+    },
+    {
+      "source": "csv_output_v2/phase7_archetype_borrowed_assets.png",
+      "bytes": 115130,
+      "original_sha256": "fa9d7bb3f9f6167e9093e540bb16a32e80d25127a042a600ccb91cc4a3c924ea",
+      "decision": "EXCLUDE",
+      "reason": "redundant outputs or execution-local scripts/receipts; retained unchanged outside package"
+    },
+    {
+      "source": "csv_output_v2/phase7_borrowed_assets_checkpoints.png",
+      "bytes": 78291,
+      "original_sha256": "0d9449e00e6cc8db8b161fddde6255e951f04dc8913bdb39e3b9c9ec4378fe89",
+      "decision": "EXCLUDE",
+      "reason": "redundant outputs or execution-local scripts/receipts; retained unchanged outside package"
+    },
+    {
+      "source": "csv_output_v2/phase7_debt_flow_decomposition.png",
+      "bytes": 68492,
+      "original_sha256": "80176ae25d29168c69dffb22ff5112808b545e7366027a20f1661aad65d20172",
+      "decision": "EXCLUDE",
+      "reason": "redundant outputs or execution-local scripts/receipts; retained unchanged outside package"
+    },
+    {
+      "source": "csv_output_v2/phase7_market_concentration.png",
+      "bytes": 101743,
+      "original_sha256": "b66df03d755257966cc5b1dd796809d6eef39a565b27b6acbdd930a82fdc14b9",
+      "decision": "EXCLUDE",
+      "reason": "redundant outputs or execution-local scripts/receipts; retained unchanged outside package"
+    },
+    {
+      "source": "csv_output_v2/phase7_retained_uplift.png",
+      "bytes": 48435,
+      "original_sha256": "42802ffd49ae48d86a9c5f444d49a8137052374cc2be43d5e73cd0c7f393179c",
+      "decision": "EXCLUDE",
+      "reason": "redundant outputs or execution-local scripts/receipts; retained unchanged outside package"
+    },
+    {
+      "source": "derivative_verification.json",
+      "bytes": 8074,
+      "original_sha256": "3c17ee879a8b3c72e2573f0f0e9cee8992076c7a5b9348c2d275cf40dc3f7c7a",
+      "decision": "INCLUDE",
+      "reason": "compact public evidence"
+    },
+    {
+      "source": "diff_analyze_phase7_metrics.txt",
+      "bytes": 2033,
+      "original_sha256": "e8afaf37f3ce92406978cbf6f4f1156575727e1a43678e31eaf78cec8e77ab0c",
+      "decision": "EXCLUDE",
+      "reason": "redundant outputs or execution-local scripts/receipts; retained unchanged outside package"
+    },
+    {
+      "source": "diff_PHASE3_SELECTION_CHECKPOINT.txt",
+      "bytes": 323,
+      "original_sha256": "0d7538c7bf6eb1b00e5c1f912f41c5b64324ea45b34fd0056ad50016802b5c8d",
+      "decision": "EXCLUDE",
+      "reason": "redundant outputs or execution-local scripts/receipts; retained unchanged outside package"
+    },
+    {
+      "source": "diff_preflight_phase8_release.txt",
+      "bytes": 11619,
+      "original_sha256": "0e2d02b3f4497dcde8cbf39cc4e06f9c269bc66e71817b1af84e152aa5d39174",
+      "decision": "EXCLUDE",
+      "reason": "redundant outputs or execution-local scripts/receipts; retained unchanged outside package"
+    },
+    {
+      "source": "diff_reproduce_phase7_isolated.txt",
+      "bytes": 4988,
+      "original_sha256": "78ca3631f502e0f3100f6c55cc09dc68a2605d8083ee215fbadc7e9098991662",
+      "decision": "EXCLUDE",
+      "reason": "redundant outputs or execution-local scripts/receipts; retained unchanged outside package"
+    },
+    {
+      "source": "diff_review_phase7_headlines.txt",
+      "bytes": 746,
+      "original_sha256": "05044f5f4c218806d148b00be9ba503b4317345a3e3edf25dfe2c819ddca23b4",
+      "decision": "EXCLUDE",
+      "reason": "redundant outputs or execution-local scripts/receipts; retained unchanged outside package"
+    },
+    {
+      "source": "external_identity_checks.json",
+      "bytes": 824556,
+      "original_sha256": "b59f11b1a17dfc204eec091205243e14b5458b34bb75ef9f8322be25b465fe42",
+      "decision": "EXCLUDE",
+      "reason": "redundant outputs or execution-local scripts/receipts; retained unchanged outside package"
+    },
+    {
+      "source": "guard_run.py",
+      "bytes": 4513,
+      "original_sha256": "22710ce4ef1cf0e32dfe24952c2df8a6ec490abaa448f14bc62bf51e7f96e89d",
+      "decision": "EXCLUDE",
+      "reason": "redundant outputs or execution-local scripts/receipts; retained unchanged outside package"
+    },
+    {
+      "source": "harness_notes.json",
+      "bytes": 691,
+      "original_sha256": "469a6dd4c187244d986198b9df65e0062f79c4f177ee28506b96d09bf4e2090d",
+      "decision": "EXCLUDE",
+      "reason": "redundant outputs or execution-local scripts/receipts; retained unchanged outside package"
+    },
+    {
+      "source": "input_copy_receipt.json",
+      "bytes": 593,
+      "original_sha256": "2989ea94b0f481e37720397666bca2f714b6437e9344ccf4f962b68ded97dc73",
+      "decision": "EXCLUDE",
+      "reason": "redundant outputs or execution-local scripts/receipts; retained unchanged outside package"
+    },
+    {
+      "source": "local_links.json",
+      "bytes": 37633,
+      "original_sha256": "cc9791aba1636e395755e16686a81e5a533b39d452ed5d7833fcc4bfcdd1f9b0",
+      "decision": "EXCLUDE",
+      "reason": "redundant outputs or execution-local scripts/receipts; retained unchanged outside package"
+    },
+    {
+      "source": "metrics_command_receipt.json",
+      "bytes": 60539,
+      "original_sha256": "c7ab2ac03f876944f092374631abec91463e2411467b696d898ba0bf33a37e30",
+      "decision": "EXCLUDE",
+      "reason": "redundant outputs or execution-local scripts/receipts; retained unchanged outside package"
+    },
+    {
+      "source": "metrics_output/route_qa.json",
+      "bytes": 650,
+      "original_sha256": "351c725cea774f9a3af0ca671937a18547582a86807f8101c9b9cd9a51773e83",
+      "decision": "INCLUDE",
+      "reason": "compact public evidence"
+    },
+    {
+      "source": "metrics_output/work/figures/csv_qa.json",
+      "bytes": 3540,
+      "original_sha256": "30f1d33ce54c6cbe5920c525ca798d645075aa7719ca209d8cf59d18c2d2fa96",
+      "decision": "EXCLUDE",
+      "reason": "redundant outputs or execution-local scripts/receipts; retained unchanged outside package"
+    },
+    {
+      "source": "metrics_output/work/figures/phase7_active_borrowers.png",
+      "bytes": 56036,
+      "original_sha256": "b9e1b47c894ef74c235c9906565301c39c3f7e1f9a6800bb6d94404565d96fbc",
+      "decision": "EXCLUDE",
+      "reason": "redundant outputs or execution-local scripts/receipts; retained unchanged outside package"
+    },
+    {
+      "source": "metrics_output/work/figures/phase7_archetype_borrowed_assets.png",
+      "bytes": 115130,
+      "original_sha256": "fa9d7bb3f9f6167e9093e540bb16a32e80d25127a042a600ccb91cc4a3c924ea",
+      "decision": "EXCLUDE",
+      "reason": "redundant outputs or execution-local scripts/receipts; retained unchanged outside package"
+    },
+    {
+      "source": "metrics_output/work/figures/phase7_borrowed_assets_checkpoints.png",
+      "bytes": 78291,
+      "original_sha256": "0d9449e00e6cc8db8b161fddde6255e951f04dc8913bdb39e3b9c9ec4378fe89",
+      "decision": "EXCLUDE",
+      "reason": "redundant outputs or execution-local scripts/receipts; retained unchanged outside package"
+    },
+    {
+      "source": "metrics_output/work/figures/phase7_debt_flow_decomposition.png",
+      "bytes": 68492,
+      "original_sha256": "80176ae25d29168c69dffb22ff5112808b545e7366027a20f1661aad65d20172",
+      "decision": "EXCLUDE",
+      "reason": "redundant outputs or execution-local scripts/receipts; retained unchanged outside package"
+    },
+    {
+      "source": "metrics_output/work/figures/phase7_market_concentration.png",
+      "bytes": 101743,
+      "original_sha256": "b66df03d755257966cc5b1dd796809d6eef39a565b27b6acbdd930a82fdc14b9",
+      "decision": "EXCLUDE",
+      "reason": "redundant outputs or execution-local scripts/receipts; retained unchanged outside package"
+    },
+    {
+      "source": "metrics_output/work/figures/phase7_retained_uplift.png",
+      "bytes": 48435,
+      "original_sha256": "42802ffd49ae48d86a9c5f444d49a8137052374cc2be43d5e73cd0c7f393179c",
+      "decision": "EXCLUDE",
+      "reason": "redundant outputs or execution-local scripts/receipts; retained unchanged outside package"
+    },
+    {
+      "source": "metrics_output/work/headline_review.json",
+      "bytes": 4964,
+      "original_sha256": "54bd10df7a935b99c9e07ba9691e6d0fd9bf61b0939cf1edf483244ec30b0f6c",
+      "decision": "INCLUDE",
+      "reason": "compact public evidence"
+    },
+    {
+      "source": "metrics_output/work/reproduced_analysis_manifest.json",
+      "bytes": 3958,
+      "original_sha256": "fefeded8e0a6b7ba90522a9ea91d47b4d740119ca867335d2eb8928a8c37eec4",
+      "decision": "EXCLUDE",
+      "reason": "redundant outputs or execution-local scripts/receipts; retained unchanged outside package"
+    },
+    {
+      "source": "package_before.json",
+      "bytes": 26190,
+      "original_sha256": "99a3532950d32f32f18f7e36a9300ad38d4739efeb05c5c8e28e024ae3f58d43",
+      "decision": "EXCLUDE",
+      "reason": "redundant outputs or execution-local scripts/receipts; retained unchanged outside package"
+    },
+    {
+      "source": "package_command_receipt.json",
+      "bytes": 22485,
+      "original_sha256": "7479d145364de4a6ccee3cdf795a589cdfbb64c1abb949229f0e14ec91e50e09",
+      "decision": "EXCLUDE",
+      "reason": "redundant outputs or execution-local scripts/receipts; retained unchanged outside package"
+    },
+    {
+      "source": "protected_originals_before.json",
+      "bytes": 22572,
+      "original_sha256": "b7c5bb15e67549f766fcd74b42d7d0b038d27964ff5692de4be02abea65f96cb",
+      "decision": "EXCLUDE",
+      "reason": "redundant outputs or execution-local scripts/receipts; retained unchanged outside package"
+    },
+    {
+      "source": "REPORT.md",
+      "bytes": 23757,
+      "original_sha256": "3a6a996d04f1bf21e7b6ae3668954edf1cfa015e2c96b0d8e6f7f0476133266c",
+      "decision": "INCLUDE",
+      "reason": "compact public evidence"
+    },
+    {
+      "source": "seal_review.py",
+      "bytes": 1745,
+      "original_sha256": "fcbb7d913849d7f0b7cf76fd5aab750ec219687b9c560b744a154bba0e44d9fd",
+      "decision": "EXCLUDE",
+      "reason": "redundant outputs or execution-local scripts/receipts; retained unchanged outside package"
+    },
+    {
+      "source": "static_audit.json",
+      "bytes": 578,
+      "original_sha256": "fea3b7f0ffaa0c958341259705ba8aead44b3f44e6d2124faa42c510de1dfc02",
+      "decision": "INCLUDE",
+      "reason": "compact public evidence"
+    },
+    {
+      "source": "summarize_rc2.py",
+      "bytes": 5060,
+      "original_sha256": "8cdcf7f4af7c9064e04fb4e55ca5603aed091e18b19534881e35164465b4b7f6",
+      "decision": "EXCLUDE",
+      "reason": "redundant outputs or execution-local scripts/receipts; retained unchanged outside package"
+    },
+    {
+      "source": "unchanged_verification.json",
+      "bytes": 256,
+      "original_sha256": "479cc8beb7f67691b9268db7832cd2776448fea9de8e46fbea3fbf6feb9b63be",
+      "decision": "INCLUDE",
+      "reason": "compact public evidence"
+    },
+    {
+      "source": "verification_summary.json",
+      "bytes": 6041,
+      "original_sha256": "b0ac0098c5796813a9514c240e1ca2ba7a8d8ee83845d661deef5802d4517788",
+      "decision": "INCLUDE",
+      "reason": "compact public evidence"
+    },
+    {
+      "source": "visual_review.json",
+      "bytes": 1158,
+      "original_sha256": "555b021e9f7f52c8ddddb89197266b79f6fe7ce0417f376b9f4758a64ce277ff",
+      "decision": "INCLUDE",
+      "reason": "compact public evidence"
+    }
+  ],
+  "large_inputs_policy": "Source bundles, SQLite, cache/job copies and contract fixture payloads are EXCLUDE; only compact contract results included",
+  "helper_files": {
+    "README.md": "maintainer English summary, not reviewer-authored",
+    "original_evidence_manifest.json": "verbatim source manifest; paths describe original evidence, not all included files",
+    "reviewed_package_manifest.json": "verbatim manifest of reviewed RC2, not final payload membership"
+  },
+  "no_review_original_modified": true
+}

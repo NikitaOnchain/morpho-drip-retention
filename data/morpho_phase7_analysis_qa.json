@@ -1,0 +1,242 @@
+{
+  "version": "morpho-phase7-analysis-v1",
+  "status": "PASS",
+  "generated_at_utc": "2026-09-02T21:29:10.305895Z",
+  "question": "Did DRIP create lending demand that remained after incentives ended?",
+  "methodological_status": "observational_before_after_not_causal",
+  "identity": {
+    "metric_version": "v1.0",
+    "production_db_sha256": "80aca74cc5e43db03fd93c69d7ad448ac9afdec5f9566a6b833ec11f7e5c9543",
+    "frozen_metrics_sha256": "2774c0856ca66da4611523289a7e1c4da937ce208cad9799c2f008753eca2ba2",
+    "eligibility_bridge_sha256": "cbab02426bcd1ac1ad0679156f837e155c5b04e86b63001a9149b0cbae27d305",
+    "boundary_manifest_sha256": "8a80d2f6f6f656f469301a6a41b7ed1a73fc1df0936c47c3503bb7ee0d7c0646",
+    "timestamp_list_sha256": "be8ee9c6c0a80864090d50b2d16737acd58da5c70a184a7728666ca0f3d04959"
+  },
+  "scope": {
+    "markets": 45,
+    "usdc_markets": 32,
+    "usdt0_markets": 13,
+    "boundaries": 227,
+    "baseline_checkpoints": 56,
+    "campaign_checkpoints": 169,
+    "post_checkpoints": 3,
+    "production_market_days": 18225
+  },
+  "checks": {
+    "boundary_manifest_identity": "PASS",
+    "production_sqlite_integrity": "ok",
+    "production_database_unchanged": true,
+    "frozen_metrics_unchanged": true,
+    "eligibility_bridge_unchanged": true,
+    "checkpoint_state_grid": {
+      "market_event_state_rows_scanned": 1230704,
+      "checkpoint_state_rows": 10260
+    },
+    "wallet_replay": {
+      "wallet_position_events_replayed": 77768,
+      "negative_wallet_share_defects": 0,
+      "malformed_owner_events": 0,
+      "checkpoint_market_share_reconciliation_checks": 10215,
+      "checkpoint_market_share_reconciliation_defects": 0,
+      "max_abs_share_difference": 0,
+      "wallet_position_events_after_p180_excluded": 10
+    },
+    "source_reconciliation": {
+      "event_family_checks": 8,
+      "event_family_defects": [],
+      "event_amount_checks": 17,
+      "event_amount_defects": []
+    },
+    "chart_ready_tables": {
+      "market_retained_uplift": {
+        "rows": 540,
+        "unique_keys": 540,
+        "duplicate_keys": 0,
+        "required_null_key_fields": 0
+      },
+      "portfolio_retained_uplift": {
+        "rows": 108,
+        "unique_keys": 108,
+        "duplicate_keys": 0,
+        "required_null_key_fields": 0
+      },
+      "checkpoint_series": {
+        "rows": 2724,
+        "unique_keys": 2724,
+        "duplicate_keys": 0,
+        "required_null_key_fields": 0
+      },
+      "period_flows": {
+        "rows": 141,
+        "unique_keys": 141,
+        "duplicate_keys": 0,
+        "required_null_key_fields": 0
+      },
+      "market_concentration": {
+        "rows": 90,
+        "unique_keys": 90,
+        "duplicate_keys": 0,
+        "required_null_key_fields": 0
+      }
+    },
+    "exact_token_aggregate_defects": 0,
+    "period_flow_reconciliation": {
+      "period_flow_event_counts": {
+        "baseline:AccrueInterest": 1701,
+        "baseline:Borrow": 346,
+        "baseline:Liquidate": 1,
+        "baseline:Repay": 144,
+        "incentive:AccrueInterest": 393192,
+        "incentive:Borrow": 31415,
+        "incentive:Liquidate": 113,
+        "incentive:Repay": 19018,
+        "post_180:AccrueInterest": 217978,
+        "post_180:Borrow": 13518,
+        "post_180:Liquidate": 192,
+        "post_180:Repay": 13021
+      },
+      "flow_reconciliation_defects": 0
+    },
+    "phase6_exact_rounding_status_counts": {
+      "not_applicable": 688746,
+      "pass": 542761
+    },
+    "phase6_rare_branch_coverage": {
+      "nonzero_fee_shares_events": 0,
+      "nonzero_bad_debt_events": 3,
+      "fee_shares_status": "implemented_not_empirically_exercised",
+      "bad_debt_status": "empirically_covered"
+    },
+    "negative_market_checkpoint_balances": 0,
+    "unexplained_null_or_duplicate_keys": 0
+  },
+  "results": {
+    "market_applicability": {
+      "borrowed_assets": {
+        "applicable": 42,
+        "not_applicable": 3
+      },
+      "supplied_assets": {
+        "applicable": 45,
+        "not_applicable": 0
+      },
+      "collateral_assets": {
+        "applicable": 44,
+        "not_applicable": 1
+      },
+      "active_borrowers": {
+        "applicable": 38,
+        "not_applicable": 7
+      }
+    },
+    "market_concentration": {
+      "USDC:campaign_end": {
+        "market_count": 32,
+        "total_native": "70647245.378463",
+        "top1_share": "0.399591451579",
+        "top3_share": "0.658374222636",
+        "top5_share": "0.863602306001",
+        "hhi": "0.219693606948",
+        "top_market_id": "0x8147c63f3f6f5a0825c84bf2cb11443c72b609fa39cf9a362e3d4dc2c5ca76c4",
+        "top_market_collateral": "PT-USDai-19FEB2026"
+      },
+      "USDC:p180": {
+        "market_count": 32,
+        "total_native": "5645592.527445",
+        "top1_share": "0.45482825454",
+        "top3_share": "0.911637878243",
+        "top5_share": "0.964277326082",
+        "hhi": "0.313845816507",
+        "top_market_id": "0x9e90aec7d768403dacc9dd0d8320307fda3f980eed4df43e3e52168a1c667709",
+        "top_market_collateral": "xUSD"
+      },
+      "USD₮0:campaign_end": {
+        "market_count": 13,
+        "total_native": "36750499.253479",
+        "top1_share": "0.494675449516",
+        "top3_share": "0.973575356226",
+        "top5_share": "0.996565074669",
+        "hhi": "0.444238396154",
+        "top_market_id": "0x090ff0cd57a258b342c870691a180bb79691e97b31ddda2b7cdd4b5a362c3cca",
+        "top_market_collateral": "PT-USDai-19FEB2026"
+      },
+      "USD₮0:p180": {
+        "market_count": 13,
+        "total_native": "4135334.073899",
+        "top1_share": "0.379088300315",
+        "top3_share": "0.694395332967",
+        "top5_share": "0.949631043581",
+        "hhi": "0.227693247948",
+        "top_market_id": "0xe0432ceb599fbe41defbd62fe8e914824af9d891a0a92c39de7063176c8e480b",
+        "top_market_collateral": "weETH"
+      }
+    }
+  },
+  "limitations": [
+    "The design is observational before/after and does not identify a causal DRIP effect.",
+    "Eligible-market wallets are not verified reward recipients, and a wallet is not a person.",
+    "No wallet cohort retention or wallet concentration is calculated; active borrowers are cross-sectional checkpoint counts.",
+    "USDC and USD₮0 are never added; collateral assets are not added across different token addresses.",
+    "Non-zero feeShares were not empirically exercised in the accepted Phase 6 source; bad debt was empirically exercised.",
+    "No price/USD layer or market-level allocation of shared/direct-vault budgets is used."
+  ],
+  "runtime_seconds": 55.455,
+  "output_bytes": 1393141,
+  "outputs": [
+    {
+      "path": "data/morpho_phase7_market_retained_uplift.csv",
+      "bytes": 305276,
+      "sha256": "528eb56d05bcef02fc6a2a96545b20e4d08fb5a04da91917a9257ae28ee66ca5"
+    },
+    {
+      "path": "data/morpho_phase7_portfolio_retained_uplift.csv",
+      "bytes": 56260,
+      "sha256": "870559401fe31e00fe44dbc2727b836b07892a95540fc0c9e6fb5800aec0d47e"
+    },
+    {
+      "path": "data/morpho_phase7_checkpoint_series.csv",
+      "bytes": 491812,
+      "sha256": "4aecd60b2f3f85c34057a2d62a4552d1b9229811307d4cef656b896eb1040537"
+    },
+    {
+      "path": "data/morpho_phase7_period_flows.csv",
+      "bytes": 58100,
+      "sha256": "44003813bf720a360a61e03e2c2c71194906cf70bbe58fac3e7e23105c2ab917"
+    },
+    {
+      "path": "data/morpho_phase7_market_concentration.csv",
+      "bytes": 26621,
+      "sha256": "b5bcf48e839acaf103475d6cf7487ccc1be57564b293ecf9d6ac131047b52bd4"
+    },
+    {
+      "path": "figures/phase7_borrowed_assets_checkpoints.png",
+      "bytes": 78291,
+      "sha256": "0d9449e00e6cc8db8b161fddde6255e951f04dc8913bdb39e3b9c9ec4378fe89"
+    },
+    {
+      "path": "figures/phase7_retained_uplift.png",
+      "bytes": 48435,
+      "sha256": "42802ffd49ae48d86a9c5f444d49a8137052374cc2be43d5e73cd0c7f393179c"
+    },
+    {
+      "path": "figures/phase7_debt_flow_decomposition.png",
+      "bytes": 68492,
+      "sha256": "80176ae25d29168c69dffb22ff5112808b545e7366027a20f1661aad65d20172"
+    },
+    {
+      "path": "figures/phase7_market_concentration.png",
+      "bytes": 101743,
+      "sha256": "b66df03d755257966cc5b1dd796809d6eef39a565b27b6acbdd930a82fdc14b9"
+    },
+    {
+      "path": "figures/phase7_archetype_borrowed_assets.png",
+      "bytes": 108667,
+      "sha256": "eb850ddfbac8d4180da96830c34afeedf09d9156936ef7ee8b55de73c96a8b24"
+    },
+    {
+      "path": "figures/phase7_active_borrowers.png",
+      "bytes": 49444,
+      "sha256": "19b812d361889f0578580b7a0eea03e1261f1fba3cd3d71ba4ffacc4b91001d1"
+    }
+  ]
+}

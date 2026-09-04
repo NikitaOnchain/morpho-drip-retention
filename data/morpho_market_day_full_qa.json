@@ -1,0 +1,872 @@
+{
+  "version": "morpho-phase6-full-market-day-v1",
+  "status": "pass",
+  "acceptance_status": "awaiting_user_acceptance",
+  "completed_at_utc": "2026-09-02T12:57:01.334020Z",
+  "sql_engine": "SQLite 3.50.4 through Python stdlib sqlite3",
+  "scope": {
+    "market_count": 45,
+    "utc_bucket_count": 405,
+    "market_day_rows": 18225,
+    "grain": "market_id x UTC day",
+    "window_start_utc": "2025-07-09T13:00:00Z",
+    "window_end_exclusive_utc": "2026-08-18T00:00:00Z",
+    "ordering": [
+      "block_number",
+      "transaction_index",
+      "log_index"
+    ]
+  },
+  "input_fingerprints": {
+    "phase2_manifest_sha256": "c8552428187094e5aad725193f2e3023e622ddc4ab37428f1414c375e7d6be58",
+    "markets_sha256": "a88fceaa19fe383bb956ef698a819facb2d345a29bd173db730e85bbd5213a6a",
+    "eligibility_bridge_sha256": "cbab02426bcd1ac1ad0679156f837e155c5b04e86b63001a9149b0cbae27d305",
+    "utc_boundaries_sha256": "da1b7c58406301f8b282ae798344dba292f2b0a650ae1f451235f84c8a261ac0",
+    "frozen_metrics_v1_sha256": "2774c0856ca66da4611523289a7e1c4da937ce208cad9799c2f008753eca2ba2",
+    "prototype_database_sha256_at_comparison": "39d0f182e5b42ce01669c1760fe721e993f39a55e69e0498e6f8c71d29ba1cd6",
+    "prototype_market_day_schema_sha256": "3b6ca29dfd79df9c351fbc8a8dbc1bebf1d7b3cb56ff0373c215b6c4c24125bb"
+  },
+  "sql_files": {
+    "replay_module": "sql/10_market_day_prototype.sql",
+    "replay_module_sha256": "c989c4d9985785c53ce8dfa6006d5898e5d64348e946f22e08ccbc15c3be035f",
+    "production": "sql/20_market_day_full.sql",
+    "production_sha256": "9fafe1c722b1b79cf9aea540eb2f807983216d3bc2757da0242bd6ba0e05cf89",
+    "replay_qa_module": "sql/90_qa_market_day_prototype.sql",
+    "replay_qa_module_sha256": "ff43c5ce72aac30052e766db635770f3e69c1cb285ba8db8ee5c79c4197e5272",
+    "population_qa": "sql/90_qa_market_day_full.sql",
+    "population_qa_sha256": "c4346a5fe77e4a48501990baf453cbb9d591fbd8e149d74b2e9e6130a395ae05"
+  },
+  "source_scan": {
+    "elapsed_seconds": 46.879548,
+    "verified_shards": 3157,
+    "source_rows_scanned": 1231462,
+    "source_bytes_scanned": 786571394,
+    "selected_raw_jsonl_bytes": 786571394,
+    "selected_event_rows": 1231462,
+    "selected_event_counts_by_market": {
+      "0x06a5954e8222a1f4719934d370ac558b657c6a5321d6cae615127b6596d10d32": 8016,
+      "0x090ff0cd57a258b342c870691a180bb79691e97b31ddda2b7cdd4b5a362c3cca": 44755,
+      "0x11d3bca0d1a9af8bf2982ef802f2971cf86043df1b31a044cacb35a8048156c6": 7259,
+      "0x14982da64b67967ef3a70c2f3b7d05518f7dd4ba98d850c40c46618c75059a64": 9873,
+      "0x1a926ab8add08dca634f8d6cecd8c866e166a4affc65801beda9f239d21b622a": 20533,
+      "0x1d094624063756fc61aaf061c7da056aebe3b3ad0ae0395b22e00db6c074de7c": 2358,
+      "0x209fa1520640f664f59f7c1f955d52e8b81ead826edf439b48254d21d24b97a9": 3053,
+      "0x30c505b1ce479157e1035bdc5de3d4c811cf3e427c31db0b81b5c27a09054e97": 14055,
+      "0x33e0c8ab132390822b07e5dc95033cf250c963153320b7ffca73220664da2ea0": 198920,
+      "0x52f4d5038749565658a51f43d214e811c328c00c8b58c544accfb8924e8be8f8": 6,
+      "0x551dbcdcceaf9322986e0cddde993d49840522a9532dc441359acd98af8badff": 184328,
+      "0x571cb3ac535d61d92026c071ef1df4794d0bbbe1755f916ff640746f81b52af4": 30495,
+      "0x582c92d5ea0ab48eba3a1ee88c8884e34f7fc61c57fb821f3f6d9e474574c6e3": 2108,
+      "0x58df3ad9cf719b1ca97365db634a11b770785517f409ecbe85eefdb34803de1f": 21926,
+      "0x678b525f162b499b17d8fd71f3129bd3a5a10d4c728e6af02ee7c644ae262d01": 17,
+      "0x6a2b0c23c79dde84628314d21797f7bd5b06ae36e6bde6924ece64ef4821d2df": 13,
+      "0x6c831dcc45a7c0af00b751da651bd874b96653c587615d11aafade7b357c4b43": 17188,
+      "0x71c2954e00c8f72864600c9d1d1cd70fa15202c4294cd938d80add3be2eced26": 27059,
+      "0x729e4ab1f1613a55f4dc6444cb073a2f9ba4c402f8c59e93e1d725f9ce45f23a": 2293,
+      "0x7717f1e04510390518811b3133ea47c298094ddd1d806ed8f8867d88c727bad7": 20251,
+      "0x77fe2f7c2dd6f4da6bc5f445b06052ff8df55cb70cfce9afc16ec3c69a5fd3a3": 159899,
+      "0x7d4799e15dcaad9da49ab8edf46d647db2da2ff419db52e8ec0984d0c49e8b9b": 10948,
+      "0x7e7c08f2d8bb6821408ac6b4e2f322d73ba1fb8ce20b3b65087f440ef3b2f8f1": 24382,
+      "0x8147c63f3f6f5a0825c84bf2cb11443c72b609fa39cf9a362e3d4dc2c5ca76c4": 20561,
+      "0x84367e5bc5df26437618f749d5beb793746e620560721fec15518d684191ebc6": 6418,
+      "0x8e58f0dea27f877db258ecbbe16e57c9bb3541448ac0d578ef08c5b93ea9b84b": 1941,
+      "0x989ddb4f5b09e6d02e7f5f2f8efb846fd2de1f3f3dfd96e1939455abe7dd5a48": 4040,
+      "0x9e90aec7d768403dacc9dd0d8320307fda3f980eed4df43e3e52168a1c667709": 4310,
+      "0xa35d91efb3e284a0ab7098e8c5a65caf58ea0451073e36a544a821fd8f350953": 6898,
+      "0xac6a118134cc4208a22534b041a83f4ac5ca42e2ab9ea732ee53c44b7deebc62": 7644,
+      "0xadc6897d644a005149d1aa42de72bcb1ff1c9f7c4a8b00db3e2356752995f80e": 690,
+      "0xb7b5729ad332f57a02f4d9f87aa50910ee955d859e2b2ad9b0b8e15ca44d8b7f": 66,
+      "0xc7670063349ac19dfa324ead7bd7da2985ae931e1b09fb0e31b62c6486b730bd": 11498,
+      "0xd09404e9512e1341321c8ae3bd663fab7087582142ac61486635a6c072c2af12": 62753,
+      "0xd478de9c069f12759d3baed9ddd16fe8902128937821af3a3cf77eca1885c7fc": 357,
+      "0xd91052003758145cc53615895c0ce2081c7080b661dbab5652c2b8433b248c2d": 1660,
+      "0xde895fd4a9d1ca693485fcfc2ee47d8c3b47f810bbce3c965c60d97b855d4ed2": 8991,
+      "0xe0432ceb599fbe41defbd62fe8e914824af9d891a0a92c39de7063176c8e480b": 3147,
+      "0xe0de6b571ec913ada63d5327f70c8849ea2363d47f44a190e8fb489db07fee1e": 15238,
+      "0xe23e15ddd552eb148045e3f4b74e71f4923bc6bea6e5bda0a4cf89a0cecd1a3b": 6347,
+      "0xed06d9e82d7c35ca80d3983194e15462a96202bd875800af18183321f4611868": 15120,
+      "0xef62d07c7e29c3864feb6de8945edd82688a2ea558de5a44dc795ad1eb1d9853": 2358,
+      "0xf4ab212f6fcc943e2669cb6307fa4b608b0418ac5255c100e58394822157785c": 52338,
+      "0xf86f3edd6f16cd8211f4d206866dc4ecd41be6211063ac11f8508e1b7112ef40": 182549,
+      "0xff608e5881ccba3859006b3c01e377314384c3d661d684c3e8b6354146e62155": 6803
+    },
+    "selected_event_family_counts": {
+      "0x06a5954e8222a1f4719934d370ac558b657c6a5321d6cae615127b6596d10d32": {
+        "AccrueInterest": 5291,
+        "Borrow": 42,
+        "Liquidate": 3,
+        "Repay": 25,
+        "Supply": 1175,
+        "SupplyCollateral": 42,
+        "Withdraw": 1407,
+        "WithdrawCollateral": 31
+      },
+      "0x090ff0cd57a258b342c870691a180bb79691e97b31ddda2b7cdd4b5a362c3cca": {
+        "AccrueInterest": 21734,
+        "Borrow": 904,
+        "Liquidate": 2,
+        "Repay": 929,
+        "Supply": 11435,
+        "SupplyCollateral": 912,
+        "Withdraw": 7921,
+        "WithdrawCollateral": 918
+      },
+      "0x11d3bca0d1a9af8bf2982ef802f2971cf86043df1b31a044cacb35a8048156c6": {
+        "AccrueInterest": 4486,
+        "Borrow": 27,
+        "Liquidate": 1,
+        "Repay": 43,
+        "Supply": 1269,
+        "SupplyCollateral": 25,
+        "Withdraw": 1366,
+        "WithdrawCollateral": 42
+      },
+      "0x14982da64b67967ef3a70c2f3b7d05518f7dd4ba98d850c40c46618c75059a64": {
+        "AccrueInterest": 4730,
+        "Borrow": 176,
+        "Liquidate": 13,
+        "Repay": 202,
+        "Supply": 2165,
+        "SupplyCollateral": 154,
+        "Withdraw": 2322,
+        "WithdrawCollateral": 111
+      },
+      "0x1a926ab8add08dca634f8d6cecd8c866e166a4affc65801beda9f239d21b622a": {
+        "AccrueInterest": 11264,
+        "Borrow": 280,
+        "Repay": 272,
+        "Supply": 3328,
+        "SupplyCollateral": 249,
+        "Withdraw": 4947,
+        "WithdrawCollateral": 193
+      },
+      "0x1d094624063756fc61aaf061c7da056aebe3b3ad0ae0395b22e00db6c074de7c": {
+        "AccrueInterest": 1051,
+        "Borrow": 144,
+        "Liquidate": 2,
+        "Repay": 106,
+        "Supply": 318,
+        "SupplyCollateral": 167,
+        "Withdraw": 451,
+        "WithdrawCollateral": 119
+      },
+      "0x209fa1520640f664f59f7c1f955d52e8b81ead826edf439b48254d21d24b97a9": {
+        "AccrueInterest": 1441,
+        "Borrow": 144,
+        "Liquidate": 3,
+        "Repay": 122,
+        "Supply": 642,
+        "SupplyCollateral": 122,
+        "Withdraw": 514,
+        "WithdrawCollateral": 65
+      },
+      "0x30c505b1ce479157e1035bdc5de3d4c811cf3e427c31db0b81b5c27a09054e97": {
+        "AccrueInterest": 7765,
+        "Borrow": 457,
+        "Repay": 345,
+        "Supply": 2190,
+        "SupplyCollateral": 490,
+        "Withdraw": 2457,
+        "WithdrawCollateral": 351
+      },
+      "0x33e0c8ab132390822b07e5dc95033cf250c963153320b7ffca73220664da2ea0": {
+        "AccrueInterest": 99414,
+        "Borrow": 6296,
+        "Liquidate": 86,
+        "Repay": 7006,
+        "Supply": 42491,
+        "SupplyCollateral": 2531,
+        "Withdraw": 39229,
+        "WithdrawCollateral": 1867
+      },
+      "0x52f4d5038749565658a51f43d214e811c328c00c8b58c544accfb8924e8be8f8": {
+        "AccrueInterest": 2,
+        "Supply": 1,
+        "SupplyCollateral": 2,
+        "WithdrawCollateral": 1
+      },
+      "0x551dbcdcceaf9322986e0cddde993d49840522a9532dc441359acd98af8badff": {
+        "AccrueInterest": 81767,
+        "Borrow": 8089,
+        "Liquidate": 141,
+        "Repay": 5409,
+        "Supply": 34099,
+        "SupplyCollateral": 11008,
+        "Withdraw": 36564,
+        "WithdrawCollateral": 7251
+      },
+      "0x571cb3ac535d61d92026c071ef1df4794d0bbbe1755f916ff640746f81b52af4": {
+        "AccrueInterest": 15451,
+        "Borrow": 439,
+        "Repay": 489,
+        "Supply": 6756,
+        "SupplyCollateral": 454,
+        "Withdraw": 6428,
+        "WithdrawCollateral": 478
+      },
+      "0x582c92d5ea0ab48eba3a1ee88c8884e34f7fc61c57fb821f3f6d9e474574c6e3": {
+        "AccrueInterest": 1054,
+        "Borrow": 7,
+        "Repay": 4,
+        "Supply": 502,
+        "SupplyCollateral": 6,
+        "Withdraw": 532,
+        "WithdrawCollateral": 3
+      },
+      "0x58df3ad9cf719b1ca97365db634a11b770785517f409ecbe85eefdb34803de1f": {
+        "AccrueInterest": 11539,
+        "Borrow": 948,
+        "Liquidate": 3,
+        "Repay": 660,
+        "Supply": 3009,
+        "SupplyCollateral": 949,
+        "Withdraw": 4196,
+        "WithdrawCollateral": 622
+      },
+      "0x678b525f162b499b17d8fd71f3129bd3a5a10d4c728e6af02ee7c644ae262d01": {
+        "AccrueInterest": 13,
+        "Borrow": 1,
+        "Supply": 2,
+        "SupplyCollateral": 1
+      },
+      "0x6a2b0c23c79dde84628314d21797f7bd5b06ae36e6bde6924ece64ef4821d2df": {
+        "AccrueInterest": 6,
+        "Borrow": 1,
+        "Supply": 3,
+        "SupplyCollateral": 1,
+        "Withdraw": 2
+      },
+      "0x6c831dcc45a7c0af00b751da651bd874b96653c587615d11aafade7b357c4b43": {
+        "AccrueInterest": 8017,
+        "Borrow": 452,
+        "Repay": 399,
+        "Supply": 3804,
+        "SupplyCollateral": 445,
+        "Withdraw": 3700,
+        "WithdrawCollateral": 371
+      },
+      "0x71c2954e00c8f72864600c9d1d1cd70fa15202c4294cd938d80add3be2eced26": {
+        "AccrueInterest": 16005,
+        "Borrow": 614,
+        "Liquidate": 2,
+        "Repay": 456,
+        "Supply": 4636,
+        "SupplyCollateral": 582,
+        "Withdraw": 4321,
+        "WithdrawCollateral": 443
+      },
+      "0x729e4ab1f1613a55f4dc6444cb073a2f9ba4c402f8c59e93e1d725f9ce45f23a": {
+        "AccrueInterest": 1149,
+        "Borrow": 25,
+        "Repay": 25,
+        "Supply": 548,
+        "SupplyCollateral": 28,
+        "Withdraw": 494,
+        "WithdrawCollateral": 24
+      },
+      "0x7717f1e04510390518811b3133ea47c298094ddd1d806ed8f8867d88c727bad7": {
+        "AccrueInterest": 8967,
+        "Borrow": 1148,
+        "Liquidate": 3,
+        "Repay": 1003,
+        "Supply": 4845,
+        "SupplyCollateral": 1052,
+        "Withdraw": 2405,
+        "WithdrawCollateral": 828
+      },
+      "0x77fe2f7c2dd6f4da6bc5f445b06052ff8df55cb70cfce9afc16ec3c69a5fd3a3": {
+        "AccrueInterest": 67359,
+        "Borrow": 16139,
+        "Repay": 9693,
+        "Supply": 19746,
+        "SupplyCollateral": 18207,
+        "Withdraw": 19133,
+        "WithdrawCollateral": 9622
+      },
+      "0x7d4799e15dcaad9da49ab8edf46d647db2da2ff419db52e8ec0984d0c49e8b9b": {
+        "AccrueInterest": 9585,
+        "Borrow": 112,
+        "Liquidate": 1,
+        "Repay": 85,
+        "Supply": 488,
+        "SupplyCollateral": 122,
+        "Withdraw": 467,
+        "WithdrawCollateral": 88
+      },
+      "0x7e7c08f2d8bb6821408ac6b4e2f322d73ba1fb8ce20b3b65087f440ef3b2f8f1": {
+        "AccrueInterest": 16079,
+        "Borrow": 40,
+        "Liquidate": 2,
+        "Repay": 42,
+        "Supply": 3511,
+        "SupplyCollateral": 44,
+        "Withdraw": 4617,
+        "WithdrawCollateral": 47
+      },
+      "0x8147c63f3f6f5a0825c84bf2cb11443c72b609fa39cf9a362e3d4dc2c5ca76c4": {
+        "AccrueInterest": 10565,
+        "Borrow": 783,
+        "Liquidate": 1,
+        "Repay": 623,
+        "Supply": 3793,
+        "SupplyCollateral": 776,
+        "Withdraw": 3421,
+        "WithdrawCollateral": 599
+      },
+      "0x84367e5bc5df26437618f749d5beb793746e620560721fec15518d684191ebc6": {
+        "AccrueInterest": 3776,
+        "Borrow": 17,
+        "Repay": 13,
+        "Supply": 1276,
+        "SupplyCollateral": 20,
+        "Withdraw": 1302,
+        "WithdrawCollateral": 14
+      },
+      "0x8e58f0dea27f877db258ecbbe16e57c9bb3541448ac0d578ef08c5b93ea9b84b": {
+        "AccrueInterest": 1141,
+        "Borrow": 43,
+        "Repay": 14,
+        "Supply": 213,
+        "SupplyCollateral": 48,
+        "Withdraw": 466,
+        "WithdrawCollateral": 16
+      },
+      "0x989ddb4f5b09e6d02e7f5f2f8efb846fd2de1f3f3dfd96e1939455abe7dd5a48": {
+        "AccrueInterest": 2199,
+        "Borrow": 3,
+        "Repay": 3,
+        "Supply": 935,
+        "SupplyCollateral": 3,
+        "Withdraw": 894,
+        "WithdrawCollateral": 3
+      },
+      "0x9e90aec7d768403dacc9dd0d8320307fda3f980eed4df43e3e52168a1c667709": {
+        "AccrueInterest": 2351,
+        "Borrow": 76,
+        "Repay": 78,
+        "Supply": 715,
+        "SupplyCollateral": 55,
+        "Withdraw": 985,
+        "WithdrawCollateral": 50
+      },
+      "0xa35d91efb3e284a0ab7098e8c5a65caf58ea0451073e36a544a821fd8f350953": {
+        "AccrueInterest": 3354,
+        "Borrow": 114,
+        "Liquidate": 2,
+        "Repay": 106,
+        "Supply": 1494,
+        "SupplyCollateral": 107,
+        "Withdraw": 1657,
+        "WithdrawCollateral": 64
+      },
+      "0xac6a118134cc4208a22534b041a83f4ac5ca42e2ab9ea732ee53c44b7deebc62": {
+        "AccrueInterest": 3255,
+        "Borrow": 369,
+        "Liquidate": 9,
+        "Repay": 292,
+        "Supply": 2031,
+        "SupplyCollateral": 423,
+        "Withdraw": 1056,
+        "WithdrawCollateral": 209
+      },
+      "0xadc6897d644a005149d1aa42de72bcb1ff1c9f7c4a8b00db3e2356752995f80e": {
+        "AccrueInterest": 344,
+        "Borrow": 29,
+        "Repay": 42,
+        "Supply": 89,
+        "SupplyCollateral": 31,
+        "Withdraw": 113,
+        "WithdrawCollateral": 42
+      },
+      "0xb7b5729ad332f57a02f4d9f87aa50910ee955d859e2b2ad9b0b8e15ca44d8b7f": {
+        "AccrueInterest": 29,
+        "Borrow": 4,
+        "Liquidate": 3,
+        "Repay": 2,
+        "Supply": 9,
+        "SupplyCollateral": 4,
+        "Withdraw": 13,
+        "WithdrawCollateral": 2
+      },
+      "0xc7670063349ac19dfa324ead7bd7da2985ae931e1b09fb0e31b62c6486b730bd": {
+        "AccrueInterest": 6198,
+        "Borrow": 121,
+        "Liquidate": 1,
+        "Repay": 101,
+        "Supply": 2862,
+        "SupplyCollateral": 117,
+        "Withdraw": 2006,
+        "WithdrawCollateral": 92
+      },
+      "0xd09404e9512e1341321c8ae3bd663fab7087582142ac61486635a6c072c2af12": {
+        "AccrueInterest": 36086,
+        "Borrow": 111,
+        "Liquidate": 11,
+        "Repay": 114,
+        "Supply": 11800,
+        "SupplyCollateral": 100,
+        "Withdraw": 14446,
+        "WithdrawCollateral": 85
+      },
+      "0xd478de9c069f12759d3baed9ddd16fe8902128937821af3a3cf77eca1885c7fc": {
+        "AccrueInterest": 167,
+        "Borrow": 10,
+        "Liquidate": 2,
+        "Repay": 13,
+        "Supply": 85,
+        "SupplyCollateral": 7,
+        "Withdraw": 66,
+        "WithdrawCollateral": 7
+      },
+      "0xd91052003758145cc53615895c0ce2081c7080b661dbab5652c2b8433b248c2d": {
+        "AccrueInterest": 1062,
+        "Borrow": 30,
+        "Repay": 38,
+        "Supply": 202,
+        "SupplyCollateral": 27,
+        "Withdraw": 278,
+        "WithdrawCollateral": 23
+      },
+      "0xde895fd4a9d1ca693485fcfc2ee47d8c3b47f810bbce3c965c60d97b855d4ed2": {
+        "AccrueInterest": 3985,
+        "Borrow": 406,
+        "Repay": 411,
+        "Supply": 1635,
+        "SupplyCollateral": 422,
+        "Withdraw": 1742,
+        "WithdrawCollateral": 390
+      },
+      "0xe0432ceb599fbe41defbd62fe8e914824af9d891a0a92c39de7063176c8e480b": {
+        "AccrueInterest": 1419,
+        "Borrow": 90,
+        "Liquidate": 4,
+        "Repay": 83,
+        "Supply": 557,
+        "SupplyCollateral": 87,
+        "Withdraw": 826,
+        "WithdrawCollateral": 81
+      },
+      "0xe0de6b571ec913ada63d5327f70c8849ea2363d47f44a190e8fb489db07fee1e": {
+        "AccrueInterest": 11727,
+        "Borrow": 15,
+        "Repay": 11,
+        "Supply": 1689,
+        "SupplyCollateral": 20,
+        "Withdraw": 1761,
+        "WithdrawCollateral": 15
+      },
+      "0xe23e15ddd552eb148045e3f4b74e71f4923bc6bea6e5bda0a4cf89a0cecd1a3b": {
+        "AccrueInterest": 4254,
+        "Borrow": 27,
+        "Repay": 32,
+        "Supply": 898,
+        "SupplyCollateral": 23,
+        "Withdraw": 1094,
+        "WithdrawCollateral": 19
+      },
+      "0xed06d9e82d7c35ca80d3983194e15462a96202bd875800af18183321f4611868": {
+        "AccrueInterest": 6841,
+        "Borrow": 816,
+        "Liquidate": 11,
+        "Repay": 567,
+        "Supply": 3953,
+        "SupplyCollateral": 904,
+        "Withdraw": 1695,
+        "WithdrawCollateral": 333
+      },
+      "0xef62d07c7e29c3864feb6de8945edd82688a2ea558de5a44dc795ad1eb1d9853": {
+        "AccrueInterest": 1200,
+        "Borrow": 54,
+        "Repay": 70,
+        "Supply": 526,
+        "SupplyCollateral": 50,
+        "Withdraw": 407,
+        "WithdrawCollateral": 51
+      },
+      "0xf4ab212f6fcc943e2669cb6307fa4b608b0418ac5255c100e58394822157785c": {
+        "AccrueInterest": 26733,
+        "Borrow": 774,
+        "Repay": 752,
+        "Supply": 14013,
+        "SupplyCollateral": 761,
+        "Withdraw": 8567,
+        "WithdrawCollateral": 738
+      },
+      "0xf86f3edd6f16cd8211f4d206866dc4ecd41be6211063ac11f8508e1b7112ef40": {
+        "AccrueInterest": 85677,
+        "Borrow": 4907,
+        "Repay": 1507,
+        "Supply": 43059,
+        "SupplyCollateral": 6025,
+        "Withdraw": 39814,
+        "WithdrawCollateral": 1560
+      },
+      "0xff608e5881ccba3859006b3c01e377314384c3d661d684c3e8b6354146e62155": {
+        "AccrueInterest": 6697,
+        "Borrow": 1,
+        "Supply": 48,
+        "SupplyCollateral": 1,
+        "Withdraw": 56
+      }
+    },
+    "checksum_defects": 0,
+    "row_count_defects": 0,
+    "removed_rows": 0,
+    "scope_defects": 0,
+    "malformed_rows": 0,
+    "source_ordering_defects": 0,
+    "duplicate_selected_keys": 0
+  },
+  "rpc_evidence": {
+    "selection_rule": "all 45 anchors; then first 5 SHA256(morpho-phase6-rpc-sample-v1|market_id) markets with start/mid/end checkpoints",
+    "sample_markets": [
+      "0xd478de9c069f12759d3baed9ddd16fe8902128937821af3a3cf77eca1885c7fc",
+      "0x8e58f0dea27f877db258ecbbe16e57c9bb3541448ac0d578ef08c5b93ea9b84b",
+      "0x1a926ab8add08dca634f8d6cecd8c866e166a4affc65801beda9f239d21b622a",
+      "0x7e7c08f2d8bb6821408ac6b4e2f322d73ba1fb8ce20b3b65087f440ef3b2f8f1",
+      "0x729e4ab1f1613a55f4dc6444cb073a2f9ba4c402f8c59e93e1d725f9ce45f23a"
+    ],
+    "checkpoint_count": 60,
+    "matching_checkpoints": 60,
+    "plan_sha256": "6a720063f1ba8ba2f626c869798ea4bc622201c7b2256e00cc1df5ec0d884025",
+    "evidence_path": "data/morpho_phase6_rpc_checkpoint_evidence.json",
+    "cache_audit": {
+      "sqlite_integrity": "ok",
+      "cache_identity_sha256": "b00cd5a576d7f6191edffb37408316d312b931cb81e2f7ac38121602fc44e909",
+      "cache_entries": 60,
+      "invalid_entries": 0,
+      "duplicate_key_groups": 0,
+      "error_entries": 0,
+      "checkpoint_contiguous_through": 59,
+      "progress_rows": 60,
+      "progress_gaps": 0,
+      "orphan_progress_rows": 0,
+      "wal_mode": "wal",
+      "synchronous": 2
+    },
+    "archive_session_metrics": {
+      "planned_calls_seen": 60,
+      "cache_hits": 60,
+      "new_archive_rpc_calls": 0
+    },
+    "transport_metrics": {
+      "offline_only": 1
+    },
+    "cache_population_evidence": {
+      "confirmed_entries": 60,
+      "first_confirmed_at_utc": "2026-09-02T12:33:24.746036Z",
+      "last_confirmed_at_utc": "2026-09-02T12:34:10.340689Z",
+      "initial_fill_span_seconds": 45.594653,
+      "initial_new_archive_rpc_calls": 60,
+      "initial_live_chain_id_validated": true,
+      "final_validation_mode": "offline cache-only replay",
+      "final_cache_hits": 60,
+      "final_new_archive_rpc_calls": 0
+    }
+  },
+  "qa_checks": {
+    "replay": [
+      {
+        "check_name": "continuous_calendar_boundaries",
+        "blocking": 1,
+        "observed": "0",
+        "expected": "0",
+        "defect_count": 0,
+        "status": "PASS"
+      },
+      {
+        "check_name": "daily_event_sequence_delta",
+        "blocking": 1,
+        "observed": "0",
+        "expected": "0",
+        "defect_count": 0,
+        "status": "PASS"
+      },
+      {
+        "check_name": "deterministic_ordering_duplicates",
+        "blocking": 1,
+        "observed": "0",
+        "expected": "0",
+        "defect_count": 0,
+        "status": "PASS"
+      },
+      {
+        "check_name": "expected_market_day_rows",
+        "blocking": 1,
+        "observed": "18225",
+        "expected": "18225",
+        "defect_count": 0,
+        "status": "PASS"
+      },
+      {
+        "check_name": "inactive_days_are_zero",
+        "blocking": 1,
+        "observed": "0",
+        "expected": "0",
+        "defect_count": 0,
+        "status": "PASS"
+      },
+      {
+        "check_name": "nonzero_bad_debt_incidence",
+        "blocking": 0,
+        "observed": "3",
+        "expected": ">0 for empirical coverage",
+        "defect_count": 0,
+        "status": "COVERED"
+      },
+      {
+        "check_name": "nonzero_fee_shares_incidence",
+        "blocking": 0,
+        "observed": "0",
+        "expected": ">0 for empirical coverage",
+        "defect_count": 0,
+        "status": "GAP"
+      },
+      {
+        "check_name": "per_market_calendar_coverage",
+        "blocking": 1,
+        "observed": "405..405",
+        "expected": "405..405",
+        "defect_count": 0,
+        "status": "PASS"
+      },
+      {
+        "check_name": "previous_close_equals_next_open",
+        "blocking": 1,
+        "observed": "0",
+        "expected": "0",
+        "defect_count": 0,
+        "status": "PASS"
+      },
+      {
+        "check_name": "raw_event_counts_reconcile",
+        "blocking": 1,
+        "observed": "0",
+        "expected": "0",
+        "defect_count": 0,
+        "status": "PASS"
+      },
+      {
+        "check_name": "raw_event_flows_reconcile",
+        "blocking": 1,
+        "observed": "0",
+        "expected": "0",
+        "defect_count": 0,
+        "status": "PASS"
+      },
+      {
+        "check_name": "raw_event_key_duplicates",
+        "blocking": 1,
+        "observed": "0",
+        "expected": "0",
+        "defect_count": 0,
+        "status": "PASS"
+      },
+      {
+        "check_name": "rounding_checks",
+        "blocking": 1,
+        "observed": "0",
+        "expected": "0",
+        "defect_count": 0,
+        "status": "PASS"
+      },
+      {
+        "check_name": "rpc_market_checkpoint_reconciliation",
+        "blocking": 1,
+        "observed": "0",
+        "expected": "0",
+        "defect_count": 0,
+        "status": "PASS"
+      },
+      {
+        "check_name": "unexplained_required_nulls",
+        "blocking": 1,
+        "observed": "0",
+        "expected": "0",
+        "defect_count": 0,
+        "status": "PASS"
+      },
+      {
+        "check_name": "unique_market_day_key",
+        "blocking": 1,
+        "observed": "0",
+        "expected": "0",
+        "defect_count": 0,
+        "status": "PASS"
+      },
+      {
+        "check_name": "unsigned_state_format_and_nonnegative",
+        "blocking": 1,
+        "observed": "0",
+        "expected": "0",
+        "defect_count": 0,
+        "status": "PASS"
+      }
+    ],
+    "population": [
+      {
+        "check_name": "coverage_45_markets",
+        "observed": "45",
+        "expected": "45",
+        "defect_count": 0,
+        "status": "PASS"
+      },
+      {
+        "check_name": "direct_vault_not_attributed_to_markets",
+        "observed": "0",
+        "expected": "0",
+        "defect_count": 0,
+        "status": "PASS"
+      },
+      {
+        "check_name": "each_market_has_405_days",
+        "observed": "405..405",
+        "expected": "405..405",
+        "defect_count": 0,
+        "status": "PASS"
+      },
+      {
+        "check_name": "eligibility_bridge_45_markets",
+        "observed": "45",
+        "expected": "45",
+        "defect_count": 0,
+        "status": "PASS"
+      },
+      {
+        "check_name": "eligibility_bridge_orphan_markets",
+        "observed": "0",
+        "expected": "0",
+        "defect_count": 0,
+        "status": "PASS"
+      },
+      {
+        "check_name": "eligibility_bridge_unique_key",
+        "observed": "0",
+        "expected": "0",
+        "defect_count": 0,
+        "status": "PASS"
+      },
+      {
+        "check_name": "eligibility_join_preserves_grain",
+        "observed": "18225",
+        "expected": "18225",
+        "defect_count": 0,
+        "status": "PASS"
+      },
+      {
+        "check_name": "eligibility_rollup_one_row_per_market",
+        "observed": "45",
+        "expected": "45",
+        "defect_count": 0,
+        "status": "PASS"
+      },
+      {
+        "check_name": "expected_18225_market_days",
+        "observed": "18225",
+        "expected": "18225",
+        "defect_count": 0,
+        "status": "PASS"
+      },
+      {
+        "check_name": "full_required_fields_not_null",
+        "observed": "0",
+        "expected": "0",
+        "defect_count": 0,
+        "status": "PASS"
+      },
+      {
+        "check_name": "prototype_source_qa_is_accepted",
+        "observed": "0",
+        "expected": "0",
+        "defect_count": 0,
+        "status": "PASS"
+      },
+      {
+        "check_name": "prototype_three_markets_exact_match",
+        "observed": "0",
+        "expected": "0",
+        "defect_count": 0,
+        "status": "PASS"
+      },
+      {
+        "check_name": "shared_budget_not_allocated_to_markets",
+        "observed": "0",
+        "expected": "0",
+        "defect_count": 0,
+        "status": "PASS"
+      },
+      {
+        "check_name": "unique_market_day_full_key",
+        "observed": "0",
+        "expected": "0",
+        "defect_count": 0,
+        "status": "PASS"
+      }
+    ],
+    "blocking_failures": 0,
+    "sqlite_integrity_check": "ok",
+    "foreign_key_defects": 0,
+    "prototype_comparison_defects": 0
+  },
+  "event_reconciliation": {
+    "family_rows": 360,
+    "family_mismatches": 0,
+    "flow_rows": 765,
+    "flow_mismatches": 0,
+    "daily_event_total": 1231462,
+    "event_family_totals": {
+      "Supply": 238845,
+      "Withdraw": 226138,
+      "Borrow": 45285,
+      "Repay": 32187,
+      "SupplyCollateral": 47604,
+      "WithdrawCollateral": 27868,
+      "Liquidate": 306,
+      "AccrueInterest": 613229
+    }
+  },
+  "rounding_status_counts": {
+    "not_applicable": 688746,
+    "pass": 542761
+  },
+  "rare_branch_coverage": {
+    "nonzero_fee_shares_events": 0,
+    "nonzero_bad_debt_events": 3,
+    "fee_shares_status": "implemented_not_empirically_exercised",
+    "bad_debt_status": "empirically_covered"
+  },
+  "runtime_and_storage": {
+    "input_load_seconds": 9.801001,
+    "sql_and_qa_seconds": 0.122189,
+    "total_elapsed_seconds": 73.270304,
+    "measurement_note": "The three values above describe the final resume/verification pass. The full replay had already materialized in the preserved building database before a comparison-handle error stopped publication.",
+    "immutable_source_scan_seconds_final_pass": 46.879548,
+    "initial_rpc_cache_fill_span_seconds": 45.594653,
+    "full_replay_and_materialization_seconds_observed_approx": 385.3,
+    "full_replay_runtime_basis": "Elapsed wall time from the durable database_loaded checkpoint at 2026-09-02T12:37:06.671781Z to the post-materialization building-file timestamp at 2026-09-02T12:43:32Z; the run then stopped before publication on a Phase 4 comparison-handle error.",
+    "final_qa_and_publish_resume_seconds": 73.270304,
+    "database_bytes": 1878016000,
+    "database_gib": 1.749039,
+    "maximum_observed_working_database_bytes": 1878926384,
+    "gate_bytes": 10737418240,
+    "within_10_gib_gate": true,
+    "free_bytes_after_publish": 232912523264,
+    "gba_bytes_billed": 0,
+    "new_eth_getLogs_calls": 0
+  },
+  "artifacts": {
+    "published_database_ignored": "data/tmp/morpho_market_day_full_v1.sqlite",
+    "published_database_sha256": "80aca74cc5e43db03fd93c69d7ad448ac9afdec5f9566a6b833ec11f7e5c9543",
+    "sample_csv": "data/morpho_market_day_full_sample.csv",
+    "sample_rows": 225,
+    "coverage_csv": "data/morpho_market_day_full_coverage.csv",
+    "coverage_rows": 45
+  },
+  "limitations": [
+    "The first UTC bucket is partial because the immutable interval starts at 2025-07-09T13:00:00Z.",
+    "Aggregate collateral has no Morpho market-level RPC getter; it is replayed from verified zero anchors and all collateral/seizure deltas.",
+    "Independent RPC evidence is bounded: all 45 anchors plus start/mid/end for five precommitted hash-ranked markets.",
+    "Shared campaign budgets remain campaign-level pools and the 505K direct-vault budget is not attributed to underlying markets.",
+    "This state layer does not yet calculate retained uplift, wallet cohorts, reward receipt or DRIP causality."
+  ]
+}

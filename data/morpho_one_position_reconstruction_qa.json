@@ -1,0 +1,361 @@
+{
+  "version": "morpho-phase3-one-position-replay-v1",
+  "status": "pass",
+  "scope": {
+    "chain_id": 42161,
+    "contract_address": "0x6c247b1f6182318877311737bac0844baa518f5e",
+    "market_id": "0xed06d9e82d7c35ca80d3983194e15462a96202bd875800af18183321f4611868",
+    "wallet": "0xa0c826c8238dae8e11c637c29d0b3374c34f5f80",
+    "replay_interval": [
+      464068387,
+      482431183
+    ],
+    "ordering": [
+      "block_number",
+      "transaction_index",
+      "log_index"
+    ]
+  },
+  "selection_verification": {
+    "manifest_sha256": "c8552428187094e5aad725193f2e3023e622ddc4ab37428f1414c375e7d6be58",
+    "selection_artifact_sha256": "3cc780edbac84232a0160f876705bb6fdb7a0392f4056e4c3f26a22f3aee345c",
+    "structural_candidates_sha256": "dfaa8941e5b559ecd312fd9184e4f33e79d9b9a952f5de38f40f68abe2c4987f",
+    "checkpoint_plan_sha256": "2b889e527860756ecb31ca6153fe7d8e0fd8aa3c68725bf96db27d0962b47f37",
+    "manifest_complete": true,
+    "manifest_verified_shards": 3157,
+    "manifest_rows": 1231462,
+    "eligible_candidates": 5575,
+    "selected_rank": 1,
+    "archive_session_metrics": {
+      "planned_calls_seen": 22301,
+      "cache_hits": 7243,
+      "new_archive_rpc_calls": 15058
+    },
+    "declared_selection_cache_audit": {
+      "sqlite_integrity": "ok",
+      "cache_identity_sha256": "c1276390b3fb230340e60e53a65f57cfaa95b459bb2314e5659206bea115361c",
+      "cache_entries": 22181,
+      "invalid_entries": 0,
+      "duplicate_key_groups": 0,
+      "error_entries": 0,
+      "checkpoint_contiguous_through": 22300,
+      "progress_rows": 22301,
+      "progress_gaps": 0,
+      "orphan_progress_rows": 0,
+      "wal_mode": "wal",
+      "synchronous": 2
+    },
+    "archive_gate_defects": {
+      "fee_recipient_pairs_excluded": 0,
+      "anchor_rpc_failures": 0,
+      "nonzero_position_anchors": 0,
+      "uninitialized_market_anchors": 0,
+      "final_rpc_failures": 0,
+      "rpc_failure_samples": []
+    },
+    "selection_preimage": "morpho-phase3-v1|0xed06d9e82d7c35ca80d3983194e15462a96202bd875800af18183321f4611868|0xa0c826c8238dae8e11c637c29d0b3374c34f5f80",
+    "selection_sha256": "00031bb5035ff7db2acca4ee754c563e588412db7a46428d7248682152615e5f",
+    "structural_selected_record": {
+      "market_id": "0xed06d9e82d7c35ca80d3983194e15462a96202bd875800af18183321f4611868",
+      "wallet": "0xa0c826c8238dae8e11c637c29d0b3374c34f5f80",
+      "event_count": 19,
+      "family_counts": {
+        "Borrow": 7,
+        "Repay": 5,
+        "SupplyCollateral": 4,
+        "WithdrawCollateral": 3
+      },
+      "first_order": [
+        464068387,
+        2,
+        5
+      ],
+      "last_order": [
+        482431182,
+        4,
+        11
+      ],
+      "first_transaction_hash": "0x5f8d6b2b0f21fda7e532196307d54432a78e30f56609242671670591e4d8998d",
+      "last_transaction_hash": "0x79c0551618ca57736a746b28e3732d72d2a357d6ee30c0bb0c3bd53537c145d7",
+      "first_supply_collateral_order": [
+        464068387,
+        2,
+        5
+      ],
+      "first_borrow_order": [
+        464068387,
+        2,
+        10
+      ],
+      "close_orders": [
+        [
+          471714373,
+          6,
+          7
+        ],
+        [
+          476176884,
+          1,
+          6
+        ],
+        [
+          482421716,
+          4,
+          9
+        ],
+        [
+          482428236,
+          4,
+          9
+        ],
+        [
+          482431030,
+          8,
+          13
+        ]
+      ]
+    }
+  },
+  "sealed_selection_cache": {
+    "sqlite_integrity": "ok",
+    "sqlite_sha256_before": "d36aa0ca153ca9a3f5d197928bf11f5fc9e18511bd662b7fc4f9c3890221a801",
+    "identity_sha256": "c1276390b3fb230340e60e53a65f57cfaa95b459bb2314e5659206bea115361c",
+    "cache_entries": 22181,
+    "invalid_entries": 0,
+    "duplicate_key_groups": 0,
+    "checkpoint_contiguous_through": 22300,
+    "progress_rows": 22301,
+    "orphan_progress_rows": 0,
+    "wal_bytes": 0,
+    "read_mode": "mode=ro&immutable=1",
+    "sqlite_sha256_after": "d36aa0ca153ca9a3f5d197928bf11f5fc9e18511bd662b7fc4f9c3890221a801",
+    "unchanged": true
+  },
+  "replay_source": {
+    "overlapping_verified_shards": 252,
+    "first_shard_range_id": 2741,
+    "last_shard_range_id": 2992,
+    "verified_shard_bytes": 60419048,
+    "scanned_rows_in_overlapping_shards": 94598,
+    "selected_market_events": 2634,
+    "event_family_counts": {
+      "AccrueInterest": 1108,
+      "Borrow": 262,
+      "Liquidate": 6,
+      "Repay": 179,
+      "Supply": 388,
+      "SupplyCollateral": 316,
+      "Withdraw": 257,
+      "WithdrawCollateral": 118
+    },
+    "unique_event_keys": 2634,
+    "duplicate_event_keys": 0,
+    "duplicate_order_keys": 0
+  },
+  "replay": {
+    "rounding_checks": {
+      "not_applicable": 1542,
+      "pass": 1092
+    },
+    "selected_wallet_event_count": 19,
+    "selected_wallet_event_family_counts": {
+      "Borrow": 7,
+      "Repay": 5,
+      "SupplyCollateral": 4,
+      "WithdrawCollateral": 3
+    },
+    "selected_wallet_event_keys_sha256": "87b48ed89653cbe70f27b55677de15f3a80f17c6658692fb5df94159e3f99582",
+    "negative_balance_defects": 0
+  },
+  "intermediate_rpc": {
+    "cache_path": "data/tmp/morpho_phase3_one_position_rpc.sqlite",
+    "cache_identity_sha256": "81f5c13d4d596d8f7e301260b1dbc0aa58808b61f4af8f022b7149aaec7d24a8",
+    "cache_sha256": "6b23507f02f054ab807f1527a969d8b368e01e713aaac92f1fcdcf9956b6ff04",
+    "cache_created_at_utc": "2026-09-01T15:23:12.010143Z",
+    "persisted_responses": [
+      {
+        "abi_method": "market",
+        "block_number": 464068387,
+        "market_id": "0xed06d9e82d7c35ca80d3983194e15462a96202bd875800af18183321f4611868",
+        "wallet": "",
+        "key_sha256": "bce51bc5867faa11a480aab0f0cc3a3d0f6918b72cbd5c546597d57e7cc905b1",
+        "response_sha256": "4a6b768339d9ffa8c0287f9e49fe6a0e86df3fd98eccf275cc1f055754d60b21",
+        "confirmed_at_utc": "2026-09-01T15:25:34.377968Z"
+      },
+      {
+        "abi_method": "position",
+        "block_number": 464068387,
+        "market_id": "0xed06d9e82d7c35ca80d3983194e15462a96202bd875800af18183321f4611868",
+        "wallet": "0xa0c826c8238dae8e11c637c29d0b3374c34f5f80",
+        "key_sha256": "8d352e3df787f57f744ceac3103cec862cdc03890cab37c03567a561161ad860",
+        "response_sha256": "225a90e775422b4ecc1dfaba8829a6362f37545f49274c45edbaa5b00323949e",
+        "confirmed_at_utc": "2026-09-01T15:25:33.633655Z"
+      }
+    ],
+    "archive_session": {
+      "planned_calls_seen": 2,
+      "cache_hits": 2,
+      "new_archive_rpc_calls": 0
+    },
+    "cache_audit": {
+      "sqlite_integrity": "ok",
+      "cache_identity_sha256": "81f5c13d4d596d8f7e301260b1dbc0aa58808b61f4af8f022b7149aaec7d24a8",
+      "cache_entries": 2,
+      "invalid_entries": 0,
+      "duplicate_key_groups": 0,
+      "error_entries": 0,
+      "checkpoint_contiguous_through": 1,
+      "progress_rows": 2,
+      "progress_gaps": 0,
+      "orphan_progress_rows": 0,
+      "wal_mode": "wal",
+      "synchronous": 2
+    },
+    "rpc_metrics": {
+      "offline_only": 1
+    }
+  },
+  "checkpoints": {
+    "anchor": {
+      "block_number": 464068386,
+      "comparison": {
+        "reconstructed": {
+          "wallet_supply_shares": 0,
+          "wallet_borrow_shares": 0,
+          "wallet_collateral_assets": 0,
+          "total_supply_assets": 2306147574352,
+          "total_supply_shares": 2153552919740529288,
+          "total_borrow_assets": 1993654167463,
+          "total_borrow_shares": 1847467653220434764,
+          "wallet_supply_assets_down": 0,
+          "wallet_borrow_assets_up": 0
+        },
+        "rpc": {
+          "wallet_supply_shares": 0,
+          "wallet_borrow_shares": 0,
+          "wallet_collateral_assets": 0,
+          "total_supply_assets": 2306147574352,
+          "total_supply_shares": 2153552919740529288,
+          "total_borrow_assets": 1993654167463,
+          "total_borrow_shares": 1847467653220434764,
+          "wallet_supply_assets_down": 0,
+          "wallet_borrow_assets_up": 0
+        },
+        "differences": {
+          "wallet_supply_shares": 0,
+          "wallet_borrow_shares": 0,
+          "wallet_collateral_assets": 0,
+          "total_supply_assets": 0,
+          "total_supply_shares": 0,
+          "total_borrow_assets": 0,
+          "total_borrow_shares": 0
+        },
+        "position_match": true,
+        "market_totals_match": true
+      }
+    },
+    "intermediate": {
+      "block_number": 464068387,
+      "comparison": {
+        "reconstructed": {
+          "wallet_supply_shares": 0,
+          "wallet_borrow_shares": 3243341461534715,
+          "wallet_collateral_assets": 6188640,
+          "total_supply_assets": 2306158539888,
+          "total_supply_shares": 2153552919740529288,
+          "total_borrow_assets": 1997165132999,
+          "total_borrow_shares": 1850710994681969479,
+          "wallet_supply_assets_down": 0,
+          "wallet_borrow_assets_up": 3500000001
+        },
+        "rpc": {
+          "wallet_supply_shares": 0,
+          "wallet_borrow_shares": 3243341461534715,
+          "wallet_collateral_assets": 6188640,
+          "total_supply_assets": 2306158539888,
+          "total_supply_shares": 2153552919740529288,
+          "total_borrow_assets": 1997165132999,
+          "total_borrow_shares": 1850710994681969479,
+          "wallet_supply_assets_down": 0,
+          "wallet_borrow_assets_up": 3500000001
+        },
+        "differences": {
+          "wallet_supply_shares": 0,
+          "wallet_borrow_shares": 0,
+          "wallet_collateral_assets": 0,
+          "total_supply_assets": 0,
+          "total_supply_shares": 0,
+          "total_borrow_assets": 0,
+          "total_borrow_shares": 0
+        },
+        "position_match": true,
+        "market_totals_match": true
+      }
+    },
+    "final": {
+      "block_number": 482431182,
+      "comparison": {
+        "reconstructed": {
+          "wallet_supply_shares": 0,
+          "wallet_borrow_shares": 0,
+          "wallet_collateral_assets": 0,
+          "total_supply_assets": 719347685838,
+          "total_supply_shares": 669107751092827764,
+          "total_borrow_assets": 640120558484,
+          "total_borrow_shares": 590476084282594003,
+          "wallet_supply_assets_down": 0,
+          "wallet_borrow_assets_up": 0
+        },
+        "rpc": {
+          "wallet_supply_shares": 0,
+          "wallet_borrow_shares": 0,
+          "wallet_collateral_assets": 0,
+          "total_supply_assets": 719347685838,
+          "total_supply_shares": 669107751092827764,
+          "total_borrow_assets": 640120558484,
+          "total_borrow_shares": 590476084282594003,
+          "wallet_supply_assets_down": 0,
+          "wallet_borrow_assets_up": 0
+        },
+        "differences": {
+          "wallet_supply_shares": 0,
+          "wallet_borrow_shares": 0,
+          "wallet_collateral_assets": 0,
+          "total_supply_assets": 0,
+          "total_supply_shares": 0,
+          "total_borrow_assets": 0,
+          "total_borrow_shares": 0
+        },
+        "position_match": true,
+        "market_totals_match": true
+      }
+    }
+  },
+  "market_metadata": {
+    "anchor_last_update": 1779090098,
+    "final_last_update": 1783698811,
+    "anchor_fee": 0,
+    "final_fee": 0,
+    "fee_unchanged": true,
+    "note": "The four stored market totals are replayed and reconciled. lastUpdate is metadata and is not inferred from timestamp-free raw log rows."
+  },
+  "outputs": {
+    "market_events_csv": "data/morpho_one_position_market_events.csv",
+    "wallet_sample_csv": "data/morpho_one_position_sample.csv"
+  },
+  "defects": {
+    "selection": 0,
+    "sealed_cache": 0,
+    "shard_checksum_or_row_count": 0,
+    "duplicate_event_keys": 0,
+    "rounding": 0,
+    "negative_balances": 0,
+    "intermediate_reconciliation": 0,
+    "final_reconciliation": 0
+  },
+  "limitations": [
+    "This is a feasibility proof for one deterministically selected wallet-market pair, not proof for every wallet or all 45 markets.",
+    "It does not prove a complete future market-day pipeline, reward receipt, retention, or DRIP causality.",
+    "Position assets are checkpoint quotes from shares using the contemporaneous market totals; they are not accumulated Borrow minus Repay amounts."
+  ]
+}

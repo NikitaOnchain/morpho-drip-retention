@@ -1,0 +1,212 @@
+{
+  "derivatives": [
+    {
+      "path": "PHASE3_SELECTION_CHECKPOINT.md",
+      "original_sha256": "8d2ba762300972b14e3bae61bb318a55be161c3f739fabd0e2a5b868ceeb9a90",
+      "release_sha256": "a7a9aa3919cbdcac0ced5915c4b7f6508b50c28586b1a1043b6fa4cd97dde9ff",
+      "identity_match": true
+    },
+    {
+      "path": "data/drip_morpho_scope_reproducibility_manifest.json",
+      "original_sha256": "08098fbb4b288bf8741bf5aa2fb16da7973cb521fc9b758460d5057a45e505d3",
+      "release_sha256": "8bf4ddc8f5ef5608740cf55121ba9b84b5717500e9f3ccf991071fab8e586b0d",
+      "identity_match": true,
+      "actual_changed_fields": [
+        "$.api.raw_snapshot_path",
+        "$.extractor.path",
+        "$.accepted.campaign_csv",
+        "$.accepted.market_csv",
+        "$.candidate.campaign_csv",
+        "$.candidate.market_csv",
+        "$.comparison.report_path"
+      ],
+      "declared_changed_fields": [
+        "$.api.raw_snapshot_path",
+        "$.extractor.path",
+        "$.accepted.campaign_csv",
+        "$.accepted.market_csv",
+        "$.candidate.campaign_csv",
+        "$.candidate.market_csv",
+        "$.comparison.report_path"
+      ]
+    },
+    {
+      "path": "data/morpho_market_day_full_qa.json",
+      "original_sha256": "2f9c345f107ca0b6081c57ca36ff7da6534a252ef4c66558e56e0635a37199e6",
+      "release_sha256": "69abb9aed4953c6821c84ac05c4e255e8688987278c5d41e7ea74a5140e47042",
+      "identity_match": true,
+      "actual_changed_fields": [
+        "$.sql_files.replay_module",
+        "$.sql_files.production",
+        "$.sql_files.replay_qa_module",
+        "$.sql_files.population_qa",
+        "$.rpc_evidence.evidence_path",
+        "$.artifacts.published_database_ignored",
+        "$.artifacts.sample_csv",
+        "$.artifacts.coverage_csv"
+      ],
+      "declared_changed_fields": [
+        "$.sql_files.replay_module",
+        "$.sql_files.production",
+        "$.sql_files.replay_qa_module",
+        "$.sql_files.population_qa",
+        "$.rpc_evidence.evidence_path",
+        "$.artifacts.published_database_ignored",
+        "$.artifacts.sample_csv",
+        "$.artifacts.coverage_csv"
+      ]
+    },
+    {
+      "path": "data/morpho_market_day_prototype_qa.json",
+      "original_sha256": "53993f3b9ef429d88b14a54ecca3c9937cacea79a3f868c9800ca166ff53b0d3",
+      "release_sha256": "b8578c43c54c51687390a0632036b5409d2f982cd7e1d6eb2b4d62a4dc8b5e52",
+      "identity_match": true,
+      "actual_changed_fields": [
+        "$.sql_files.build",
+        "$.sql_files.qa",
+        "$.rpc_evidence.checkpoint_evidence_path",
+        "$.artifacts.database_path_ignored",
+        "$.artifacts.sample_csv"
+      ],
+      "declared_changed_fields": [
+        "$.sql_files.build",
+        "$.sql_files.qa",
+        "$.rpc_evidence.checkpoint_evidence_path",
+        "$.artifacts.database_path_ignored",
+        "$.artifacts.sample_csv"
+      ]
+    },
+    {
+      "path": "data/morpho_one_position_reconstruction_qa.json",
+      "original_sha256": "b352598bc04e04e6353ef7626047bbb3155198a077c3ecd93e7e506455921155",
+      "release_sha256": "7fa5e32ab6970868b178a8e356baf8de97942ee234d9acd3598f1df070ce2767",
+      "identity_match": true,
+      "actual_changed_fields": [
+        "$.intermediate_rpc.cache_path",
+        "$.outputs.market_events_csv",
+        "$.outputs.wallet_sample_csv"
+      ],
+      "declared_changed_fields": [
+        "$.intermediate_rpc.cache_path",
+        "$.outputs.market_events_csv",
+        "$.outputs.wallet_sample_csv"
+      ]
+    },
+    {
+      "path": "data/morpho_phase4_rpc_checkpoint_evidence.json",
+      "original_sha256": "d8523f351651ae0273bfdf03eb12e31413e5dabc59ea560653e22d030f0f7ed4",
+      "release_sha256": "3fe39ff366cefe86d5de80f24aa065f58d5a8d33c0ca7e38b0210fb8119f3dd7",
+      "identity_match": true,
+      "actual_changed_fields": [
+        "$.cache_path"
+      ],
+      "declared_changed_fields": [
+        "$.cache_path"
+      ]
+    },
+    {
+      "path": "data/morpho_phase6_rpc_checkpoint_evidence.json",
+      "original_sha256": "723174732ec25489e81df3c410f0e61f03aec94e0c67cb1badc6737093bd097b",
+      "release_sha256": "047aa3435d4898dc414447e61619e4afd2a6f4f368b7718c9ce46c7ef6feeeca",
+      "identity_match": true,
+      "actual_changed_fields": [
+        "$.cache_path_ignored"
+      ],
+      "declared_changed_fields": [
+        "$.cache_path_ignored"
+      ]
+    },
+    {
+      "path": "data/phase6_preflight_qa.json",
+      "original_sha256": "ecc98e278e871d3bb712e51bfa0d22e44bfc09558da36d323797dcd1c2f95dbd",
+      "release_sha256": "ca63484abfc9f67a40ecfac46bab9286fd526b418533e0752f39a120c8421ec6",
+      "identity_match": true,
+      "actual_changed_fields": [
+        "$.inputs[0].path",
+        "$.inputs[1].path",
+        "$.inputs[2].path",
+        "$.inputs[3].path",
+        "$.inputs[4].path",
+        "$.inputs[5].path",
+        "$.inputs[6].path",
+        "$.inputs[7].path",
+        "$.inputs[8].path"
+      ],
+      "declared_changed_fields": [
+        "$.inputs[0].path",
+        "$.inputs[1].path",
+        "$.inputs[2].path",
+        "$.inputs[3].path",
+        "$.inputs[4].path",
+        "$.inputs[5].path",
+        "$.inputs[6].path",
+        "$.inputs[7].path",
+        "$.inputs[8].path"
+      ]
+    },
+    {
+      "path": "scripts/analyze_phase7_metrics.py",
+      "original_sha256": "de4924a97c4b8beccdfdba6b6e3d327dce36c3d9dc5ca6515d2ab478fead2712",
+      "release_sha256": "f61201d2fd0599b13c6627af986c4c4f02c78495ee19a0b5e848cdc491b9d38b",
+      "identity_match": true
+    },
+    {
+      "path": "scripts/preflight_phase8_release.py",
+      "original_sha256": "2e5f5ae9b17472976f80c86b79c496535236c67353dadc414d22087ac6b2d618",
+      "release_sha256": "1ffa506bd7ed8629094dbe4bdf59ce3afa1b6417fa0a3f5ba6251d56b39abc6d",
+      "identity_match": true
+    },
+    {
+      "path": "scripts/reproduce_phase7_isolated.py",
+      "original_sha256": "25511fffda565009a768646eaa96fc563583561b0579eb60887080eaf52b2fd8",
+      "release_sha256": "5933946f9ff495e66d42797ac0d996e5fe08d11bdc7257fba9b8adb25ae6ab9d",
+      "identity_match": true
+    },
+    {
+      "path": "scripts/review_phase7_headlines.py",
+      "original_sha256": "d22d7c4a177c5066de64133a6e53ee13fe76d34e429fc4c2ee1289ed02b263cf",
+      "release_sha256": "fcd36b019c32c8313380a92273b40435eaca6277d49ee27dc30c7f1ddbb37483",
+      "identity_match": true
+    },
+    {
+      "path": "figures/phase7_archetype_borrowed_assets.png",
+      "original_sha256": "eb850ddfbac8d4180da96830c34afeedf09d9156936ef7ee8b55de73c96a8b24",
+      "release_sha256": "fa9d7bb3f9f6167e9093e540bb16a32e80d25127a042a600ccb91cc4a3c924ea",
+      "identity_match": true
+    },
+    {
+      "path": "figures/phase7_active_borrowers.png",
+      "original_sha256": "19b812d361889f0578580b7a0eea03e1261f1fba3cd3d71ba4ffacc4b91001d1",
+      "release_sha256": "b9e1b47c894ef74c235c9906565301c39c3f7e1f9a6800bb6d94404565d96fbc",
+      "identity_match": true
+    }
+  ],
+  "generated_renderer_hash_verified": true,
+  "frozen_csvs": [
+    {
+      "path": "data/morpho_phase7_market_retained_uplift.csv",
+      "bytes": 305276,
+      "sha256": "528eb56d05bcef02fc6a2a96545b20e4d08fb5a04da91917a9257ae28ee66ca5"
+    },
+    {
+      "path": "data/morpho_phase7_portfolio_retained_uplift.csv",
+      "bytes": 56260,
+      "sha256": "870559401fe31e00fe44dbc2727b836b07892a95540fc0c9e6fb5800aec0d47e"
+    },
+    {
+      "path": "data/morpho_phase7_checkpoint_series.csv",
+      "bytes": 491812,
+      "sha256": "4aecd60b2f3f85c34057a2d62a4552d1b9229811307d4cef656b896eb1040537"
+    },
+    {
+      "path": "data/morpho_phase7_period_flows.csv",
+      "bytes": 58100,
+      "sha256": "44003813bf720a360a61e03e2c2c71194906cf70bbe58fac3e7e23105c2ab917"
+    },
+    {
+      "path": "data/morpho_phase7_market_concentration.csv",
+      "bytes": 26621,
+      "sha256": "b5bcf48e839acaf103475d6cf7487ccc1be57564b293ecf9d6ac131047b52bd4"
+    }
+  ]
+}

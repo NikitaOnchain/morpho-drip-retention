@@ -1,0 +1,164 @@
+{
+  "version": "phase8-headline-review-v1",
+  "status": "PASS",
+  "review_type": "same_author_independent_code_path_not_external_signoff",
+  "network_calls": 0,
+  "production_access": "mode=ro&immutable=1; query_only=ON",
+  "source_identities": {
+    "production_db_sha256": "80aca74cc5e43db03fd93c69d7ad448ac9afdec5f9566a6b833ec11f7e5c9543",
+    "frozen_metrics_sha256": "2774c0856ca66da4611523289a7e1c4da937ce208cad9799c2f008753eca2ba2",
+    "eligibility_bridge_sha256": "cbab02426bcd1ac1ad0679156f837e155c5b04e86b63001a9149b0cbae27d305",
+    "market_csv_sha256": "a88fceaa19fe383bb956ef698a819facb2d345a29bd173db730e85bbd5213a6a",
+    "boundary_json_sha256": "00b888f453a72cf991dd3cd8dc9b52a95e86b8f6956b26fe681b4467b97a11cb",
+    "boundary_manifest_sha256": "8a80d2f6f6f656f469301a6a41b7ed1a73fc1df0936c47c3503bb7ee0d7c0646"
+  },
+  "checked_metric_rows": 648,
+  "market_checkpoint_share_checks": 10215,
+  "wallet_events_replayed": 77768,
+  "defects": 0,
+  "headlines": [
+    {
+      "metric": "borrowed_assets",
+      "scope_id": "0xaf88d065e77c8cc2239327c5edb3a432268e5831",
+      "post_checkpoint": "p30",
+      "B_exact": "3416146761295/14",
+      "E": "70647245378463",
+      "Q": "180871350308110",
+      "P": "48068435591953",
+      "primary_ratio_exact": "669541951526047/985645288537187"
+    },
+    {
+      "metric": "borrowed_assets",
+      "scope_id": "0xaf88d065e77c8cc2239327c5edb3a432268e5831",
+      "post_checkpoint": "p90",
+      "B_exact": "3416146761295/14",
+      "E": "70647245378463",
+      "Q": "180871350308110",
+      "P": "14172733907336",
+      "primary_ratio_exact": "195002127941409/985645288537187"
+    },
+    {
+      "metric": "borrowed_assets",
+      "scope_id": "0xaf88d065e77c8cc2239327c5edb3a432268e5831",
+      "post_checkpoint": "p180",
+      "B_exact": "3416146761295/14",
+      "E": "70647245378463",
+      "Q": "180871350308110",
+      "P": "5645592527445",
+      "primary_ratio_exact": "75622148622935/985645288537187"
+    },
+    {
+      "metric": "borrowed_assets",
+      "scope_id": "0xfd086bc7cd5c481dcc9c85ebe478a1c0b69fcbb9",
+      "post_checkpoint": "p30",
+      "B_exact": "934914557/56",
+      "E": "36750499253479",
+      "Q": "59368918000304",
+      "P": "37113025937306",
+      "primary_ratio_exact": "2078328517574579/2058027023280267"
+    },
+    {
+      "metric": "borrowed_assets",
+      "scope_id": "0xfd086bc7cd5c481dcc9c85ebe478a1c0b69fcbb9",
+      "post_checkpoint": "p90",
+      "B_exact": "934914557/56",
+      "E": "36750499253479",
+      "Q": "59368918000304",
+      "P": "14081478694084",
+      "primary_ratio_exact": "87617985772683/228669669253363"
+    },
+    {
+      "metric": "borrowed_assets",
+      "scope_id": "0xfd086bc7cd5c481dcc9c85ebe478a1c0b69fcbb9",
+      "post_checkpoint": "p180",
+      "B_exact": "934914557/56",
+      "E": "36750499253479",
+      "Q": "59368918000304",
+      "P": "4135334073899",
+      "primary_ratio_exact": "231577773223787/2058027023280267"
+    },
+    {
+      "metric": "active_borrowers",
+      "scope_id": "45_markets",
+      "post_checkpoint": "p30",
+      "B_exact": "541/28",
+      "E": "765",
+      "Q": "3132",
+      "P": "578",
+      "primary_ratio_exact": "15643/20879"
+    },
+    {
+      "metric": "active_borrowers",
+      "scope_id": "45_markets",
+      "post_checkpoint": "p90",
+      "B_exact": "541/28",
+      "E": "765",
+      "Q": "3132",
+      "P": "608",
+      "primary_ratio_exact": "16483/20879"
+    },
+    {
+      "metric": "active_borrowers",
+      "scope_id": "45_markets",
+      "post_checkpoint": "p180",
+      "B_exact": "541/28",
+      "E": "765",
+      "Q": "3132",
+      "P": "495",
+      "primary_ratio_exact": "13319/20879"
+    },
+    {
+      "metric": "active_borrowers_shares_only",
+      "scope_id": "45_markets",
+      "post_checkpoint": "p30",
+      "B_exact": "1291/56",
+      "E": "1416",
+      "Q": "3762",
+      "P": "1301",
+      "primary_ratio_exact": "14313/15601"
+    },
+    {
+      "metric": "active_borrowers_shares_only",
+      "scope_id": "45_markets",
+      "post_checkpoint": "p90",
+      "B_exact": "1291/56",
+      "E": "1416",
+      "Q": "3762",
+      "P": "1348",
+      "primary_ratio_exact": "74197/78005"
+    },
+    {
+      "metric": "active_borrowers_shares_only",
+      "scope_id": "45_markets",
+      "post_checkpoint": "p180",
+      "B_exact": "1291/56",
+      "E": "1416",
+      "Q": "3762",
+      "P": "1172",
+      "primary_ratio_exact": "64341/78005"
+    }
+  ],
+  "applicability": {
+    "active_borrowers": {
+      "applicable": 38,
+      "not_applicable_no_positive_end_uplift": 7
+    },
+    "supplied_assets": {
+      "applicable": 45
+    },
+    "collateral_assets": {
+      "applicable": 44,
+      "not_applicable_no_positive_end_uplift": 1
+    },
+    "borrowed_assets": {
+      "applicable": 42,
+      "not_applicable_no_positive_end_uplift": 3
+    }
+  },
+  "runtime_seconds": 22.278,
+  "environment": {
+    "python": "3.12.14",
+    "sqlite": "3.53.1"
+  },
+  "production_unchanged": true
+}

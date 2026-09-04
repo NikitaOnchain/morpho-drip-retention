@@ -1,0 +1,80 @@
+{
+  "version": "phase8-isolated-reproduction-v1",
+  "status": "PASS",
+  "returncode": 0,
+  "network_calls": 0,
+  "destination_relative": "data/tmp/phase8_reproduction_20260903T184107147755Z",
+  "accepted_inputs_unchanged": true,
+  "matched_outputs": [
+    {
+      "path": "data/morpho_phase7_market_retained_uplift.csv",
+      "accepted_sha256": "528eb56d05bcef02fc6a2a96545b20e4d08fb5a04da91917a9257ae28ee66ca5",
+      "reproduced_sha256": "528eb56d05bcef02fc6a2a96545b20e4d08fb5a04da91917a9257ae28ee66ca5"
+    },
+    {
+      "path": "data/morpho_phase7_portfolio_retained_uplift.csv",
+      "accepted_sha256": "870559401fe31e00fe44dbc2727b836b07892a95540fc0c9e6fb5800aec0d47e",
+      "reproduced_sha256": "870559401fe31e00fe44dbc2727b836b07892a95540fc0c9e6fb5800aec0d47e"
+    },
+    {
+      "path": "data/morpho_phase7_checkpoint_series.csv",
+      "accepted_sha256": "4aecd60b2f3f85c34057a2d62a4552d1b9229811307d4cef656b896eb1040537",
+      "reproduced_sha256": "4aecd60b2f3f85c34057a2d62a4552d1b9229811307d4cef656b896eb1040537"
+    },
+    {
+      "path": "data/morpho_phase7_period_flows.csv",
+      "accepted_sha256": "44003813bf720a360a61e03e2c2c71194906cf70bbe58fac3e7e23105c2ab917",
+      "reproduced_sha256": "44003813bf720a360a61e03e2c2c71194906cf70bbe58fac3e7e23105c2ab917"
+    },
+    {
+      "path": "data/morpho_phase7_market_concentration.csv",
+      "accepted_sha256": "b5bcf48e839acaf103475d6cf7487ccc1be57564b293ecf9d6ac131047b52bd4",
+      "reproduced_sha256": "b5bcf48e839acaf103475d6cf7487ccc1be57564b293ecf9d6ac131047b52bd4"
+    },
+    {
+      "path": "figures/phase7_borrowed_assets_checkpoints.png",
+      "accepted_sha256": "0d9449e00e6cc8db8b161fddde6255e951f04dc8913bdb39e3b9c9ec4378fe89",
+      "reproduced_sha256": "0d9449e00e6cc8db8b161fddde6255e951f04dc8913bdb39e3b9c9ec4378fe89"
+    },
+    {
+      "path": "figures/phase7_retained_uplift.png",
+      "accepted_sha256": "42802ffd49ae48d86a9c5f444d49a8137052374cc2be43d5e73cd0c7f393179c",
+      "reproduced_sha256": "42802ffd49ae48d86a9c5f444d49a8137052374cc2be43d5e73cd0c7f393179c"
+    },
+    {
+      "path": "figures/phase7_debt_flow_decomposition.png",
+      "accepted_sha256": "80176ae25d29168c69dffb22ff5112808b545e7366027a20f1661aad65d20172",
+      "reproduced_sha256": "80176ae25d29168c69dffb22ff5112808b545e7366027a20f1661aad65d20172"
+    },
+    {
+      "path": "figures/phase7_market_concentration.png",
+      "accepted_sha256": "b66df03d755257966cc5b1dd796809d6eef39a565b27b6acbdd930a82fdc14b9",
+      "reproduced_sha256": "b66df03d755257966cc5b1dd796809d6eef39a565b27b6acbdd930a82fdc14b9"
+    },
+    {
+      "path": "figures/phase7_archetype_borrowed_assets.png",
+      "accepted_sha256": "eb850ddfbac8d4180da96830c34afeedf09d9156936ef7ee8b55de73c96a8b24",
+      "reproduced_sha256": "eb850ddfbac8d4180da96830c34afeedf09d9156936ef7ee8b55de73c96a8b24"
+    },
+    {
+      "path": "figures/phase7_active_borrowers.png",
+      "accepted_sha256": "19b812d361889f0578580b7a0eea03e1261f1fba3cd3d71ba4ffacc4b91001d1",
+      "reproduced_sha256": "19b812d361889f0578580b7a0eea03e1261f1fba3cd3d71ba4ffacc4b91001d1"
+    }
+  ],
+  "mismatches": [],
+  "relocation": {
+    "file": "data/drip_morpho_scope_reproducibility_manifest.json",
+    "only_changed_value": "api.raw_snapshot_path",
+    "original_sha256": "08098fbb4b288bf8741bf5aa2fb16da7973cb521fc9b758460d5057a45e505d3",
+    "copy_sha256": "6805b6ed59cf6e383a2d7a7a9b8d45f0f7610131ae80585e537b5c8466db7cb1",
+    "raw_snapshot_sha256": "4d9bc3e011ce56ad555b3b650d42198d83fd78d35594d8b93e1f56d5362ae8c7"
+  },
+  "environment": {
+    "python": "3.12.13",
+    "sqlite": "3.53.1",
+    "pillow": "12.3.0"
+  },
+  "runtime_seconds": 58.473,
+  "note": "Versioned reproduction directory retained; nothing deleted. No Phase 6 rebuild."
+}

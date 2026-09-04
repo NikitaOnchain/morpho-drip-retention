@@ -1,0 +1,101 @@
+{
+  "version": "morpho-phase4-three-market-daily-v1",
+  "status": "precommitted_before_rpc",
+  "created_at_utc": "2026-09-01T18:29:21.912472Z",
+  "chain_id": 42161,
+  "contract_address": "0x6c247b1f6182318877311737bac0844baa518f5e",
+  "manifest_sha256": "c8552428187094e5aad725193f2e3023e622ddc4ab37428f1414c375e7d6be58",
+  "archetype_csv_sha256": "6e95d02e69e4d8a6f2033063870d8069c61da064a37c0e526f00638e98ac080c",
+  "selection_rule": "anchor; first scoped-event block; lower-median ordered-event block; final allowed block",
+  "ordering": [
+    "block_number",
+    "transaction_index",
+    "log_index"
+  ],
+  "checkpoints": [
+    {
+      "ordinal": 0,
+      "market_id": "0xd09404e9512e1341321c8ae3bd663fab7087582142ac61486635a6c072c2af12",
+      "checkpoint_name": "anchor",
+      "block_number": 355887375,
+      "rationale": "end-of-block state immediately before the allowed replay interval"
+    },
+    {
+      "ordinal": 1,
+      "market_id": "0xd09404e9512e1341321c8ae3bd663fab7087582142ac61486635a6c072c2af12",
+      "checkpoint_name": "start",
+      "block_number": 358881054,
+      "rationale": "end of the first scoped-event block"
+    },
+    {
+      "ordinal": 2,
+      "market_id": "0xd09404e9512e1341321c8ae3bd663fab7087582142ac61486635a6c072c2af12",
+      "checkpoint_name": "mid",
+      "block_number": 449327957,
+      "rationale": "end of the block containing lower-median ordered event"
+    },
+    {
+      "ordinal": 3,
+      "market_id": "0xd09404e9512e1341321c8ae3bd663fab7087582142ac61486635a6c072c2af12",
+      "checkpoint_name": "end",
+      "block_number": 495647033,
+      "rationale": "end of the final block in the allowed replay interval"
+    },
+    {
+      "ordinal": 4,
+      "market_id": "0xf86f3edd6f16cd8211f4d206866dc4ecd41be6211063ac11f8508e1b7112ef40",
+      "checkpoint_name": "anchor",
+      "block_number": 355887375,
+      "rationale": "end-of-block state immediately before the allowed replay interval"
+    },
+    {
+      "ordinal": 5,
+      "market_id": "0xf86f3edd6f16cd8211f4d206866dc4ecd41be6211063ac11f8508e1b7112ef40",
+      "checkpoint_name": "start",
+      "block_number": 373644710,
+      "rationale": "end of the first scoped-event block"
+    },
+    {
+      "ordinal": 6,
+      "market_id": "0xf86f3edd6f16cd8211f4d206866dc4ecd41be6211063ac11f8508e1b7112ef40",
+      "checkpoint_name": "mid",
+      "block_number": 419106522,
+      "rationale": "end of the block containing lower-median ordered event"
+    },
+    {
+      "ordinal": 7,
+      "market_id": "0xf86f3edd6f16cd8211f4d206866dc4ecd41be6211063ac11f8508e1b7112ef40",
+      "checkpoint_name": "end",
+      "block_number": 495647033,
+      "rationale": "end of the final block in the allowed replay interval"
+    },
+    {
+      "ordinal": 8,
+      "market_id": "0x571cb3ac535d61d92026c071ef1df4794d0bbbe1755f916ff640746f81b52af4",
+      "checkpoint_name": "anchor",
+      "block_number": 355887375,
+      "rationale": "end-of-block state immediately before the allowed replay interval"
+    },
+    {
+      "ordinal": 9,
+      "market_id": "0x571cb3ac535d61d92026c071ef1df4794d0bbbe1755f916ff640746f81b52af4",
+      "checkpoint_name": "start",
+      "block_number": 413594451,
+      "rationale": "end of the first scoped-event block"
+    },
+    {
+      "ordinal": 10,
+      "market_id": "0x571cb3ac535d61d92026c071ef1df4794d0bbbe1755f916ff640746f81b52af4",
+      "checkpoint_name": "mid",
+      "block_number": 445271692,
+      "rationale": "end of the block containing lower-median ordered event"
+    },
+    {
+      "ordinal": 11,
+      "market_id": "0x571cb3ac535d61d92026c071ef1df4794d0bbbe1755f916ff640746f81b52af4",
+      "checkpoint_name": "end",
+      "block_number": 495647033,
+      "rationale": "end of the final block in the allowed replay interval"
+    }
+  ]
+}
