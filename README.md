@@ -123,7 +123,7 @@ Technical and descriptive confidence is high, decision confidence is moderate, a
 
 | I want to… | Start here |
 |---|---|
-| Read the decision memo | [English report](reports/DRIP_LENDING_DEMAND_REPORT.md) |
+| Read the decision memo | [Decision report](reports/DRIP_LENDING_DEMAND_REPORT.md) |
 | Check metric definitions | [Metrics v1.0](docs/METRICS.md) |
 | Trace headline numbers | [Headline provenance](docs/HEADLINE_PROVENANCE.md) |
 | Reproduce the outputs | [Reproduction guide](docs/REPRODUCTION.md) |

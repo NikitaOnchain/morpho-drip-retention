@@ -566,8 +566,8 @@
     },
     {
       "path": "README.md",
-      "bytes": 10378,
-      "sha256": "86a0840751e8159adf5f68bda16bc39ad132778d35c41043583ac3648679dfbb"
+      "bytes": 10379,
+      "sha256": "7672845a087185e540b03de05c8e5de98329b355ebf99fc72ab3676c83cbc046"
     },
     {
       "path": "release/chart_contract.json",
@@ -602,7 +602,7 @@
     {
       "path": "release/package_audit.json",
       "bytes": 3472,
-      "sha256": "c480d2b3dd215c14d85fd7aa0405e91eb34383453537d02240022a5de07c2619"
+      "sha256": "d94df8fac313f97f10ebde53c358852a3b5d6832a751468b5778f69b4708bcc8"
     },
     {
       "path": "release/qa/correction_summary.json",
