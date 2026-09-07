@@ -1,3 +1,5 @@
+# Preserve every checksum-bound file regardless of core.autocrlf.
+* -text
 # Preserve byte identities of accepted evidence and checksum-bound code.
 *.csv -text
 *.json -text
@@ -6,3 +8,7 @@
 *.py -text
 *.ps1 -text
 *.png binary
+
+# Keep release control files stable across checkouts.
+/LICENSE text eol=lf
+/release/SHA256SUMS.txt text eol=lf

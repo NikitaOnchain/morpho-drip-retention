@@ -2,12 +2,12 @@
   "version": "phase8-reviewed-rc-v1",
   "status": "CURRENT — reviewed release candidate ready for publication approval",
   "reviewed_parent_manifest_sha256": "18bedd20ced80d229230214fd1170af1e35063330a017a7e07ca2ea48a99882a",
-  "self_reference_rule": "manifest excludes itself and SHA256SUMS; SHA256SUMS additionally covers manifest; no other payload omitted",
+  "self_reference_rule": "repository payload excludes .git; manifest excludes itself and SHA256SUMS; SHA256SUMS additionally covers manifest; no other payload omitted",
   "files": [
     {
       "path": ".gitattributes",
-      "bytes": 157,
-      "sha256": "16619a15e352d289cee9cd07beb37a771421fbac127071061dbe2a34f8197760"
+      "bytes": 343,
+      "sha256": "0f3c0e88e70ba5650bdbcb9b2e0b41c6065b89f06bcf12cfb1d8564301b89110"
     },
     {
       "path": ".gitignore",
@@ -601,8 +601,8 @@
     },
     {
       "path": "release/package_audit.json",
-      "bytes": 3472,
-      "sha256": "d94df8fac313f97f10ebde53c358852a3b5d6832a751468b5778f69b4708bcc8"
+      "bytes": 4446,
+      "sha256": "f2a06b9a8943ab83db401fcb4c51f752264429ab9048a9811f262908858afb31"
     },
     {
       "path": "release/qa/correction_summary.json",
@@ -933,6 +933,11 @@
       "path": "sql/README.md",
       "bytes": 1938,
       "sha256": "d74a4a79834084f64510a24ccba3cd29df2b300fde6815297d7c1b3210a4fc66"
+    },
+    {
+      "path": "LICENSE",
+      "bytes": 1070,
+      "sha256": "4a2bed4f566a910f460c6013faa4cc669924d57d2f9aa822b0f1c7ea05d38857"
     }
   ]
 }

@@ -1,7 +1,7 @@
 {
   "status": "PASS",
-  "files": 186,
-  "bytes": 6219775,
+  "files": 189,
+  "bytes": 6231265,
   "local_links_checked": 210,
   "broken_links": [],
   "review_link_cases": [
@@ -108,9 +108,22 @@
   "large_files": [],
   "forbidden_payloads": [],
   "limitations": [
-    "Heuristic secrets only; no dedicated scanner or Git history audit.",
-    "External URLs and renderer-specific anchors not checked.",
-    "No browser/GitHub renderer or cross-OS font certification."
+    "Privacy scan used local heuristics; no dedicated scanner or proof of absence of unlabeled secrets.",
+    "Separate offline pre-public scan covered all 188 locally available blobs and 4 commits, including Git identities; zero candidates. Remote-only objects were not checked.",
+    "External URLs and renderer-specific anchors are not certified by this package auditor.",
+    "README visual review was confirmed by the owner before this run; no new browser or cross-OS font certification."
   ],
-  "scope": "Final local package; sizes below are the pre-seal payload scan, final receipt counts the completed manifest and sums"
+  "scope": "Current repository payload, excluding Git administrative directory. Files and bytes describe the completed sealed payload including all three release metadata files.",
+  "line_endings": "LICENSE matches the existing Git blob byte-for-byte (LF); Default -text preserves all checksum-bound bytes; LICENSE and SHA256SUMS explicitly use text eol=lf.",
+  "pre_public_check_date": "2026-09-07",
+  "privacy_check": {
+    "method": "heuristic",
+    "tree_files": 189,
+    "git_blobs": 188,
+    "git_commits": 4,
+    "high_findings": 0,
+    "candidates": 0,
+    "dedicated_scanner": "unavailable on PATH",
+    "scope": "All locally available objects and current tree before metadata-only refresh; local Git config/reflogs also screened. Public alias GitHub noreply and GitHub service identities accepted."
+  }
 }
